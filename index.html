@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="assets/images/assets/images/drive-icon.png" />
+	<link rel="apple-touch-icon" href="assets/images/drive-apple-icon.png" />
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="DRIVe is transforming health security innovation to protect Americans from 21st century health security threats" />
+	<meta name="author" content="DRIVe" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@BARDA" />
+	<meta name="twitter:title" content=" DRIVe: Transforming Health Security" />
+	<meta name="twitter:description" content="Revolutionizing the way we prevent, detect, and respond to major 21st-century health security threats." />
+	<meta name="twitter:image" content="https://drive.hhs.gov/img/drive-logo-plain.png" />
+	<meta name="twitter:image:alt" content="Banner for DRIVe Homepage" />
+	<title>DRIVe</title>
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start': new Date().getTime(), 
+				event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-MJGSB2L');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=raleway" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/pbm1bix.css">
+
+	<!-- Font Awesome Version 5.0 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Custom styles for Website -->
+	<link href="assets/css/full-slider.css" rel="stylesheet">
+	<link href="assets/css/serviceboxes.css" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/grayscale.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom CSS -->
+	<!-- <link href="assets/css/theme1.css" rel="stylesheet"> -->
+	<link href="assets/css/theme.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="/drivepubhtml/js/ie/html5shiv.js"></script>
+		<script src="/drivepubhtml/js/ie/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- jQuery -->
+	<script src="assets/javascript/global/jquery-min.js"></script>
+
+	<!-- Needed for tooltips -->
+	<script src="assets/javascript/global/popper.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="assets/javascript/global/bootstrap.min.js"></script>
+
+	<script>
+		$(function () {
+			$("#includefooter").load("templates/footer.html");
+			$("#includeheader").load("templates/header.html");
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+
+	<style>
+		.btn_readmore:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+		/*Service Boxes */
+		.serviceBox {
+			padding: 35px 35px;
+			border-radius: 0px;
+			text-align: left;
+			overflow: hidden;
+			z-index: 1;
+			position: relative;
+		}
+
+		.serviceBox:before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			border-radius: 0px;
+			position: absolute;
+			top: 0;
+			left: -100%;
+			z-index: -1;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox:hover:before {
+			left: 0;
+		}
+
+		.serviceBox:after {
+			content: "";
+			width: 7px;
+			height: 0;
+			border-radius: 0px;
+			background: #5fbb46;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox:hover:after {
+			height: 100%;
+		}
+
+		.serviceBox .service-icon {
+			color: #161616;
+			margin-bottom: 10px;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox .service-icon i {
+			font-size: 30px;
+		}
+
+		.serviceBox .title {
+			display: inline-block;
+			font-size: 22px;
+			font-weight: 700;
+			text-transform: capitalize;
+			margin-right: 10px;
+		}
+
+		.serviceBox .description {
+			font-size: 15px;
+			color: #161616;
+			line-height: 25px;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox:hover .service-icon,
+		.serviceBox:hover .description {
+			color: #fff;
+		}
+
+		.enactService:hover {
+			background-image: url("img/icons/smartwatch_bg_on.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.enactServiceOff {
+			background-image: url("img/icons/smartwatch_bg_off.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.sepsisService:hover {
+			background-image: url("img/icons/ivfluids_bg_on.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.sepsisServiceOff {
+			background-image: url("img/icons/ivfluids_bg_off.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.otherService:hover {
+			background-image: url("img/icons/microscope_bg_on.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.otherService {
+			background-image: url("img/icons/microscope_bg_off.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+
+		@media only screen and (max-width:990px) {
+			.serviceBox {
+				margin-bottom: 30px;
+			}
+		}
+
+		.blog-home2 h2 {
+			font-size: 20px;
+			padding-top: 10px;
+		}
+	</style>
+</head>
+
+<body id="page-top" class="index">
+	<!-- Google Analytics Manager -->
+	<script>
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script',
+				'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-122497508-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJGSB2L" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- Navigation -->
+	<div id="includeheader"></div>
+	<!-- End Navigation -->
+	<br>
+
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<!--
+			<div class="carousel-item ">
+				<div class="carousel-design-two">
+				<div class="container-fluid">
+					<div class="row">
+					
+						<div class="col-lg-8 text-left">
+						
+							
+						</div>
+						<div class="col-lg-4 text-left">
+							
+							<br><br>
+							<h1 style=" text-align: left; color: #FFFFFF; font-size: 40px; font-weight: bolder">BARDA INDUSTRY DAY 2020</h1><br><br>
+							<h2 style="color: #F37300">October 27, 200</h2><br>
+							<h5><a class="btn-success" style="padding:10px" href="partner.html#ncov" target="_self">Find Out More</a></h5>
+							
+							
+						</div>
+					</div>
+				</div>
+					</div>
+			</div>
+			-->
+			<div class="carousel-item active ">
+				<div class="carousel-design-four">
+					<div class="container-fluid">
+						<div class="row">
+							<div style="background-color: #000000" class="col-lg-1">
+							</div>
+							<div style="background-color: #000000" class="col-lg-4 text-left">
+								<br><br>
+								<h2 style=" text-align: left; color: #FFFFFF;">EZ-BAA now open for COVID-19 medical
+									countermeasures Abstracts</h2>
+								<br><br>
+								<h5>
+									<a class="btn-info" style="padding:10px" href="views/partner.html#ncov" target="_self">Apply Now</a>
+								</h5>
+								<br><br><br>
+							</div>
+							<div class="col-lg-7 designfourbg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--	
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span> 
+		</a>-->
+	</div>
+	<!--Mask Challenge 
+		<section style="background-color: #EEEEEE; ">
+			<div class="container-fluid ">
+				<div class="row justify-content-center" >
+					<div class="col-lg-9 text-center" ><br>
+					  <h5 style="font-size: 25px; text-transform: none; font-weight: bold; color: #000000;">DRIVe IS SPONSORING A MASK CHALLENGE TO SUPPORT COVID-19 EFFORTS</h5>
+								</div>
+					<div class="col-lg-2"><br>
+				
+					<h5><a style="padding:10px; font-size: 20px; margin-bottom: 15px; padding: 5px; border: 2px solid #000000;" href="mask_challenge.html" target="_self">GET INVOLVED</a></h5><br>
+						</div>					
+					</div>
+			</div>
+		</section>  -->
+	<div class="background-white">
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center"><br>
+						<h4>Revolutionize the way we <strong>prevent, detect,</strong> and <strong>respond</strong> to
+							major 21<sup>st</sup> century health security threats.</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr />
+		<!--Service Areas -->
+		<!-- ======= Services Section ======= -->
+		<section id="services" class="services services text-center ">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2>DRIVe PROGRAM AREAS</h2>
+					<p>Our individual DRIVe programs accelerate the development and availability of transformative
+						technologies and approaches to protect Americans from health security threats. We push the
+						boundaries of innovation to tackle the biggest health security challenges.</p>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 icon-box text-center" data-aos="zoom-in" data-aos-delay="100">
+						<img style="max-height: 140px" class="img-fluid" src="assets/images/icons/smartwatch.png"><br><br>
+						<h4 class="title"><a href="views/enact.html">ENACT</a></h4>
+						<p class="description">Too often, people do not receive adequate and timely treatment for
+							infectious diseases. Early Notification to Act, Control, and Treat (ENACT) aims to provide
+							actionable health information to individuals and medical care providers in early stages of
+							an infection, ideally ahead of noticeable symptoms.</p>
+					</div>
+					<div class="col-lg-4  icon-box" data-aos="zoom-in" data-aos-delay="200">
+						<img style="max-height: 140px" class="img-fluid" src="assets/images/icons/ivbag_circle.png"><br><br>
+						<h4 class="title"><a href="views/solvingsepsis.html">SOLVING SEPSIS</a></h4>
+						<p class="description">Sepsis is one the country’s most urgent and costly systemic health
+							threats. Solving Sepsis is catalyzing technological approaches along the sepsis patient
+							continuum to empower both the patient and the healthcare provider with a focus on innovative
+							technologies.</p>
+					</div>
+					<div class="col-lg-4  icon-box" data-aos="zoom-in" data-aos-delay="200">
+						<img style="max-height: 120px; margin-top: 20px" class="img-fluid"
+							src="assets/images/covid_icon.png"><br><br>
+						<h4 class="title"><a target="_blank"
+								href="https://www.medicalcountermeasures.gov/app/barda/coronavirus/COVID19.aspx">COVID-19
+								Response</a></h4>
+						<p class="description">The Rapidly Deployable Capabilities (RDC) team was formed as part of
+							BARDA’s response to COVID-19. The program’s goal is to use previously developed,
+							pathogen–agnostic technologies from the ENACT and Solving Sepsis portfolios. These
+							technologies will promote patient self-monitoring or remote patient monitoring by healthcare
+							providers.</p>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-lg-4  icon-box" data-aos="zoom-in" data-aos-delay="300">
+						<img style="max-height: 140px" class="img-fluid" src="assets/images/icons/syringe.png"><br><br>
+						<h4 class="title"><a href="views/beyondtheneedle.html">Beyond the Needle</a></h4>
+						<!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p> -->
+						<p class="description">Beyond the Needle is developing alternative vaccine technologies to make
+							vaccinations easier to administer and more widely available. The goal is to reduce the
+							burden of traditional vaccine delivery via needle and syringe on the healthcare system and
+							supply-chain – especially during a pandemic.</p>
+					</div>
+					<div class="col-lg-4  icon-box" data-aos="zoom-in" data-aos-delay="200">
+						<img style="max-height: 115px; margin-top: 15px " class="img-fluid"
+							src="assets/images/redirect_icon.png"><br><br>
+						<h4 class="title"><a style="text-transform: none" href="views/ReDIRECT.html">ReDIRECT</a></h4>
+						<p class="description">In a chemical emergency, minutes matter and a timely response is
+							necessary to save lives. The Repurposing Drugs in Response to Chemical Threats (ReDIRECT)
+							program aims to repurpose therapeutics that are commonly available in our communities as
+							medical counter measures and treat the symptoms associated with chemical agent exposure.</p>
+					</div>
+				</div>
+			</div>
+		</section><!-- End Services Section -->
+		<br>
+		<section class="coronavirushome">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9 text-left">
+						<h2 style="color: #fff; margin-top: 30px; font-size: 40px; text-transform: none; padding: 10px; background-color: #000000">
+							COVID-19 Pivot of ENACT and Sepsis
+						</h2>
+						<h5 style="color: #FFFFFF; font-size: 20px; line-height: 25px; padding: 20px; background-color: #000000">
+							Since March, we’ve invested in approaches to <span style="color: #CF0306">pilot and
+								clinically validate technologies</span> in advanced development, or that are FDA
+							cleared, to be used by patients or healthcare providers in monitoring patients along the
+							<span style="color: #CF0306">COVID-19 care continuum </span> (pre-infection, symptomatic,
+							infection, and recovery).
+						</h5>
+						<br>
+						<h5>
+							<a target="_blank"
+								style="background-color: #000000; padding: 15px; color: #FFFFFF; text-decoration: underline; font-size: 20px"
+								href="https://www.medicalcountermeasures.gov/app/barda/coronavirus/COVID19.aspx">See Our
+								Portfolio
+							</a>
+						</h5>
+						<br>
+					</div>
+					<div class="col-sm-12">
+						<div class="container">
+							<div class="row">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container-fluid px-0">
+				<div class="row no-gutters">
+					<div style="padding: 70px;" class="col-lg-6 text-left">
+						<h3 style="text-transform: none; font-size: 35px">DRIVe's Impact</h3>
+						<hr />
+						<ul style="font-size: 21px;">
+							<li>We change how government approaches big <strong>health security challenges and
+									threats</strong></li>
+							<li>We tackle health security threats by seeking <strong>breakthrough devices and
+									technologies</strong></li>
+							<li>We model our work on the <strong>best practices</strong> of the entrepreneurial world.
+							</li>
+							<li>We use tools and authorities to support <strong>new technologies, streamline contracting
+									processes</strong>, and launch a network of accelerators</li>
+							<li>The team is comprised of <strong>scientists and venture entrepreneurs</strong> dedicated
+								to identifying threats to health security.</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 text-center"><br><br>
+						<img alt="Investing Process" class="img-fluid" src="assets/images/startup_graphic.png">
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr />
+		<!-- event list -->
+		<div class="blog-home2 py-5">
+			<div class="container">
+				<!-- Row  -->
+				<div id="driveevents" class="row justify-content-center">
+					<!-- Column -->
+					<div class="col-md-8 text-center">
+						<h2 style="text-transform: none; font-size: 30px">UPCOMING DRIVe EVENTS</h2>
+						<h6 class="subtitle font-weight-normal">Find out more about DRIVe upcoming events</h6>
+					</div>
+					<!-- Column -->
+					<!-- Column -->
+				</div>
+				<div class="row mt-4">
+					<!-- Column -->
+					<div class="col-md-4 on-hover ">
+						<div style="padding: 15px" class="card border-0 mb-4">
+							<a href="#"><img class="card-img-top" src="https://drive.hhs.gov/img/enact_webinars.jpg" alt="wrappixel kit"></a>
+							<div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+								Nov<span class="d-block">6</span></div>
+							<h2>WEBINAR 2: LEARN ABOUT THE ENACT EZ-BAA AREA OF INTEREST</h2>
+							<p class="font-weight-medium mt-3">Friday, Nov 6 2020
+								3:30 PM - 4:00 PM (UTC-04:00) Eastern Time (US & Canada)</p>
+							<p class="mt-3">ONLINE</p>
+							<a href="views/enact.html#webinars" class="btn_readmore text-center">Read More</a>
+						</div>
+					</div>
+					<!-- Column -->
+					<div id="driveevents" class="col-md-4 on-hover">
+						<div style="padding: 15px" class="card border-0 mb-4">
+							<a href="#"><img class="card-img-top" src="https://drive.hhs.gov/img/enact_webinars2.jpg" alt="wrappixel kit"></a>
+							<div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+								Nov<span class="d-block">13</span></div>
+							<h2>WEBINAR 3: LEARN ABOUT THE ENACT EZ-BAA AREA OF INTEREST</h2>
+							<p class="font-weight-medium mt-3">3:30 PM - 4:00 PM (UTC-04:00) Eastern Time (US & Canada)
+							</p>
+							<p class="mt-3">ONLINE</p>
+							<a href="views/enact.html#webinars" class="btn_readmore text-center">Read More</a>
+						</div>
+					</div>
+					<!-- Column -->
+					<div class="col-md-4 on-hover">
+						<div style="padding: 15px" class="card border-0 mb-4">
+							<a href="#">
+								<img class="card-img-top" src="https://drive.hhs.gov/img/sciencelifesummit_logo.jpg" alt="wrappixel kit">
+							</a>
+							<div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+								Nov<span class="d-block">17</span></div>
+							<h2>Center for Biotechnology Life Sciences Summit</h2>
+							<p class="font-weight-medium mt-3">
+								<a href="https://lifesciencessummit.org">https://lifesciencessummit.org/</a>
+								<br>
+								Panel presentation: Sandeep Patel
+							</p>
+							<br>
+							<p class="mt-3">ONLINE</p>
+							<a target="_blank" href="https://lifesciencessummit.org" class="btn_readmore text-center">Read More</a>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div  class="row justify-content-center">
+					<a href="views/pastevents.html" style="color: black">
+						<p>click here for a list of Past Events </p>
+					</a>
+				</div>
+				<!-- <h3 class="text-center">See Past Events <a href="#"><i style="color: #515151" class="fas fa-1x  fa-arrow-circle-right"></i></a> </h3>-->
+			</div>
+		</div>
+		<!-- event list -->
+		<!-- BID 
+		<section class="bid">
+			<div  class="container">
+				<div  class="row">
+					<div class="col-sm-9 text-left"><br>
+						<h2 style="margin-top: 20px; font-size: 40px; color: #FFFFFF; padding-left: 0px">BARDA INDUSTRY DAY 2020</h2>
+						<h3 style="color: #F37300">October 27th, 2020</h3>
+
+						<p style=" color: #FFFFFF;">Join us for virtual presentations and interactive sessions to hear the latest from DRIVe staff and our partners in the Solving Sepsis, ENACT, and the DRIVe Accelerator Network, including plans for BARDA Ventures.  Learn how to partner with us. Bring your bold ideas to advance health security today and tomorrow.</p><br>
+						<a class="btn-learnmore" target="_blank" href="https://www.medicalcountermeasures.gov/barda/barda-industry-day-2020/">Find Out More</a><br><br><br>
+					</div>
+					<div class="col-sm-3 text-left">
+				
+					</div>
+				</div>
+			</div>
+		</section>
+		-->
+		<!-- END BID -->
+	</div>
+	<!--   END: CONTENT -->
+	<!-- Footer -->
+	<div id="includefooter"></div>
+	<!-- Footer --------->
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div id="scroll-top-link" class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#page-top"> <i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+</body>
+
+</html>

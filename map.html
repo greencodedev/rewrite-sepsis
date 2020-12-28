@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="assets/images/drive-icon.png" />
+	<link rel="apple-touch-icon" href="assets/images/drive-apple-icon.png" />
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="DRIVe is transforming health security innovation to protect Americans from 21st century health security threats" />
+	<meta name="author" content="Barda DRIVe" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@BARDA" />
+	<meta name="twitter:title" content="DRIVe Portfolio" />
+	<meta name="twitter:description" content="An ecosystem Powered by DRIVe." />
+	<meta name="twitter:image" content="/img/twitter_card_portfolio.png" />
+	<meta name="twitter:image:alt" content="DRIVe Portfolio" />
+	<title>DRIVe</title>
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/theme.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="../js/ie/html5shiv.js"></script>
+		<script src="../js/ie/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- map -->
+	<link href="assets/fonts/OpenSans.css" rel="stylesheet">
+	<link href="assets/fonts/PathwayGothicOne.css" rel="stylesheet">
+	<link href="assets/fonts/MaterialIcons.css" rel="stylesheet">
+
+	<link href="assets/css/mapstyles.css" rel="stylesheet">
+
+	<link href="assets/css/darktheme.css" rel="stylesheet">
+	<link href="assets/css/whitetheme.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/leaflet.css">
+	<link rel="stylesheet" href="assets/css/MarkerCluster.css">
+	<link rel="stylesheet" href="assets/css/MarkerCluster.Default.css">
+	<!--<link rel="stylesheet" href="assets/css/styles.css">-->
+	<script src="assets/javascript/custom/leaflet.js"></script>
+	<!--<script src="js/jquery-2.1.1.min.js"></script>-->
+	<script src="assets/javascript/custom/leaflet.markercluster.js"></script>
+
+	<!-- NOTE: Make sure JQuery is loaded before Bootstrap. Otherwise, tabs will not toggle. -->
+	<script src="assets/javascript/global/jquery-min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="assets/javascript/global/bootstrap.min.js"></script>
+
+	<!--- Non-GOV Website Dialog popup -->
+	<script src="assets/javascript/custom/confirmExit.js"></script>
+
+	<script>
+		$(function () {
+			$("#includeheader").load("templates/header.html");
+			$("#includefooter").load("templates/footer.html");
+		});
+	</script>
+
+	<style>
+		.nav-item li:hover {
+			color: #FFFFFF
+		}
+
+		.custom-select {
+			background-color: #000000;
+		}
+
+		.sub-banner-heading-text {
+			font-size: 18px !important;
+		}
+
+		@media (min-width :530px) {
+			.sub-banner-heading-text {
+				font-size: 24px !important;
+			}
+		}
+
+		@media (min-width :992px) {
+			.sub-banner-heading-text {
+				font-size: 32px !important;
+			}
+		}
+
+		.productbox {
+			top: 20px;
+			border: 1px solid #DDDDDD;
+			margin: 15px;
+			height: 270px;
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: perspective(1px) translateZ(0);
+			transform: perspective(1px) translateZ(0);
+			position: relative;
+			overflow: hidden;
+			background-color: #FFFFFF;
+		}
+
+		.productbox:before {
+			padding-top: 7px;
+			border: 1px;
+			border-width: solid #DDDDDD;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			right: 100%;
+			top: 0;
+			background: #5fbb46;
+			height: 5px;
+			-webkit-transition-property: right;
+			transition-property: right;
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-timing-function: ease-out;
+			transition-timing-function: ease-out;
+		}
+
+		.productbox:hover:before,
+		.productbox:focus:before,
+		.productbox:active:before {
+			right: 0;
+		}
+
+		.full-profile {
+			font-size: 12px;
+			padding-top: 10px;
+			color: #636363;
+			position: absolute;
+			bottom: 0px;
+			width: 87%;
+			text-align: center;
+		}
+
+		.full-profile:hover {
+			text-decoration: none;
+		}
+
+		.product-content {
+			position: relative;
+			float: left;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		@media {
+			.row.equal {
+				flex-wrap: wrap;
+				display: flex;
+			}
+
+			.tiplabel {
+				font-weight: bold;
+				font-family: 'Raleway', sans-serif;
+			}
+		}
+
+		.nav-link.active {
+			border-color: #000000 !important;
+			border-bottom: none;
+			border-left: none;
+			border-right: none;
+
+		}
+
+		.nav-link:hover {
+			border-color: #000000 !important;
+			border-bottom: none;
+			border-left: none;
+			border-right: none;
+
+		}
+
+		.leaflet-popup {
+			display: none;
+		}
+	</style>
+</head>
+
+<body id="page-top" class="index">
+	<!-- Google Tag Manager -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+			'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-122497508-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(255,255,255,0.9)">
+		<div style="padding-right: 30px;" class="fixed-top topbar row">
+			<div class="ml-auto"><img alt="HHS logo" height="20px" style="margin-right: 7px;" src="assets/images/HHS-Logo.png">
+			</div>
+			<div>
+				<p>
+					<a target="_blank" href="https://www.hhs.gov/">U.S. Department of Health & Human Services</a> |
+					<a target="_blank" href="https://www.phe.gov/preparedness/pages/default.aspx">Assistant Secretary
+						for Preparedness and Response</a> | <a target="_blank"
+						href="https://medicalcountermeasures.gov/">Biomedical Advanced Research and Development
+						Authority</a>
+				</p>
+			</div>
+		</div>
+
+		<a class="navbar-brand" href="index.html" title="Go to home page">
+			<img style="width: 186px; height: 75px;" src="assets/images/drive-logo.png" alt="DRIVe" />
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="about.html"
+						id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+						About
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="about.html">About</a> 
+						<a class="dropdown-item" href="impactareas.html">Impact Areas</a>
+						<a class="dropdown-item" href="solving_sepsis.html">Solving Sepsis</a>
+					</div>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="index.html">Portfolio</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Partner With Us
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="partner.html">Introduction</a>
+						<a class="dropdown-item" href="partner.html?id=applyNow">Apply Now</a> 
+						<a class="dropdown-item" href="partner.html?id=partneringApproaches">Partnering Approaches</a>
+						<a class="dropdown-item" href="accelerators.html">Accelerators</a>
+						<a class="dropdown-item" href="resources.html">Resources</a>
+						<a class="dropdown-item" href="ventures.html">Ventures</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="news.html">News</a>
+				</li>
+				<li class="nav-item">
+					<span class="org-header-logo-big">
+						<a target="_blank" class="nav-link" href="https://hhs.gov"> </a>
+					</span>
+				</li>
+				<li class="nav-item">
+					<span class="org-header-logo"> 
+						<a target="_blank" class="nav-link" href="https://phe.gov"></a>
+					</span>
+				</li>
+				<li class="nav-item">
+					<span class="org-header-logo">
+						<a target="_blank" class="nav-link" href="https://medicalcountermeasures.gov/"></a>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- <div id="includeheader"></div> -->
+	<br>
+	<header id="banner">
+		<div class="jumbotron"
+			style="background-image: url('assets/images/portfoliobanner.jpg'); background-size: cover; background-position: center center;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 banner-text-container">
+						<div class="banner-text">
+							<div class=" green">
+								<div class="home-banner-heading">
+									<h3 style="letter-spacing: 8px">Portfolio</h3><br />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section style="border-bottom: 1px solid #efefef; border-top: 1px solid #f0f0f0; padding: 20px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h5>
+						DRIVe is building an ecosystem of restless innovators that includes investors, companies, and
+						research teams offering solutions to a broad range of national health security threats. These
+						include drugs and indicators to reduce illness and death from sepsis, technologies and processes
+						to identify biological and other threats, and tools and techniques to mitigate the damages and
+						loss of life associated with catastrophic events.
+					</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section style="margin-top: 40px; margin-bottom: 40px">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xs-8 text-center">
+					<div class="row">
+						<div class="col-xs-6 text-center">
+							<p>
+								<strong>DRIVe Investments to Date:&nbsp; </strong>
+							</p>
+							<p>
+								<b>Cost-Share to Date:&nbsp;&nbsp;</b>
+							</p>
+						</div>
+						<div class="col-xs-6 text-left" id="fundingCounters">
+							<!-- Auto-generated values -->
+						</div>
+					</div>
+				</div>
+				<!--<div class="col-xs-6 text-left" id="fundingCounters">
+					 Auto-generated values -->
+			</div>
+		</div>
+	</section>
+	<!--	<div id="mapdiv-assets"></div>-->
+	<section style="background-color: #EEEEEE;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12" style="width: 100%">
+					<ul class="nav nav-tabs" role="tab-list">
+						<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#impact-areas">Impact Areas</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#assets">Investments</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div id="impact-areas" class="container tab-pane fade">
+					<div class="map-container container-fluid">
+						<div class="row">
+							<div class="col-sm-12 map-col" id="map-col-impact-areas">
+								<div class="picholder" id="picholder-impact-areas"></div>
+								<div class="clearfix vizholder" id="vizholder-impact-areas">
+									<div class="selections clearfix">
+										<div class="row">
+											<div class="col-sm-4">
+												<p style="padding-top: 10px; margin-bottom: 0px">Impact
+													Areas</p>
+												<ul style="margin-top: 0px; padding-bottom: 0px;">
+													<li class="selector" id="sepsisselector">Sepsis</li>
+													<li class="selector" id="fluselector">Influenza</li>
+													<li id="instructions"></li>
+												</ul>
+											</div>
+											<div class="col-sm-8">
+												<ul class="sub">
+													<li class="us-state-drop-down" id="zoomdrop-impact-areas">Zoom
+														to:</li>
+													<li class="reset_map">Reset Zoom</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix mapholder" id="mapholder-impact-areas">
+										<div class="clearfix mapdiv" id="mapdiv-impact-areas"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="assets" class="container tab-pane fade">
+					<div class="map-container container-fluid">
+						<div class="row">
+							<div class="col-sm-12 map-col" id="map-col-assets">
+								<div class="picholder" id="picholder-assets"></div>
+								<div class="clearfix vizholder" id="vizholder-assets">
+									<div class="selections clearfix">
+										<div class="row">
+											<div class="col-sm-4">
+												<p style="padding-top: 10px; margin-bottom: 0px">Funding
+													Type</p>
+												<ul style="margin-top: 0px; padding-bottom: 0px">
+													<li class="selector" id="accelselector">Accelerators</li>
+													<li class="selector" id="productselector">Products</li>
+													<!--<li class="selector" id="technologyselector">Technologies</li>-->
+													<li id="instructions"></li>
+												</ul>
+											</div>
+											<div class="col-sm-8">
+												<ul class="sub">
+													<li class="us-state-drop-down" id="zoomdrop-assets">Zoom
+														to:</li>
+													<li class="reset_map">Reset Zoom</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div id="map-info">
+										<div class="clearfix mapholder" id="mapholder-assets">
+											<div class="clearfix mapdiv" id="mapdiv-assets"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="gallery" class="container tab-pane active">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="selections clearfix">
+									<div class="row">
+										<div class="col-sm-10">
+											<p style="padding-top: 10px; margin-bottom: 0px; font-size: 200%;">DRIVe Awardees</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-3 col-sm-6 col-xs-12">
+											<ul class="sub selectdiv">
+												<li class=" gallery-drop-down" id="zoomdrop-impact-area-drop-down">
+													Impact Area:
+												</li>
+											</ul>
+										</div>
+										<div class="col-lg-3 col-sm-6 col-xs-12">
+											<ul class="sub selectdiv">
+												<li class="gallery-drop-down" id="zoomdrop-product-type-drop-down">
+													Product Type:
+												</li>
+											</ul>
+										</div>
+										<div class="col-lg-3 col-sm-6 col-xs-12">
+											<ul class="sub selectdiv">
+												<li class="gallery-drop-down" id="zoomdrop-technology-level-drop-down">
+													Technology Level:
+												</li>
+											</ul>
+										</div>
+										<div class="col-lg-3 col-sm-6 col-xs-12">
+											<ul class="sub selectdiv">
+												<li class="gallery-drop-down" id="zoomdrop-country-level-drop-down">
+													Country:
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-12"
+											style="float: right; justify-content: center; align-items: center; display: flex;">
+											<!-- <p class="small">
+												<a onclick="showAllGalleryMembers()">Show all products</a>
+											</p> -->
+											<ul class="sub selectdiv">
+												<li class="gallery-drop-down" id="zoomdrop-product-drop-down">
+													Show products:
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<br />
+					<div class="row">
+						<div class="col-1"></div>
+						<div class="clearfix text-center col-11" id="mapholder">
+							<div id="gallery-content">
+								<!-- Gallery content procedurely generated here -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/javascript/global/d3.v4.min.js"></script>
+		<script src="assets/javascript/global/d3-scale-chromatic.v1.min.js"></script>
+		<script src="assets/javascript/global/queue.v1.min.js"></script>
+		<script src="assets/javascript/custom/utils.js"></script>
+		<script src="assets/javascript/custom/albers-usa-pr.js"></script>
+		<script src="assets/javascript/custom/newflumapWhite.js"></script>
+
+		<script>
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			})
+		</script><br />
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-xs-12" style="padding: 40px;">
+					<p>
+						<b>DRIVe</b> (<b>D</b>ivision of <b>R</b>esearch, <b>I</b>nnovation,
+						and <b>Ve</b>ntures) was established by the <b>B</b>iomedical <b>A</b>dvanced
+						<b>R</b>esearch and <b>D</b>evelopment <b>A</b>uthority (<a
+							href="https://medicalcountermeasures.gov/" target="_blank"><b>BARDA</b></a>),
+						part of the <b>A</b>ssistant <b>S</b>ecretary for <b>P</b>reparedness
+						and <b>R</b>esponse (<a href="http://www.phe.gov/" target="_blank"><b>ASPR</b></a>), within the
+						United States
+						Department of <b>H</b>ealth and <b>H</b>uman <b>S</b>ervices (<a href="http://www.hhs.gov/"
+							target="_blank"><b>HHS</b></a>).
+					</p>
+					<div class="text-center footer_logos" style="margin-top: 20px; margin-bottom: 20px;">
+						<a target="_blank" href="https://hhs.gov">
+							<img alt="Department of Health &amp; Human Services - USA" src="assets/images/logos/dhhs.png" style="height: 100px;">
+						</a> 
+						<a target="_blank" href="https://phe.gov">
+							<img alt="ASPR" src="assets/images/logos/aspr.png" style="height: 80px;">
+						</a> 
+						<a target="_blank" href="https://medicalcountermeasures.gov/">
+							<img alt="BARDA logo" src="assets/images/logos/barda.png" style="height: 80px;" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--   END: CONTENT -->
+	<!-- Footer -->
+	<footer class="page-footer font-small stylish-color-dark pt-4">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+			<!-- Grid row -->
+			<div class="row">
+				<!-- Grid column -->
+				<div class="col-md-4 mx-auto">
+					<!-- Content -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">MISSION</h5>
+					<p>Accelerate the development and availability of transformative technologies and approaches to
+						protect Americans from health security threats.</p>
+					<img class="img-centered img-fluid drivelogo" alt="DRIVe Logo"
+						style="max-height: 80px; padding-top: 20px" src="assets/images/drive-logo-white.png"><br>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto social_img">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">FOLLOW US!</h5>
+					<a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fdrive.hhs.gov%2Fimpactareas.html&ref_src=twsrc%5Etfw&screen_name=BARDA&tw_p=followbutton"
+						target="_blank" data-show-count="false"><img title="Follow BARDA on Twitter"
+							src="assets/images/twitter_rev_icon.png" width="25" height="20"
+							alt="Follow BARDA on Twitter" /></a>
+					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<a href="https://www.linkedin.com/showcase/barda/" target="_blank" data-show-count="false"><img
+							title="Follow BARDA on LinkedIn" src="assets/images/linkedin_rev_icon.png" width="25" height="26"
+							alt="Follow BARDA on LinkedIn" /></a> <a href="https://cloud.connect.hhs.gov/drive"
+						target="_blank" data-show-count="false"></a>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Navigation</h5>
+					<ul class="list-unstyled">
+						<li> <a href="index.html">Home</a></li>
+						<li> <a href="about.html">About</a></li>
+						<li> <a href="impactareas.html">Impact Areas</a></li>
+						<li> <a href="solving_sepsis.html">Solving Sepsis</a></li>
+						<li> <a href="partner.html">Partner</a></li>
+						<li> <a href="map/index.html">Portfolio</a></li>
+						<li> <a href="accelerators.html">Accelerators</a></li>
+						<li> <a href="ventures.html">Ventures</a></li>
+						<li> <a href="resources.html">Resources</a></li>
+						<li> <a href="news.html">News &amp; Events</a></li>
+					</ul>
+
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resources</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a target="_blank" href="privacypolicy.html">Privacy Policy</a>
+						</li>
+						<li>
+							<a target="_blank" href="disclaimers.html">Website Disclaimers</a>
+						</li>
+						<li> <a target="_blank" href="http://www.hhs.gov/asa/eeo/resources/index.html">No Fear Act</a>
+						</li>
+						<li> <a target="_blank" href="http://www.usa.gov/">USA.gov</a></li>
+						<li> <a target="_blank" href="http://www.whitehouse.gov/">White House</a></li>
+						<li> <a target="_blank" href="http://www.hhs.gov/foia/">FOIA</a></li>
+						<li> <a target="_blank" href="https://www.hhs.gov/plugins.html">Viewers & Players</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+		</div>
+		<!-- Footer Links -->
+		<!-- Call to action -->
+		<ul class="list-unstyled list-inline text-center py-2">
+			<li class="list-inline-item">
+				<h5 class="mb-1">Sign up for the newsletter</h5>
+			</li>
+			<li class="list-inline-item">
+				<a target="_blank" href="https://cloud.connect.hhs.gov/drive"
+					class="btn btn_newsletter btn-rounded">Sign up!</a>
+			</li>
+		</ul>
+		<!-- Call to action -->
+		<hr>
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">This is an official U.S. Government Web site managed by the U.S.
+			Department of Health &amp; Human Services. <br />
+			<hr /><a href="mailto:DRIVeWebmaster@hhs.gov">Contact Webmaster</a><br>
+		</div>
+		<!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div id="scroll-top-link" class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#page-top"> <i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$("#zoomdrop-impact-area-drop-down option").html(function (i, str) {
+				return str.replace(/Other|Beyond the Needle/g,
+					function (m, n) {
+						return (m == "Beyond the Needle") ? "Other" : "Beyond the Needle";
+					});
+			});
+		});
+
+		$(document).on("scroll", function () {
+			if ($(document).scrollTop() > 100) {
+				$(".navbar-fixed-top").addClass("navbar-shrink");
+				$(".navbar-brand").addClass("navbar-brand-shrink");
+			} else {
+				$(".navbar-fixed-top").removeClass("navbar-shrink");
+				$(".navbar-brand").removeClass("navbar-brand-shrink");
+			}
+		});
+
+		$(document).click(function (e) {
+			if (!$(e.target).is('#mapholder-assets, #mapholder-assets *')) {
+				reset();
+			}
+		});
+	</script>
+</body>
+
+</html>

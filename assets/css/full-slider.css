@@ -1,0 +1,428 @@
+/*!
+ * Start Bootstrap - Full Slider (https://startbootstrap.com/template-overviews/full-slider)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-slider/blob/master/LICENSE)
+ */
+
+/*Main Header Banner*/
+
+.carousel-design-two {
+	background-image: url('../images/molecule_Vector_banner.jpg');
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 450px;
+	text-align: center;
+	color: #000000;
+	margin-top: 120px;
+}
+
+.carousel-design-four {
+	width: 100%;
+	height: 450px;
+	text-align: center;
+	color: #000000;
+	margin-top: 20px;
+}
+
+.designfourbg {
+	background-image: url('../images/blue_molecules.jpg');
+	background-size: cover;
+	background-position: top;
+}
+
+.carousel-design-four h5 {
+	color: #FFFFFF
+}
+
+.carousel-design-three img {
+	padding-top: 20px;
+}
+
+.btn-dark {
+	padding: 10px 40px 10px 40px;
+	background-color: #161616;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.btn-dark-banner {
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: #5fbb46;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.btn-learnmore {
+	color: #fff !important;
+	text-align: center;
+	margin: 10px 10px 35px 0px;
+	padding: 10px 10px 10px 15px;
+	background-color: #161616;
+	font-weight: bolder;
+	max-width: 350px;
+}
+
+.btn-learnmore:hover {
+	text-decoration: none;
+}
+
+.carousel-design-four a {
+	color: #FFFFFF;
+}
+
+.carousel-design-five a {
+	color: #FFFFFF;
+}
+
+.carousel-design-five a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.carousel-design-four a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.carousel-design-two a {
+	color: #FFFFFF;
+	font-size: 17px;
+}
+
+.carousel-design-two a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.portfolio a {
+	background-color: #000000;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	font-size: 25px;
+	border-radius: 5px;
+}
+
+.portfolio a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.deadline {
+	color: #FFFFFF;
+}
+
+@media screen and (min-width: 500px) {
+	.carousel-design-two h1 {
+		font-size: 30px;
+	}
+	.carousel-design-two h4 {
+		font-size: 14px;
+	}
+	.carousel-design-two p {
+		font-size: 11px;
+	}
+	.carousel-design-two {
+		margin-top: 20px;
+	}
+	.carousel-design {
+		margin-top: 20px;
+	}
+	.designfourbg {
+		background-image: url('../images/blue_molecules.jpg');
+		background-size: cover;
+		background-position: top;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.carousel-design-two h1 {
+		font-size: 35px;
+	}
+	.carousel-design-two h4 {
+		font-size: 20px;
+	}
+	.carousel-design-two p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.carousel-design-two h4 {
+		font-size: 18px;
+	}
+	.carousel-design-two p {
+		font-size: 16px;
+	}
+	.learnmoremargin {
+		margin-top: 70px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.learnmoremargin {
+		margin-top: 70px;
+	}
+}
+
+@media only screen and (max-width: 2440px) {
+	#top .slideshow_container.dynamic_element .slideshow_inner_caption {
+		height: auto;
+	}
+	#carouselExampleIndicators {
+		margin-top: 9%;
+	}
+	.drivelogo {
+		margin-top: 5%;
+	}
+	.carousel-design-four h5 {
+		font-size: 25px;
+	}
+	.carousel-design-four h2 {
+		font-size: 45px;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	#top .slideshow_container.dynamic_element .slideshow_inner_caption {
+		height: auto;
+	}
+	.carousel-design-four h1 {
+		font-size: 20px;
+	}
+	.carousel-design-five h1 {
+		font-size: 25px;
+		padding: 10px;
+	}
+	.carousel-design-five h3 {
+		font-size: 20px;
+		padding-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 765px) {
+	#top .slideshow_container.dynamic_element .slideshow_inner_caption {
+		height: auto;
+	}
+	.carousel-design h1 {
+		font-size: 25px;
+	}
+	.carousel-design-two h1 {
+		font-size: 20px;
+	}
+	.carousel-design-two a {
+		font-size: 12px;
+	}
+	.carousel-design-four h1 {
+		font-size: 20px;
+	}
+	.carousel-design {
+		padding-top: 5%;
+	}
+	.carousel-design-two img {
+		padding-top: 50px;
+	}
+	.drivelogo {
+		max-height: 50%;
+	}
+	#carouselExampleIndicators {
+		padding-top: 50px;
+	}
+	.carousel-control-next-icon {
+		margin-top: 50px;
+	}
+	.carousel-control-prev-icon {
+		margin-top: 50px;
+	}
+	.video-carousel-caption h3 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.carousel-caption h5 {
+		font-size: 20px !important;
+	}
+	.carousel-caption h1 {
+		font-size: 20px;
+	}
+	.applybutton {
+		font-size: 13px;
+	}
+	.portfolio a {
+		font-size: 16px;
+	}
+	.btn-dark-banner {
+		font-size: 10px;
+	}
+	#carouselExampleIndicators {
+		margin-top: 10%;
+	}
+	.btn-learnmore {
+		font-size: 17px;
+	}
+	.carousel-design-three img {
+		padding-top: 60px;
+	}
+	.carousel-design-four h1 {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#top .slideshow_container.dynamic_element .slideshow_inner_caption {
+		height: auto;
+	}
+	.carousel-design-two h4 {
+		font-size: 11px;
+	}
+	.carousel-design-two h1 {
+		font-size: 12px;
+	}
+	.carousel-design-three h3 {
+		font-size: 10px;
+	}
+	.carousel-design {
+		margin-top: 20px;
+	}
+	.carousel-design-two {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	#top .slideshow_container.dynamic_element .slideshow_inner_caption {
+		height: auto;
+	}
+	.carousel-design {
+		margin-top: 20px;
+	}
+	.carousel-design-two {
+		margin-top: 20px;
+	}
+}
+
+/*Responsive text in banner*/
+
+@media (min-width: 768px) and (max-width: 1020px) {
+	.carousel-design h1 {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.carousel-caption h5 {
+		font-size: 25px !important;
+	}
+	.carousel-caption h1 {
+		font-size: 25px;
+	}
+	.applybutton {
+		font-size: 20px;
+	}
+}
+
+.carousel-control-prev-icon {
+	color: #FFFFFF !important;
+}
+
+.eventcarousel {
+	height: 40vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Video Carousel */
+
+.video-carousel-caption {
+	top: 10px;
+	font-size: 20px;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 10px;
+}
+
+.video-carousel-caption h3 {
+	color: #FFFFFF;
+}
+
+/* Event Carousel */
+
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+	bottom: -40px;
+}
+
+/* The colour of the indicators */
+
+.blog .carousel-indicators li {
+	background: #a3a3a3;
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+}
+
+.blog .carousel-indicators .active {
+	background: #707070;
+}
+
+.post-slide .post-content {
+	padding: 0px;
+	background: #F6F6F6;
+}
+
+.post-title {
+	color: 161616 !important;
+}
+
+.post-slide .post-title>a:hover {
+	text-decoration: none;
+	color: 161616 !important;
+}
+
+.post-slide .post-bar {
+	padding: 15px 0 0 0;
+	list-style: none;
+}
+
+.post-description {
+	padding: 15px;
+}
+
+.post-title {
+	padding: 15px 15px 0px 15px;
+	font-weight: bolder;
+}
+
+.post-date {
+	padding: 0px 15px 0px 15px;
+}
+
+.padding-top {
+	padding-top: 40px !important;
+}
+
+.photo {
+	border-top: 4px solid #2CAF24;
+}
+
+/*Youtube Slider*/
+
+.youtube_carousel_bg {
+	background-color: #171717;
+	padding: 20px;
+	margin-top: 40px;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 20px;
+}

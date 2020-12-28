@@ -1,0 +1,173 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.447227,34.06226 ]
+    },
+    "properties": {
+    "Name":"MedTech",
+    "URL":"https://medtechinnovator.org/",
+    "Address":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.859444,35.902939 ]
+    },
+    "properties": {
+    "Name":"First Flight Venture Center",
+    "URL":"https://www.ffvcnc.org/",
+    "Address":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.074707,29.957331 ]
+    },
+    "properties": {
+    "Name":"New Orleans BioInnovation Center",
+    "URL":"https://neworleansbio.com/",
+    "Address":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.1202541,40.9123101 ]
+    },
+    "properties": {
+    "Name":"Center for Biotechnology at Stony Brook University",
+    "URL":"https://centerforbiotechnology.org/",
+    "Address":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.397822,29.709689 ]
+    },
+    "properties": {
+    "Name":"Texas Medical Center Innovation Institute",
+    "URL":"https://tmc.edu",
+    "Address":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.180511,39.954491 ]
+    },
+    "properties": {
+    "Name":"University City Science Center",
+    "URL":"https://sciencecenter.org/",
+    "Address":"3675 Market St, Philadelphia, PA 19104"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.314206,42.641965 ]
+    },
+    "properties": {
+    "Name":"Massachusetts Medical Device Development Center",
+    "URL":"",
+    "Address":"110 Canal St 4th fl, Lowell, MA 01852"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.32554,47.634942 ]
+    },
+    "properties": {
+    "Name":"Life Science Washington Institute",
+    "URL":"",
+    "Address":"188 East Blaine St, Suite 150\nSeattle, WA 98102"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.914391,40.428246 ]
+    },
+    "properties": {
+    "Name":"Purdue University",
+    "URL":"",
+    "Address":"610 Purdue Mall, West Lafayette, IN 47907"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0159792,37.3842866 ]
+    },
+    "properties": {
+    "Name":"Plug and Play Health",
+    "URL":"",
+    "Address":"440 N Wolfe Rd, Sunnyvale, CA 94085"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.3277375,38.9403808 ]
+    },
+    "properties": {
+    "Name":"University of Missouri Midwest BioAccelerator",
+    "URL":"",
+    "Address":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.203628,44.971327 ]
+    },
+    "properties": {
+    "Name":"University Enterprise Laboratories",
+    "URL":"",
+    "Address":"1000 Westgate Dr, St Paul, MN 55114"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.042373,37.389784 ]
+    },
+    "properties": {
+    "Name":"Test Location 1",
+    "URL":"",
+    "Address":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.115275,37.424543 ]
+    },
+    "properties": {
+    "Name":"Test Location 2",
+    "URL":"",
+    "Address":""
+    }
+  }
+]
+}

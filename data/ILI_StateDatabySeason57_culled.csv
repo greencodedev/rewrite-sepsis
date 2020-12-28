@@ -1,0 +1,1620 @@
+State,AcLevNum,ACTIVITY_LEVEL_LABEL,WEEKEND,WEEK
+Alabama,10,High,Jan-06-2018,1
+Alabama,10,High,Jan-13-2018,2
+Alabama,10,High,Jan-20-2018,3
+Alabama,10,High,Jan-27-2018,4
+Alabama,10,High,Feb-03-2018,5
+Alabama,10,High,Feb-10-2018,6
+Alabama,10,High,Feb-17-2018,7
+Alabama,10,High,Feb-24-2018,8
+Alabama,7,Moderate,Mar-03-2018,9
+Alabama,5,Low,Mar-10-2018,10
+Alabama,4,Low,Mar-17-2018,11
+Alabama,4,Low,Mar-24-2018,12
+Alabama,3,Minimal,Mar-31-2018,13
+Alabama,2,Minimal,Apr-07-2018,14
+Alabama,1,Minimal,Apr-14-2018,15
+Alabama,1,Minimal,Apr-21-2018,16
+Alabama,1,Minimal,Apr-28-2018,17
+Alabama,2,Minimal,Oct-07-2017,40
+Alabama,2,Minimal,Oct-14-2017,41
+Alabama,2,Minimal,Oct-21-2017,42
+Alabama,3,Minimal,Oct-28-2017,43
+Alabama,4,Low,Nov-04-2017,44
+Alabama,4,Low,Nov-11-2017,45
+Alabama,5,Low,Nov-18-2017,46
+Alabama,5,Low,Nov-25-2017,47
+Alabama,5,Low,Dec-02-2017,48
+Alabama,7,Moderate,Dec-09-2017,49
+Alabama,10,High,Dec-16-2017,50
+Alabama,10,High,Dec-23-2017,51
+Alabama,10,High,Dec-30-2017,52
+Alaska,6,Moderate,Jan-06-2018,1
+Alaska,6,Moderate,Jan-13-2018,2
+Alaska,6,Moderate,Jan-20-2018,3
+Alaska,8,High,Jan-27-2018,4
+Alaska,10,High,Feb-03-2018,5
+Alaska,10,High,Feb-10-2018,6
+Alaska,10,High,Feb-17-2018,7
+Alaska,10,High,Feb-24-2018,8
+Alaska,10,High,Mar-03-2018,9
+Alaska,10,High,Mar-10-2018,10
+Alaska,10,High,Mar-17-2018,11
+Alaska,10,High,Mar-24-2018,12
+Alaska,10,High,Mar-31-2018,13
+Alaska,10,High,Apr-07-2018,14
+Alaska,7,Moderate,Apr-14-2018,15
+Alaska,7,Moderate,Apr-21-2018,16
+Alaska,4,Low,Apr-28-2018,17
+Alaska,1,Minimal,Oct-07-2017,40
+Alaska,2,Minimal,Oct-14-2017,41
+Alaska,4,Low,Oct-21-2017,42
+Alaska,3,Minimal,Oct-28-2017,43
+Alaska,2,Minimal,Nov-04-2017,44
+Alaska,2,Minimal,Nov-11-2017,45
+Alaska,4,Low,Nov-18-2017,46
+Alaska,4,Low,Nov-25-2017,47
+Alaska,5,Low,Dec-02-2017,48
+Alaska,6,Moderate,Dec-09-2017,49
+Alaska,5,Low,Dec-16-2017,50
+Alaska,6,Moderate,Dec-23-2017,51
+Alaska,7,Moderate,Dec-30-2017,52
+Arizona,10,High,Jan-06-2018,1
+Arizona,10,High,Jan-13-2018,2
+Arizona,10,High,Jan-20-2018,3
+Arizona,10,High,Jan-27-2018,4
+Arizona,10,High,Feb-03-2018,5
+Arizona,10,High,Feb-10-2018,6
+Arizona,10,High,Feb-17-2018,7
+Arizona,10,High,Feb-24-2018,8
+Arizona,9,High,Mar-03-2018,9
+Arizona,8,High,Mar-10-2018,10
+Arizona,7,Moderate,Mar-17-2018,11
+Arizona,6,Moderate,Mar-24-2018,12
+Arizona,6,Moderate,Mar-31-2018,13
+Arizona,5,Low,Apr-07-2018,14
+Arizona,6,Moderate,Apr-14-2018,15
+Arizona,5,Low,Apr-21-2018,16
+Arizona,5,Low,Apr-28-2018,17
+Arizona,2,Minimal,Oct-07-2017,40
+Arizona,2,Minimal,Oct-14-2017,41
+Arizona,1,Minimal,Oct-21-2017,42
+Arizona,2,Minimal,Oct-28-2017,43
+Arizona,3,Minimal,Nov-04-2017,44
+Arizona,3,Minimal,Nov-11-2017,45
+Arizona,3,Minimal,Nov-18-2017,46
+Arizona,3,Minimal,Nov-25-2017,47
+Arizona,6,Moderate,Dec-02-2017,48
+Arizona,6,Moderate,Dec-09-2017,49
+Arizona,10,High,Dec-16-2017,50
+Arizona,10,High,Dec-23-2017,51
+Arizona,10,High,Dec-30-2017,52
+Arkansas,10,High,Jan-06-2018,1
+Arkansas,10,High,Jan-13-2018,2
+Arkansas,10,High,Jan-20-2018,3
+Arkansas,10,High,Jan-27-2018,4
+Arkansas,10,High,Feb-03-2018,5
+Arkansas,10,High,Feb-10-2018,6
+Arkansas,10,High,Feb-17-2018,7
+Arkansas,10,High,Feb-24-2018,8
+Arkansas,9,High,Mar-03-2018,9
+Arkansas,5,Low,Mar-10-2018,10
+Arkansas,4,Low,Mar-17-2018,11
+Arkansas,2,Minimal,Mar-24-2018,12
+Arkansas,1,Minimal,Mar-31-2018,13
+Arkansas,1,Minimal,Apr-07-2018,14
+Arkansas,1,Minimal,Apr-14-2018,15
+Arkansas,1,Minimal,Apr-21-2018,16
+Arkansas,2,Minimal,Apr-28-2018,17
+Arkansas,1,Minimal,Oct-07-2017,40
+Arkansas,1,Minimal,Oct-14-2017,41
+Arkansas,1,Minimal,Oct-21-2017,42
+Arkansas,1,Minimal,Oct-28-2017,43
+Arkansas,1,Minimal,Nov-04-2017,44
+Arkansas,1,Minimal,Nov-11-2017,45
+Arkansas,3,Minimal,Nov-18-2017,46
+Arkansas,1,Minimal,Nov-25-2017,47
+Arkansas,4,Low,Dec-02-2017,48
+Arkansas,8,High,Dec-09-2017,49
+Arkansas,10,High,Dec-16-2017,50
+Arkansas,10,High,Dec-23-2017,51
+Arkansas,10,High,Dec-30-2017,52
+California,10,High,Jan-06-2018,1
+California,10,High,Jan-13-2018,2
+California,8,High,Jan-20-2018,3
+California,8,High,Jan-27-2018,4
+California,9,High,Feb-03-2018,5
+California,8,High,Feb-10-2018,6
+California,8,High,Feb-17-2018,7
+California,7,Moderate,Feb-24-2018,8
+California,8,High,Mar-03-2018,9
+California,6,Moderate,Mar-10-2018,10
+California,6,Moderate,Mar-17-2018,11
+California,5,Low,Mar-24-2018,12
+California,4,Low,Mar-31-2018,13
+California,4,Low,Apr-07-2018,14
+California,2,Minimal,Apr-14-2018,15
+California,2,Minimal,Apr-21-2018,16
+California,1,Minimal,Apr-28-2018,17
+California,2,Minimal,Oct-07-2017,40
+California,1,Minimal,Oct-14-2017,41
+California,1,Minimal,Oct-21-2017,42
+California,1,Minimal,Oct-28-2017,43
+California,2,Minimal,Nov-04-2017,44
+California,2,Minimal,Nov-11-2017,45
+California,2,Minimal,Nov-18-2017,46
+California,3,Minimal,Nov-25-2017,47
+California,2,Minimal,Dec-02-2017,48
+California,4,Low,Dec-09-2017,49
+California,7,Moderate,Dec-16-2017,50
+California,10,High,Dec-23-2017,51
+California,10,High,Dec-30-2017,52
+Colorado,8,High,Jan-06-2018,1
+Colorado,7,Moderate,Jan-13-2018,2
+Colorado,7,Moderate,Jan-20-2018,3
+Colorado,8,High,Jan-27-2018,4
+Colorado,10,High,Feb-03-2018,5
+Colorado,9,High,Feb-10-2018,6
+Colorado,8,High,Feb-17-2018,7
+Colorado,8,High,Feb-24-2018,8
+Colorado,6,Moderate,Mar-03-2018,9
+Colorado,5,Low,Mar-10-2018,10
+Colorado,4,Low,Mar-17-2018,11
+Colorado,3,Minimal,Mar-24-2018,12
+Colorado,2,Minimal,Mar-31-2018,13
+Colorado,2,Minimal,Apr-07-2018,14
+Colorado,1,Minimal,Apr-14-2018,15
+Colorado,1,Minimal,Apr-21-2018,16
+Colorado,2,Minimal,Apr-28-2018,17
+Colorado,1,Minimal,Oct-07-2017,40
+Colorado,1,Minimal,Oct-14-2017,41
+Colorado,1,Minimal,Oct-21-2017,42
+Colorado,1,Minimal,Oct-28-2017,43
+Colorado,2,Minimal,Nov-04-2017,44
+Colorado,2,Minimal,Nov-11-2017,45
+Colorado,2,Minimal,Nov-18-2017,46
+Colorado,3,Minimal,Nov-25-2017,47
+Colorado,3,Minimal,Dec-02-2017,48
+Colorado,4,Low,Dec-09-2017,49
+Colorado,5,Low,Dec-16-2017,50
+Colorado,6,Moderate,Dec-23-2017,51
+Colorado,7,Moderate,Dec-30-2017,52
+Connecticut,4,Low,Jan-06-2018,1
+Connecticut,5,Low,Jan-13-2018,2
+Connecticut,9,High,Jan-20-2018,3
+Connecticut,10,High,Jan-27-2018,4
+Connecticut,10,High,Feb-03-2018,5
+Connecticut,10,High,Feb-10-2018,6
+Connecticut,10,High,Feb-17-2018,7
+Connecticut,10,High,Feb-24-2018,8
+Connecticut,9,High,Mar-03-2018,9
+Connecticut,5,Low,Mar-10-2018,10
+Connecticut,3,Minimal,Mar-17-2018,11
+Connecticut,5,Low,Mar-24-2018,12
+Connecticut,7,Moderate,Mar-31-2018,13
+Connecticut,3,Minimal,Apr-07-2018,14
+Connecticut,3,Minimal,Apr-14-2018,15
+Connecticut,2,Minimal,Apr-21-2018,16
+Connecticut,3,Minimal,Apr-28-2018,17
+Connecticut,1,Minimal,Oct-07-2017,40
+Connecticut,1,Minimal,Oct-14-2017,41
+Connecticut,1,Minimal,Oct-21-2017,42
+Connecticut,1,Minimal,Oct-28-2017,43
+Connecticut,1,Minimal,Nov-04-2017,44
+Connecticut,1,Minimal,Nov-11-2017,45
+Connecticut,1,Minimal,Nov-18-2017,46
+Connecticut,1,Minimal,Nov-25-2017,47
+Connecticut,2,Minimal,Dec-02-2017,48
+Connecticut,2,Minimal,Dec-09-2017,49
+Connecticut,3,Minimal,Dec-16-2017,50
+Connecticut,2,Minimal,Dec-23-2017,51
+Connecticut,3,Minimal,Dec-30-2017,52
+Delaware,1,Minimal,Jan-06-2018,1
+Delaware,1,Minimal,Jan-13-2018,2
+Delaware,2,Minimal,Jan-20-2018,3
+Delaware,5,Low,Jan-27-2018,4
+Delaware,8,High,Feb-03-2018,5
+Delaware,10,High,Feb-10-2018,6
+Delaware,10,High,Feb-17-2018,7
+Delaware,6,Moderate,Feb-24-2018,8
+Delaware,3,Minimal,Mar-03-2018,9
+Delaware,1,Minimal,Mar-10-2018,10
+Delaware,2,Minimal,Mar-17-2018,11
+Delaware,2,Minimal,Mar-24-2018,12
+Delaware,1,Minimal,Mar-31-2018,13
+Delaware,1,Minimal,Apr-07-2018,14
+Delaware,1,Minimal,Apr-14-2018,15
+Delaware,1,Minimal,Apr-21-2018,16
+Delaware,1,Minimal,Apr-28-2018,17
+Delaware,1,Minimal,Oct-07-2017,40
+Delaware,1,Minimal,Oct-14-2017,41
+Delaware,1,Minimal,Oct-21-2017,42
+Delaware,1,Minimal,Oct-28-2017,43
+Delaware,1,Minimal,Nov-04-2017,44
+Delaware,1,Minimal,Nov-11-2017,45
+Delaware,1,Minimal,Nov-18-2017,46
+Delaware,1,Minimal,Nov-25-2017,47
+Delaware,1,Minimal,Dec-02-2017,48
+Delaware,1,Minimal,Dec-09-2017,49
+Delaware,1,Minimal,Dec-16-2017,50
+Delaware,1,Minimal,Dec-23-2017,51
+Delaware,1,Minimal,Dec-30-2017,52
+District of Columbia,5,Low,Jan-06-2018,1
+District of Columbia,5,Low,Jan-13-2018,2
+District of Columbia,7,Moderate,Jan-20-2018,3
+District of Columbia,10,High,Jan-27-2018,4
+District of Columbia,10,High,Feb-03-2018,5
+District of Columbia,10,High,Feb-10-2018,6
+District of Columbia,10,High,Feb-17-2018,7
+District of Columbia,8,High,Feb-24-2018,8
+District of Columbia,4,Low,Mar-03-2018,9
+District of Columbia,3,Minimal,Mar-10-2018,10
+District of Columbia,4,Low,Mar-17-2018,11
+District of Columbia,4,Low,Mar-24-2018,12
+District of Columbia,2,Minimal,Mar-31-2018,13
+District of Columbia,2,Minimal,Apr-07-2018,14
+District of Columbia,1,Minimal,Apr-14-2018,15
+District of Columbia,1,Minimal,Apr-21-2018,16
+District of Columbia,1,Minimal,Apr-28-2018,17
+District of Columbia,2,Minimal,Oct-07-2017,40
+District of Columbia,2,Minimal,Oct-14-2017,41
+District of Columbia,2,Minimal,Oct-21-2017,42
+District of Columbia,2,Minimal,Oct-28-2017,43
+District of Columbia,2,Minimal,Nov-04-2017,44
+District of Columbia,3,Minimal,Nov-11-2017,45
+District of Columbia,3,Minimal,Nov-18-2017,46
+District of Columbia,3,Minimal,Nov-25-2017,47
+District of Columbia,4,Low,Dec-02-2017,48
+District of Columbia,4,Low,Dec-09-2017,49
+District of Columbia,4,Low,Dec-16-2017,50
+District of Columbia,3,Minimal,Dec-23-2017,51
+District of Columbia,5,Low,Dec-30-2017,52
+Florida,5,Low,Jan-06-2018,1
+Florida,9,High,Jan-13-2018,2
+Florida,10,High,Jan-20-2018,3
+Florida,10,High,Jan-27-2018,4
+Florida,10,High,Feb-03-2018,5
+Florida,10,High,Feb-10-2018,6
+Florida,6,Moderate,Feb-17-2018,7
+Florida,4,Low,Feb-24-2018,8
+Florida,2,Minimal,Mar-03-2018,9
+Florida,2,Minimal,Mar-10-2018,10
+Florida,2,Minimal,Mar-17-2018,11
+Florida,1,Minimal,Mar-24-2018,12
+Florida,1,Minimal,Mar-31-2018,13
+Florida,1,Minimal,Apr-07-2018,14
+Florida,1,Minimal,Apr-14-2018,15
+Florida,1,Minimal,Apr-21-2018,16
+Florida,1,Minimal,Apr-28-2018,17
+Florida,1,Minimal,Oct-07-2017,40
+Florida,1,Minimal,Oct-14-2017,41
+Florida,1,Minimal,Oct-21-2017,42
+Florida,1,Minimal,Oct-28-2017,43
+Florida,1,Minimal,Nov-04-2017,44
+Florida,2,Minimal,Nov-11-2017,45
+Florida,2,Minimal,Nov-18-2017,46
+Florida,1,Minimal,Nov-25-2017,47
+Florida,1,Minimal,Dec-02-2017,48
+Florida,1,Minimal,Dec-09-2017,49
+Florida,2,Minimal,Dec-16-2017,50
+Florida,4,Low,Dec-23-2017,51
+Florida,5,Low,Dec-30-2017,52
+Georgia,10,High,Jan-06-2018,1
+Georgia,10,High,Jan-13-2018,2
+Georgia,10,High,Jan-20-2018,3
+Georgia,10,High,Jan-27-2018,4
+Georgia,10,High,Feb-03-2018,5
+Georgia,10,High,Feb-10-2018,6
+Georgia,10,High,Feb-17-2018,7
+Georgia,10,High,Feb-24-2018,8
+Georgia,9,High,Mar-03-2018,9
+Georgia,8,High,Mar-10-2018,10
+Georgia,7,Moderate,Mar-17-2018,11
+Georgia,5,Low,Mar-24-2018,12
+Georgia,5,Low,Mar-31-2018,13
+Georgia,4,Low,Apr-07-2018,14
+Georgia,4,Low,Apr-14-2018,15
+Georgia,3,Minimal,Apr-21-2018,16
+Georgia,2,Minimal,Apr-28-2018,17
+Georgia,2,Minimal,Oct-07-2017,40
+Georgia,3,Minimal,Oct-14-2017,41
+Georgia,3,Minimal,Oct-21-2017,42
+Georgia,4,Low,Oct-28-2017,43
+Georgia,4,Low,Nov-04-2017,44
+Georgia,5,Low,Nov-11-2017,45
+Georgia,6,Moderate,Nov-18-2017,46
+Georgia,7,Moderate,Nov-25-2017,47
+Georgia,6,Moderate,Dec-02-2017,48
+Georgia,7,Moderate,Dec-09-2017,49
+Georgia,7,Moderate,Dec-16-2017,50
+Georgia,10,High,Dec-23-2017,51
+Georgia,10,High,Dec-30-2017,52
+Hawaii,5,Low,Jan-06-2018,1
+Hawaii,8,High,Jan-13-2018,2
+Hawaii,7,Moderate,Jan-20-2018,3
+Hawaii,8,High,Jan-27-2018,4
+Hawaii,6,Moderate,Feb-03-2018,5
+Hawaii,6,Moderate,Feb-10-2018,6
+Hawaii,6,Moderate,Feb-17-2018,7
+Hawaii,4,Low,Feb-24-2018,8
+Hawaii,4,Low,Mar-03-2018,9
+Hawaii,7,Moderate,Mar-10-2018,10
+Hawaii,5,Low,Mar-17-2018,11
+Hawaii,3,Minimal,Mar-24-2018,12
+Hawaii,3,Minimal,Mar-31-2018,13
+Hawaii,4,Low,Apr-07-2018,14
+Hawaii,2,Minimal,Apr-14-2018,15
+Hawaii,2,Minimal,Apr-21-2018,16
+Hawaii,3,Minimal,Apr-28-2018,17
+Hawaii,1,Minimal,Oct-07-2017,40
+Hawaii,1,Minimal,Oct-14-2017,41
+Hawaii,1,Minimal,Oct-21-2017,42
+Hawaii,1,Minimal,Oct-28-2017,43
+Hawaii,2,Minimal,Nov-04-2017,44
+Hawaii,3,Minimal,Nov-11-2017,45
+Hawaii,3,Minimal,Nov-18-2017,46
+Hawaii,3,Minimal,Nov-25-2017,47
+Hawaii,5,Low,Dec-02-2017,48
+Hawaii,5,Low,Dec-09-2017,49
+Hawaii,3,Minimal,Dec-16-2017,50
+Hawaii,6,Moderate,Dec-23-2017,51
+Hawaii,7,Moderate,Dec-30-2017,52
+Idaho,5,Low,Jan-06-2018,1
+Idaho,7,Moderate,Jan-13-2018,2
+Idaho,6,Moderate,Jan-20-2018,3
+Idaho,5,Low,Jan-27-2018,4
+Idaho,6,Moderate,Feb-03-2018,5
+Idaho,5,Low,Feb-10-2018,6
+Idaho,4,Low,Feb-17-2018,7
+Idaho,5,Low,Feb-24-2018,8
+Idaho,2,Minimal,Mar-03-2018,9
+Idaho,1,Minimal,Mar-10-2018,10
+Idaho,1,Minimal,Mar-17-2018,11
+Idaho,2,Minimal,Mar-24-2018,12
+Idaho,1,Minimal,Mar-31-2018,13
+Idaho,1,Minimal,Apr-07-2018,14
+Idaho,1,Minimal,Apr-14-2018,15
+Idaho,1,Minimal,Apr-21-2018,16
+Idaho,1,Minimal,Apr-28-2018,17
+Idaho,1,Minimal,Oct-07-2017,40
+Idaho,1,Minimal,Oct-14-2017,41
+Idaho,1,Minimal,Oct-21-2017,42
+Idaho,1,Minimal,Oct-28-2017,43
+Idaho,1,Minimal,Nov-04-2017,44
+Idaho,1,Minimal,Nov-11-2017,45
+Idaho,1,Minimal,Nov-18-2017,46
+Idaho,1,Minimal,Nov-25-2017,47
+Idaho,2,Minimal,Dec-02-2017,48
+Idaho,1,Minimal,Dec-09-2017,49
+Idaho,1,Minimal,Dec-16-2017,50
+Idaho,3,Minimal,Dec-23-2017,51
+Idaho,1,Minimal,Dec-30-2017,52
+Illinois,10,High,Jan-06-2018,1
+Illinois,10,High,Jan-13-2018,2
+Illinois,10,High,Jan-20-2018,3
+Illinois,10,High,Jan-27-2018,4
+Illinois,10,High,Feb-03-2018,5
+Illinois,10,High,Feb-10-2018,6
+Illinois,10,High,Feb-17-2018,7
+Illinois,9,High,Feb-24-2018,8
+Illinois,5,Low,Mar-03-2018,9
+Illinois,4,Low,Mar-10-2018,10
+Illinois,4,Low,Mar-17-2018,11
+Illinois,4,Low,Mar-24-2018,12
+Illinois,3,Minimal,Mar-31-2018,13
+Illinois,2,Minimal,Apr-07-2018,14
+Illinois,1,Minimal,Apr-14-2018,15
+Illinois,1,Minimal,Apr-21-2018,16
+Illinois,1,Minimal,Apr-28-2018,17
+Illinois,1,Minimal,Oct-07-2017,40
+Illinois,1,Minimal,Oct-14-2017,41
+Illinois,1,Minimal,Oct-21-2017,42
+Illinois,1,Minimal,Oct-28-2017,43
+Illinois,1,Minimal,Nov-04-2017,44
+Illinois,1,Minimal,Nov-11-2017,45
+Illinois,1,Minimal,Nov-18-2017,46
+Illinois,1,Minimal,Nov-25-2017,47
+Illinois,3,Minimal,Dec-02-2017,48
+Illinois,3,Minimal,Dec-09-2017,49
+Illinois,6,Moderate,Dec-16-2017,50
+Illinois,10,High,Dec-23-2017,51
+Illinois,10,High,Dec-30-2017,52
+Indiana,10,High,Jan-06-2018,1
+Indiana,10,High,Jan-13-2018,2
+Indiana,10,High,Jan-20-2018,3
+Indiana,10,High,Jan-27-2018,4
+Indiana,10,High,Feb-03-2018,5
+Indiana,10,High,Feb-10-2018,6
+Indiana,10,High,Feb-17-2018,7
+Indiana,8,High,Feb-24-2018,8
+Indiana,9,High,Mar-03-2018,9
+Indiana,6,Moderate,Mar-10-2018,10
+Indiana,4,Low,Mar-17-2018,11
+Indiana,7,Moderate,Mar-24-2018,12
+Indiana,5,Low,Mar-31-2018,13
+Indiana,4,Low,Apr-07-2018,14
+Indiana,4,Low,Apr-14-2018,15
+Indiana,3,Minimal,Apr-21-2018,16
+Indiana,1,Minimal,Apr-28-2018,17
+Indiana,1,Minimal,Oct-07-2017,40
+Indiana,1,Minimal,Oct-14-2017,41
+Indiana,1,Minimal,Oct-21-2017,42
+Indiana,1,Minimal,Oct-28-2017,43
+Indiana,2,Minimal,Nov-04-2017,44
+Indiana,1,Minimal,Nov-11-2017,45
+Indiana,1,Minimal,Nov-18-2017,46
+Indiana,1,Minimal,Nov-25-2017,47
+Indiana,3,Minimal,Dec-02-2017,48
+Indiana,4,Low,Dec-09-2017,49
+Indiana,3,Minimal,Dec-16-2017,50
+Indiana,9,High,Dec-23-2017,51
+Indiana,10,High,Dec-30-2017,52
+Iowa,3,Minimal,Jan-06-2018,1
+Iowa,4,Low,Jan-13-2018,2
+Iowa,6,Moderate,Jan-20-2018,3
+Iowa,9,High,Jan-27-2018,4
+Iowa,8,High,Feb-03-2018,5
+Iowa,8,High,Feb-10-2018,6
+Iowa,5,Low,Feb-17-2018,7
+Iowa,4,Low,Feb-24-2018,8
+Iowa,2,Minimal,Mar-03-2018,9
+Iowa,3,Minimal,Mar-10-2018,10
+Iowa,3,Minimal,Mar-17-2018,11
+Iowa,1,Minimal,Mar-24-2018,12
+Iowa,2,Minimal,Mar-31-2018,13
+Iowa,1,Minimal,Apr-07-2018,14
+Iowa,1,Minimal,Apr-14-2018,15
+Iowa,1,Minimal,Apr-21-2018,16
+Iowa,1,Minimal,Apr-28-2018,17
+Iowa,1,Minimal,Oct-07-2017,40
+Iowa,1,Minimal,Oct-14-2017,41
+Iowa,1,Minimal,Oct-21-2017,42
+Iowa,1,Minimal,Oct-28-2017,43
+Iowa,1,Minimal,Nov-04-2017,44
+Iowa,1,Minimal,Nov-11-2017,45
+Iowa,1,Minimal,Nov-18-2017,46
+Iowa,1,Minimal,Nov-25-2017,47
+Iowa,1,Minimal,Dec-02-2017,48
+Iowa,1,Minimal,Dec-09-2017,49
+Iowa,1,Minimal,Dec-16-2017,50
+Iowa,2,Minimal,Dec-23-2017,51
+Iowa,7,Moderate,Dec-30-2017,52
+Kansas,10,High,Jan-06-2018,1
+Kansas,10,High,Jan-13-2018,2
+Kansas,10,High,Jan-20-2018,3
+Kansas,10,High,Jan-27-2018,4
+Kansas,10,High,Feb-03-2018,5
+Kansas,10,High,Feb-10-2018,6
+Kansas,10,High,Feb-17-2018,7
+Kansas,10,High,Feb-24-2018,8
+Kansas,10,High,Mar-03-2018,9
+Kansas,10,High,Mar-10-2018,10
+Kansas,6,Moderate,Mar-17-2018,11
+Kansas,6,Moderate,Mar-24-2018,12
+Kansas,4,Low,Mar-31-2018,13
+Kansas,2,Minimal,Apr-07-2018,14
+Kansas,2,Minimal,Apr-14-2018,15
+Kansas,1,Minimal,Apr-21-2018,16
+Kansas,1,Minimal,Apr-28-2018,17
+Kansas,1,Minimal,Oct-07-2017,40
+Kansas,1,Minimal,Oct-14-2017,41
+Kansas,1,Minimal,Oct-21-2017,42
+Kansas,1,Minimal,Oct-28-2017,43
+Kansas,1,Minimal,Nov-04-2017,44
+Kansas,1,Minimal,Nov-11-2017,45
+Kansas,1,Minimal,Nov-18-2017,46
+Kansas,2,Minimal,Nov-25-2017,47
+Kansas,1,Minimal,Dec-02-2017,48
+Kansas,3,Minimal,Dec-09-2017,49
+Kansas,7,Moderate,Dec-16-2017,50
+Kansas,10,High,Dec-23-2017,51
+Kansas,10,High,Dec-30-2017,52
+Kentucky,10,High,Jan-06-2018,1
+Kentucky,10,High,Jan-13-2018,2
+Kentucky,10,High,Jan-20-2018,3
+Kentucky,10,High,Jan-27-2018,4
+Kentucky,10,High,Feb-03-2018,5
+Kentucky,10,High,Feb-10-2018,6
+Kentucky,10,High,Feb-17-2018,7
+Kentucky,10,High,Feb-24-2018,8
+Kentucky,10,High,Mar-03-2018,9
+Kentucky,10,High,Mar-10-2018,10
+Kentucky,6,Moderate,Mar-17-2018,11
+Kentucky,7,Moderate,Mar-24-2018,12
+Kentucky,7,Moderate,Mar-31-2018,13
+Kentucky,5,Low,Apr-07-2018,14
+Kentucky,4,Low,Apr-14-2018,15
+Kentucky,3,Minimal,Apr-21-2018,16
+Kentucky,2,Minimal,Apr-28-2018,17
+Kentucky,1,Minimal,Oct-07-2017,40
+Kentucky,1,Minimal,Oct-14-2017,41
+Kentucky,1,Minimal,Oct-21-2017,42
+Kentucky,1,Minimal,Oct-28-2017,43
+Kentucky,1,Minimal,Nov-04-2017,44
+Kentucky,1,Minimal,Nov-11-2017,45
+Kentucky,3,Minimal,Nov-18-2017,46
+Kentucky,2,Minimal,Nov-25-2017,47
+Kentucky,3,Minimal,Dec-02-2017,48
+Kentucky,6,Moderate,Dec-09-2017,49
+Kentucky,10,High,Dec-16-2017,50
+Kentucky,10,High,Dec-23-2017,51
+Kentucky,10,High,Dec-30-2017,52
+Louisiana,10,High,Jan-06-2018,1
+Louisiana,10,High,Jan-13-2018,2
+Louisiana,10,High,Jan-20-2018,3
+Louisiana,10,High,Jan-27-2018,4
+Louisiana,10,High,Feb-03-2018,5
+Louisiana,10,High,Feb-10-2018,6
+Louisiana,10,High,Feb-17-2018,7
+Louisiana,9,High,Feb-24-2018,8
+Louisiana,6,Moderate,Mar-03-2018,9
+Louisiana,5,Low,Mar-10-2018,10
+Louisiana,4,Low,Mar-17-2018,11
+Louisiana,3,Minimal,Mar-24-2018,12
+Louisiana,3,Minimal,Mar-31-2018,13
+Louisiana,2,Minimal,Apr-07-2018,14
+Louisiana,2,Minimal,Apr-14-2018,15
+Louisiana,2,Minimal,Apr-21-2018,16
+Louisiana,2,Minimal,Apr-28-2018,17
+Louisiana,3,Minimal,Oct-07-2017,40
+Louisiana,3,Minimal,Oct-14-2017,41
+Louisiana,4,Low,Oct-21-2017,42
+Louisiana,5,Low,Oct-28-2017,43
+Louisiana,7,Moderate,Nov-04-2017,44
+Louisiana,7,Moderate,Nov-11-2017,45
+Louisiana,8,High,Nov-18-2017,46
+Louisiana,10,High,Nov-25-2017,47
+Louisiana,10,High,Dec-02-2017,48
+Louisiana,10,High,Dec-09-2017,49
+Louisiana,10,High,Dec-16-2017,50
+Louisiana,10,High,Dec-23-2017,51
+Louisiana,10,High,Dec-30-2017,52
+Maine,1,Minimal,Jan-06-2018,1
+Maine,1,Minimal,Jan-13-2018,2
+Maine,1,Minimal,Jan-20-2018,3
+Maine,1,Minimal,Jan-27-2018,4
+Maine,1,Minimal,Feb-03-2018,5
+Maine,2,Minimal,Feb-10-2018,6
+Maine,2,Minimal,Feb-17-2018,7
+Maine,2,Minimal,Feb-24-2018,8
+Maine,1,Minimal,Mar-03-2018,9
+Maine,1,Minimal,Mar-10-2018,10
+Maine,1,Minimal,Mar-17-2018,11
+Maine,1,Minimal,Mar-24-2018,12
+Maine,1,Minimal,Mar-31-2018,13
+Maine,1,Minimal,Apr-07-2018,14
+Maine,1,Minimal,Apr-14-2018,15
+Maine,1,Minimal,Apr-21-2018,16
+Maine,1,Minimal,Apr-28-2018,17
+Maine,1,Minimal,Oct-07-2017,40
+Maine,1,Minimal,Oct-14-2017,41
+Maine,1,Minimal,Oct-21-2017,42
+Maine,1,Minimal,Oct-28-2017,43
+Maine,1,Minimal,Nov-04-2017,44
+Maine,1,Minimal,Nov-11-2017,45
+Maine,1,Minimal,Nov-18-2017,46
+Maine,1,Minimal,Nov-25-2017,47
+Maine,1,Minimal,Dec-02-2017,48
+Maine,1,Minimal,Dec-09-2017,49
+Maine,1,Minimal,Dec-16-2017,50
+Maine,1,Minimal,Dec-23-2017,51
+Maine,1,Minimal,Dec-30-2017,52
+Maryland,5,Low,Jan-06-2018,1
+Maryland,6,Moderate,Jan-13-2018,2
+Maryland,10,High,Jan-20-2018,3
+Maryland,10,High,Jan-27-2018,4
+Maryland,10,High,Feb-03-2018,5
+Maryland,10,High,Feb-10-2018,6
+Maryland,9,High,Feb-17-2018,7
+Maryland,8,High,Feb-24-2018,8
+Maryland,5,Low,Mar-03-2018,9
+Maryland,3,Minimal,Mar-10-2018,10
+Maryland,1,Minimal,Mar-17-2018,11
+Maryland,1,Minimal,Mar-24-2018,12
+Maryland,1,Minimal,Mar-31-2018,13
+Maryland,1,Minimal,Apr-07-2018,14
+Maryland,1,Minimal,Apr-14-2018,15
+Maryland,1,Minimal,Apr-21-2018,16
+Maryland,1,Minimal,Apr-28-2018,17
+Maryland,1,Minimal,Oct-07-2017,40
+Maryland,1,Minimal,Oct-14-2017,41
+Maryland,1,Minimal,Oct-21-2017,42
+Maryland,1,Minimal,Oct-28-2017,43
+Maryland,1,Minimal,Nov-04-2017,44
+Maryland,1,Minimal,Nov-11-2017,45
+Maryland,1,Minimal,Nov-18-2017,46
+Maryland,1,Minimal,Nov-25-2017,47
+Maryland,1,Minimal,Dec-02-2017,48
+Maryland,1,Minimal,Dec-09-2017,49
+Maryland,1,Minimal,Dec-16-2017,50
+Maryland,2,Minimal,Dec-23-2017,51
+Maryland,7,Moderate,Dec-30-2017,52
+Massachusetts,7,Moderate,Jan-06-2018,1
+Massachusetts,5,Low,Jan-13-2018,2
+Massachusetts,8,High,Jan-20-2018,3
+Massachusetts,10,High,Jan-27-2018,4
+Massachusetts,10,High,Feb-03-2018,5
+Massachusetts,10,High,Feb-10-2018,6
+Massachusetts,10,High,Feb-17-2018,7
+Massachusetts,10,High,Feb-24-2018,8
+Massachusetts,8,High,Mar-03-2018,9
+Massachusetts,6,Moderate,Mar-10-2018,10
+Massachusetts,5,Low,Mar-17-2018,11
+Massachusetts,4,Low,Mar-24-2018,12
+Massachusetts,4,Low,Mar-31-2018,13
+Massachusetts,4,Low,Apr-07-2018,14
+Massachusetts,4,Low,Apr-14-2018,15
+Massachusetts,3,Minimal,Apr-21-2018,16
+Massachusetts,3,Minimal,Apr-28-2018,17
+Massachusetts,1,Minimal,Oct-07-2017,40
+Massachusetts,1,Minimal,Oct-14-2017,41
+Massachusetts,1,Minimal,Oct-21-2017,42
+Massachusetts,1,Minimal,Oct-28-2017,43
+Massachusetts,2,Minimal,Nov-04-2017,44
+Massachusetts,2,Minimal,Nov-11-2017,45
+Massachusetts,2,Minimal,Nov-18-2017,46
+Massachusetts,3,Minimal,Nov-25-2017,47
+Massachusetts,3,Minimal,Dec-02-2017,48
+Massachusetts,3,Minimal,Dec-09-2017,49
+Massachusetts,4,Low,Dec-16-2017,50
+Massachusetts,5,Low,Dec-23-2017,51
+Massachusetts,8,High,Dec-30-2017,52
+Michigan,6,Moderate,Jan-06-2018,1
+Michigan,9,High,Jan-13-2018,2
+Michigan,10,High,Jan-20-2018,3
+Michigan,10,High,Jan-27-2018,4
+Michigan,10,High,Feb-03-2018,5
+Michigan,10,High,Feb-10-2018,6
+Michigan,9,High,Feb-17-2018,7
+Michigan,7,Moderate,Feb-24-2018,8
+Michigan,5,Low,Mar-03-2018,9
+Michigan,4,Low,Mar-10-2018,10
+Michigan,2,Minimal,Mar-17-2018,11
+Michigan,3,Minimal,Mar-24-2018,12
+Michigan,3,Minimal,Mar-31-2018,13
+Michigan,4,Low,Apr-07-2018,14
+Michigan,3,Minimal,Apr-14-2018,15
+Michigan,2,Minimal,Apr-21-2018,16
+Michigan,1,Minimal,Apr-28-2018,17
+Michigan,1,Minimal,Oct-07-2017,40
+Michigan,1,Minimal,Oct-14-2017,41
+Michigan,1,Minimal,Oct-21-2017,42
+Michigan,1,Minimal,Oct-28-2017,43
+Michigan,1,Minimal,Nov-04-2017,44
+Michigan,2,Minimal,Nov-11-2017,45
+Michigan,2,Minimal,Nov-18-2017,46
+Michigan,3,Minimal,Nov-25-2017,47
+Michigan,2,Minimal,Dec-02-2017,48
+Michigan,3,Minimal,Dec-09-2017,49
+Michigan,4,Low,Dec-16-2017,50
+Michigan,5,Low,Dec-23-2017,51
+Michigan,7,Moderate,Dec-30-2017,52
+Minnesota,7,Moderate,Jan-06-2018,1
+Minnesota,10,High,Jan-13-2018,2
+Minnesota,10,High,Jan-20-2018,3
+Minnesota,10,High,Jan-27-2018,4
+Minnesota,10,High,Feb-03-2018,5
+Minnesota,10,High,Feb-10-2018,6
+Minnesota,10,High,Feb-17-2018,7
+Minnesota,10,High,Feb-24-2018,8
+Minnesota,9,High,Mar-03-2018,9
+Minnesota,9,High,Mar-10-2018,10
+Minnesota,6,Moderate,Mar-17-2018,11
+Minnesota,4,Low,Mar-24-2018,12
+Minnesota,3,Minimal,Mar-31-2018,13
+Minnesota,1,Minimal,Apr-07-2018,14
+Minnesota,2,Minimal,Apr-14-2018,15
+Minnesota,3,Minimal,Apr-21-2018,16
+Minnesota,1,Minimal,Apr-28-2018,17
+Minnesota,1,Minimal,Oct-07-2017,40
+Minnesota,1,Minimal,Oct-14-2017,41
+Minnesota,1,Minimal,Oct-21-2017,42
+Minnesota,1,Minimal,Oct-28-2017,43
+Minnesota,1,Minimal,Nov-04-2017,44
+Minnesota,1,Minimal,Nov-11-2017,45
+Minnesota,1,Minimal,Nov-18-2017,46
+Minnesota,1,Minimal,Nov-25-2017,47
+Minnesota,1,Minimal,Dec-02-2017,48
+Minnesota,2,Minimal,Dec-09-2017,49
+Minnesota,2,Minimal,Dec-16-2017,50
+Minnesota,4,Low,Dec-23-2017,51
+Minnesota,5,Low,Dec-30-2017,52
+Mississippi,10,High,Jan-06-2018,1
+Mississippi,10,High,Jan-13-2018,2
+Mississippi,10,High,Jan-20-2018,3
+Mississippi,10,High,Jan-27-2018,4
+Mississippi,10,High,Feb-03-2018,5
+Mississippi,10,High,Feb-10-2018,6
+Mississippi,10,High,Feb-17-2018,7
+Mississippi,10,High,Feb-24-2018,8
+Mississippi,6,Moderate,Mar-03-2018,9
+Mississippi,4,Low,Mar-10-2018,10
+Mississippi,4,Low,Mar-17-2018,11
+Mississippi,3,Minimal,Mar-24-2018,12
+Mississippi,1,Minimal,Mar-31-2018,13
+Mississippi,1,Minimal,Apr-07-2018,14
+Mississippi,2,Minimal,Apr-14-2018,15
+Mississippi,1,Minimal,Apr-21-2018,16
+Mississippi,1,Minimal,Apr-28-2018,17
+Mississippi,2,Minimal,Oct-07-2017,40
+Mississippi,1,Minimal,Oct-14-2017,41
+Mississippi,1,Minimal,Oct-21-2017,42
+Mississippi,3,Minimal,Oct-28-2017,43
+Mississippi,4,Low,Nov-04-2017,44
+Mississippi,8,High,Nov-11-2017,45
+Mississippi,10,High,Nov-18-2017,46
+Mississippi,10,High,Nov-25-2017,47
+Mississippi,10,High,Dec-02-2017,48
+Mississippi,10,High,Dec-09-2017,49
+Mississippi,10,High,Dec-16-2017,50
+Mississippi,10,High,Dec-23-2017,51
+Mississippi,10,High,Dec-30-2017,52
+Missouri,10,High,Jan-06-2018,1
+Missouri,10,High,Jan-13-2018,2
+Missouri,10,High,Jan-20-2018,3
+Missouri,10,High,Jan-27-2018,4
+Missouri,10,High,Feb-03-2018,5
+Missouri,10,High,Feb-10-2018,6
+Missouri,10,High,Feb-17-2018,7
+Missouri,10,High,Feb-24-2018,8
+Missouri,8,High,Mar-03-2018,9
+Missouri,6,Moderate,Mar-10-2018,10
+Missouri,2,Minimal,Mar-17-2018,11
+Missouri,6,Moderate,Mar-24-2018,12
+Missouri,1,Minimal,Mar-31-2018,13
+Missouri,1,Minimal,Apr-07-2018,14
+Missouri,1,Minimal,Apr-14-2018,15
+Missouri,1,Minimal,Apr-21-2018,16
+Missouri,1,Minimal,Apr-28-2018,17
+Missouri,1,Minimal,Oct-07-2017,40
+Missouri,1,Minimal,Oct-14-2017,41
+Missouri,1,Minimal,Oct-21-2017,42
+Missouri,1,Minimal,Oct-28-2017,43
+Missouri,1,Minimal,Nov-04-2017,44
+Missouri,1,Minimal,Nov-11-2017,45
+Missouri,1,Minimal,Nov-18-2017,46
+Missouri,1,Minimal,Nov-25-2017,47
+Missouri,1,Minimal,Dec-02-2017,48
+Missouri,3,Minimal,Dec-09-2017,49
+Missouri,5,Low,Dec-16-2017,50
+Missouri,10,High,Dec-23-2017,51
+Missouri,10,High,Dec-30-2017,52
+Montana,1,Minimal,Jan-06-2018,1
+Montana,2,Minimal,Jan-13-2018,2
+Montana,2,Minimal,Jan-20-2018,3
+Montana,1,Minimal,Jan-27-2018,4
+Montana,2,Minimal,Feb-03-2018,5
+Montana,1,Minimal,Feb-10-2018,6
+Montana,1,Minimal,Feb-17-2018,7
+Montana,2,Minimal,Feb-24-2018,8
+Montana,2,Minimal,Mar-03-2018,9
+Montana,1,Minimal,Mar-10-2018,10
+Montana,1,Minimal,Mar-17-2018,11
+Montana,1,Minimal,Mar-24-2018,12
+Montana,1,Minimal,Mar-31-2018,13
+Montana,1,Minimal,Apr-07-2018,14
+Montana,1,Minimal,Apr-14-2018,15
+Montana,1,Minimal,Apr-21-2018,16
+Montana,1,Minimal,Apr-28-2018,17
+Montana,1,Minimal,Oct-07-2017,40
+Montana,1,Minimal,Oct-14-2017,41
+Montana,1,Minimal,Oct-21-2017,42
+Montana,1,Minimal,Oct-28-2017,43
+Montana,1,Minimal,Nov-04-2017,44
+Montana,1,Minimal,Nov-11-2017,45
+Montana,1,Minimal,Nov-18-2017,46
+Montana,1,Minimal,Nov-25-2017,47
+Montana,1,Minimal,Dec-02-2017,48
+Montana,1,Minimal,Dec-09-2017,49
+Montana,1,Minimal,Dec-16-2017,50
+Montana,1,Minimal,Dec-23-2017,51
+Montana,1,Minimal,Dec-30-2017,52
+Nebraska,10,High,Jan-06-2018,1
+Nebraska,6,Moderate,Jan-13-2018,2
+Nebraska,9,High,Jan-20-2018,3
+Nebraska,10,High,Jan-27-2018,4
+Nebraska,10,High,Feb-03-2018,5
+Nebraska,10,High,Feb-10-2018,6
+Nebraska,10,High,Feb-17-2018,7
+Nebraska,10,High,Feb-24-2018,8
+Nebraska,10,High,Mar-03-2018,9
+Nebraska,10,High,Mar-10-2018,10
+Nebraska,10,High,Mar-17-2018,11
+Nebraska,6,Moderate,Mar-24-2018,12
+Nebraska,6,Moderate,Mar-31-2018,13
+Nebraska,5,Low,Apr-07-2018,14
+Nebraska,2,Minimal,Apr-14-2018,15
+Nebraska,1,Minimal,Apr-21-2018,16
+Nebraska,2,Minimal,Apr-28-2018,17
+Nebraska,1,Minimal,Oct-07-2017,40
+Nebraska,1,Minimal,Oct-14-2017,41
+Nebraska,2,Minimal,Oct-21-2017,42
+Nebraska,2,Minimal,Oct-28-2017,43
+Nebraska,2,Minimal,Nov-04-2017,44
+Nebraska,3,Minimal,Nov-11-2017,45
+Nebraska,3,Minimal,Nov-18-2017,46
+Nebraska,5,Low,Nov-25-2017,47
+Nebraska,3,Minimal,Dec-02-2017,48
+Nebraska,3,Minimal,Dec-09-2017,49
+Nebraska,6,Moderate,Dec-16-2017,50
+Nebraska,8,High,Dec-23-2017,51
+Nebraska,10,High,Dec-30-2017,52
+Nevada,9,High,Jan-06-2018,1
+Nevada,7,Moderate,Jan-13-2018,2
+Nevada,6,Moderate,Jan-20-2018,3
+Nevada,6,Moderate,Jan-27-2018,4
+Nevada,8,High,Feb-03-2018,5
+Nevada,7,Moderate,Feb-10-2018,6
+Nevada,7,Moderate,Feb-17-2018,7
+Nevada,5,Low,Feb-24-2018,8
+Nevada,4,Low,Mar-03-2018,9
+Nevada,3,Minimal,Mar-10-2018,10
+Nevada,3,Minimal,Mar-17-2018,11
+Nevada,2,Minimal,Mar-24-2018,12
+Nevada,2,Minimal,Mar-31-2018,13
+Nevada,1,Minimal,Apr-07-2018,14
+Nevada,2,Minimal,Apr-14-2018,15
+Nevada,1,Minimal,Apr-21-2018,16
+Nevada,2,Minimal,Apr-28-2018,17
+Nevada,1,Minimal,Oct-07-2017,40
+Nevada,1,Minimal,Oct-14-2017,41
+Nevada,1,Minimal,Oct-21-2017,42
+Nevada,1,Minimal,Oct-28-2017,43
+Nevada,2,Minimal,Nov-04-2017,44
+Nevada,2,Minimal,Nov-11-2017,45
+Nevada,2,Minimal,Nov-18-2017,46
+Nevada,2,Minimal,Nov-25-2017,47
+Nevada,2,Minimal,Dec-02-2017,48
+Nevada,3,Minimal,Dec-09-2017,49
+Nevada,5,Low,Dec-16-2017,50
+Nevada,6,Moderate,Dec-23-2017,51
+Nevada,9,High,Dec-30-2017,52
+New Hampshire,3,Minimal,Jan-06-2018,1
+New Hampshire,3,Minimal,Jan-13-2018,2
+New Hampshire,7,Moderate,Jan-20-2018,3
+New Hampshire,9,High,Jan-27-2018,4
+New Hampshire,10,High,Feb-03-2018,5
+New Hampshire,10,High,Feb-10-2018,6
+New Hampshire,10,High,Feb-17-2018,7
+New Hampshire,9,High,Feb-24-2018,8
+New Hampshire,9,High,Mar-03-2018,9
+New Hampshire,4,Low,Mar-10-2018,10
+New Hampshire,1,Minimal,Mar-17-2018,11
+New Hampshire,1,Minimal,Mar-24-2018,12
+New Hampshire,1,Minimal,Mar-31-2018,13
+New Hampshire,1,Minimal,Apr-07-2018,14
+New Hampshire,1,Minimal,Apr-14-2018,15
+New Hampshire,1,Minimal,Apr-21-2018,16
+New Hampshire,1,Minimal,Apr-28-2018,17
+New Hampshire,1,Minimal,Oct-07-2017,40
+New Hampshire,1,Minimal,Oct-14-2017,41
+New Hampshire,1,Minimal,Oct-21-2017,42
+New Hampshire,1,Minimal,Oct-28-2017,43
+New Hampshire,1,Minimal,Nov-04-2017,44
+New Hampshire,1,Minimal,Nov-11-2017,45
+New Hampshire,1,Minimal,Nov-18-2017,46
+New Hampshire,1,Minimal,Nov-25-2017,47
+New Hampshire,1,Minimal,Dec-02-2017,48
+New Hampshire,1,Minimal,Dec-09-2017,49
+New Hampshire,1,Minimal,Dec-16-2017,50
+New Hampshire,1,Minimal,Dec-23-2017,51
+New Hampshire,1,Minimal,Dec-30-2017,52
+New Jersey,9,High,Jan-06-2018,1
+New Jersey,8,High,Jan-13-2018,2
+New Jersey,10,High,Jan-20-2018,3
+New Jersey,10,High,Jan-27-2018,4
+New Jersey,10,High,Feb-03-2018,5
+New Jersey,10,High,Feb-10-2018,6
+New Jersey,10,High,Feb-17-2018,7
+New Jersey,10,High,Feb-24-2018,8
+New Jersey,10,High,Mar-03-2018,9
+New Jersey,8,High,Mar-10-2018,10
+New Jersey,6,Moderate,Mar-17-2018,11
+New Jersey,4,Low,Mar-24-2018,12
+New Jersey,4,Low,Mar-31-2018,13
+New Jersey,3,Minimal,Apr-07-2018,14
+New Jersey,2,Minimal,Apr-14-2018,15
+New Jersey,1,Minimal,Apr-21-2018,16
+New Jersey,1,Minimal,Apr-28-2018,17
+New Jersey,1,Minimal,Oct-07-2017,40
+New Jersey,1,Minimal,Oct-14-2017,41
+New Jersey,1,Minimal,Oct-21-2017,42
+New Jersey,1,Minimal,Oct-28-2017,43
+New Jersey,2,Minimal,Nov-04-2017,44
+New Jersey,2,Minimal,Nov-11-2017,45
+New Jersey,2,Minimal,Nov-18-2017,46
+New Jersey,3,Minimal,Nov-25-2017,47
+New Jersey,3,Minimal,Dec-02-2017,48
+New Jersey,3,Minimal,Dec-09-2017,49
+New Jersey,4,Low,Dec-16-2017,50
+New Jersey,5,Low,Dec-23-2017,51
+New Jersey,8,High,Dec-30-2017,52
+New Mexico,10,High,Jan-06-2018,1
+New Mexico,10,High,Jan-13-2018,2
+New Mexico,10,High,Jan-20-2018,3
+New Mexico,10,High,Jan-27-2018,4
+New Mexico,10,High,Feb-03-2018,5
+New Mexico,10,High,Feb-10-2018,6
+New Mexico,10,High,Feb-17-2018,7
+New Mexico,10,High,Feb-24-2018,8
+New Mexico,10,High,Mar-03-2018,9
+New Mexico,8,High,Mar-10-2018,10
+New Mexico,7,Moderate,Mar-17-2018,11
+New Mexico,6,Moderate,Mar-24-2018,12
+New Mexico,4,Low,Mar-31-2018,13
+New Mexico,3,Minimal,Apr-07-2018,14
+New Mexico,2,Minimal,Apr-14-2018,15
+New Mexico,2,Minimal,Apr-21-2018,16
+New Mexico,2,Minimal,Apr-28-2018,17
+New Mexico,1,Minimal,Oct-07-2017,40
+New Mexico,1,Minimal,Oct-14-2017,41
+New Mexico,1,Minimal,Oct-21-2017,42
+New Mexico,1,Minimal,Oct-28-2017,43
+New Mexico,1,Minimal,Nov-04-2017,44
+New Mexico,2,Minimal,Nov-11-2017,45
+New Mexico,3,Minimal,Nov-18-2017,46
+New Mexico,3,Minimal,Nov-25-2017,47
+New Mexico,1,Minimal,Dec-02-2017,48
+New Mexico,3,Minimal,Dec-09-2017,49
+New Mexico,5,Low,Dec-16-2017,50
+New Mexico,7,Moderate,Dec-23-2017,51
+New Mexico,10,High,Dec-30-2017,52
+New York,7,Moderate,Jan-06-2018,1
+New York,10,High,Jan-13-2018,2
+New York,10,High,Jan-20-2018,3
+New York,10,High,Jan-27-2018,4
+New York,10,High,Feb-03-2018,5
+New York,10,High,Feb-10-2018,6
+New York,10,High,Feb-17-2018,7
+New York,10,High,Feb-24-2018,8
+New York,9,High,Mar-03-2018,9
+New York,6,Moderate,Mar-10-2018,10
+New York,5,Low,Mar-17-2018,11
+New York,2,Minimal,Mar-24-2018,12
+New York,2,Minimal,Mar-31-2018,13
+New York,1,Minimal,Apr-07-2018,14
+New York,1,Minimal,Apr-14-2018,15
+New York,1,Minimal,Apr-21-2018,16
+New York,1,Minimal,Apr-28-2018,17
+New York,1,Minimal,Oct-07-2017,40
+New York,1,Minimal,Oct-14-2017,41
+New York,1,Minimal,Oct-21-2017,42
+New York,1,Minimal,Oct-28-2017,43
+New York,1,Minimal,Nov-04-2017,44
+New York,1,Minimal,Nov-11-2017,45
+New York,1,Minimal,Nov-18-2017,46
+New York,1,Minimal,Nov-25-2017,47
+New York,1,Minimal,Dec-02-2017,48
+New York,1,Minimal,Dec-09-2017,49
+New York,2,Minimal,Dec-16-2017,50
+New York,5,Low,Dec-23-2017,51
+New York,4,Low,Dec-30-2017,52
+New York City,8,High,Jan-06-2018,1
+New York City,8,High,Jan-13-2018,2
+New York City,10,High,Jan-20-2018,3
+New York City,10,High,Jan-27-2018,4
+New York City,10,High,Feb-03-2018,5
+New York City,10,High,Feb-10-2018,6
+New York City,10,High,Feb-17-2018,7
+New York City,10,High,Feb-24-2018,8
+New York City,8,High,Mar-03-2018,9
+New York City,5,Low,Mar-10-2018,10
+New York City,4,Low,Mar-17-2018,11
+New York City,4,Low,Mar-24-2018,12
+New York City,4,Low,Mar-31-2018,13
+New York City,3,Minimal,Apr-07-2018,14
+New York City,2,Minimal,Apr-14-2018,15
+New York City,2,Minimal,Apr-21-2018,16
+New York City,2,Minimal,Apr-28-2018,17
+New York City,1,Minimal,Oct-07-2017,40
+New York City,1,Minimal,Oct-14-2017,41
+New York City,2,Minimal,Oct-21-2017,42
+New York City,2,Minimal,Oct-28-2017,43
+New York City,2,Minimal,Nov-04-2017,44
+New York City,2,Minimal,Nov-11-2017,45
+New York City,4,Low,Nov-18-2017,46
+New York City,3,Minimal,Nov-25-2017,47
+New York City,2,Minimal,Dec-02-2017,48
+New York City,4,Low,Dec-09-2017,49
+New York City,5,Low,Dec-16-2017,50
+New York City,6,Moderate,Dec-23-2017,51
+New York City,8,High,Dec-30-2017,52
+North Carolina,4,Low,Jan-06-2018,1
+North Carolina,9,High,Jan-13-2018,2
+North Carolina,10,High,Jan-20-2018,3
+North Carolina,10,High,Jan-27-2018,4
+North Carolina,10,High,Feb-03-2018,5
+North Carolina,10,High,Feb-10-2018,6
+North Carolina,10,High,Feb-17-2018,7
+North Carolina,10,High,Feb-24-2018,8
+North Carolina,7,Moderate,Mar-03-2018,9
+North Carolina,6,Moderate,Mar-10-2018,10
+North Carolina,6,Moderate,Mar-17-2018,11
+North Carolina,5,Low,Mar-24-2018,12
+North Carolina,5,Low,Mar-31-2018,13
+North Carolina,5,Low,Apr-07-2018,14
+North Carolina,3,Minimal,Apr-14-2018,15
+North Carolina,3,Minimal,Apr-21-2018,16
+North Carolina,2,Minimal,Apr-28-2018,17
+North Carolina,1,Minimal,Oct-07-2017,40
+North Carolina,1,Minimal,Oct-14-2017,41
+North Carolina,1,Minimal,Oct-21-2017,42
+North Carolina,1,Minimal,Oct-28-2017,43
+North Carolina,1,Minimal,Nov-04-2017,44
+North Carolina,1,Minimal,Nov-11-2017,45
+North Carolina,2,Minimal,Nov-18-2017,46
+North Carolina,3,Minimal,Nov-25-2017,47
+North Carolina,1,Minimal,Dec-02-2017,48
+North Carolina,2,Minimal,Dec-09-2017,49
+North Carolina,1,Minimal,Dec-16-2017,50
+North Carolina,1,Minimal,Dec-23-2017,51
+North Carolina,6,Moderate,Dec-30-2017,52
+North Dakota,2,Minimal,Jan-06-2018,1
+North Dakota,6,Moderate,Jan-13-2018,2
+North Dakota,4,Low,Jan-20-2018,3
+North Dakota,4,Low,Jan-27-2018,4
+North Dakota,4,Low,Feb-03-2018,5
+North Dakota,6,Moderate,Feb-10-2018,6
+North Dakota,3,Minimal,Feb-17-2018,7
+North Dakota,4,Low,Feb-24-2018,8
+North Dakota,3,Minimal,Mar-03-2018,9
+North Dakota,1,Minimal,Mar-10-2018,10
+North Dakota,1,Minimal,Mar-17-2018,11
+North Dakota,1,Minimal,Mar-24-2018,12
+North Dakota,1,Minimal,Mar-31-2018,13
+North Dakota,1,Minimal,Apr-07-2018,14
+North Dakota,1,Minimal,Apr-14-2018,15
+North Dakota,1,Minimal,Apr-21-2018,16
+North Dakota,1,Minimal,Apr-28-2018,17
+North Dakota,1,Minimal,Oct-07-2017,40
+North Dakota,1,Minimal,Oct-14-2017,41
+North Dakota,1,Minimal,Oct-21-2017,42
+North Dakota,1,Minimal,Oct-28-2017,43
+North Dakota,1,Minimal,Nov-04-2017,44
+North Dakota,1,Minimal,Nov-11-2017,45
+North Dakota,1,Minimal,Nov-18-2017,46
+North Dakota,1,Minimal,Nov-25-2017,47
+North Dakota,1,Minimal,Dec-02-2017,48
+North Dakota,1,Minimal,Dec-09-2017,49
+North Dakota,1,Minimal,Dec-16-2017,50
+North Dakota,5,Low,Dec-23-2017,51
+North Dakota,2,Minimal,Dec-30-2017,52
+Ohio,5,Low,Jan-06-2018,1
+Ohio,6,Moderate,Jan-13-2018,2
+Ohio,8,High,Jan-20-2018,3
+Ohio,8,High,Jan-27-2018,4
+Ohio,9,High,Feb-03-2018,5
+Ohio,10,High,Feb-10-2018,6
+Ohio,8,High,Feb-17-2018,7
+Ohio,6,Moderate,Feb-24-2018,8
+Ohio,1,Minimal,Mar-03-2018,9
+Ohio,1,Minimal,Mar-10-2018,10
+Ohio,1,Minimal,Mar-17-2018,11
+Ohio,1,Minimal,Mar-24-2018,12
+Ohio,1,Minimal,Mar-31-2018,13
+Ohio,1,Minimal,Apr-07-2018,14
+Ohio,1,Minimal,Apr-14-2018,15
+Ohio,1,Minimal,Apr-21-2018,16
+Ohio,1,Minimal,Apr-28-2018,17
+Ohio,1,Minimal,Oct-07-2017,40
+Ohio,1,Minimal,Oct-14-2017,41
+Ohio,1,Minimal,Oct-21-2017,42
+Ohio,1,Minimal,Oct-28-2017,43
+Ohio,1,Minimal,Nov-04-2017,44
+Ohio,1,Minimal,Nov-11-2017,45
+Ohio,1,Minimal,Nov-18-2017,46
+Ohio,1,Minimal,Nov-25-2017,47
+Ohio,1,Minimal,Dec-02-2017,48
+Ohio,1,Minimal,Dec-09-2017,49
+Ohio,1,Minimal,Dec-16-2017,50
+Ohio,2,Minimal,Dec-23-2017,51
+Ohio,6,Moderate,Dec-30-2017,52
+Oklahoma,10,High,Jan-06-2018,1
+Oklahoma,10,High,Jan-13-2018,2
+Oklahoma,10,High,Jan-20-2018,3
+Oklahoma,10,High,Jan-27-2018,4
+Oklahoma,10,High,Feb-03-2018,5
+Oklahoma,10,High,Feb-10-2018,6
+Oklahoma,10,High,Feb-17-2018,7
+Oklahoma,10,High,Feb-24-2018,8
+Oklahoma,6,Moderate,Mar-03-2018,9
+Oklahoma,4,Low,Mar-10-2018,10
+Oklahoma,2,Minimal,Mar-17-2018,11
+Oklahoma,3,Minimal,Mar-24-2018,12
+Oklahoma,1,Minimal,Mar-31-2018,13
+Oklahoma,1,Minimal,Apr-07-2018,14
+Oklahoma,1,Minimal,Apr-14-2018,15
+Oklahoma,1,Minimal,Apr-21-2018,16
+Oklahoma,1,Minimal,Apr-28-2018,17
+Oklahoma,1,Minimal,Oct-07-2017,40
+Oklahoma,1,Minimal,Oct-14-2017,41
+Oklahoma,1,Minimal,Oct-21-2017,42
+Oklahoma,1,Minimal,Oct-28-2017,43
+Oklahoma,2,Minimal,Nov-04-2017,44
+Oklahoma,3,Minimal,Nov-11-2017,45
+Oklahoma,3,Minimal,Nov-18-2017,46
+Oklahoma,4,Low,Nov-25-2017,47
+Oklahoma,4,Low,Dec-02-2017,48
+Oklahoma,4,Low,Dec-09-2017,49
+Oklahoma,10,High,Dec-16-2017,50
+Oklahoma,10,High,Dec-23-2017,51
+Oklahoma,10,High,Dec-30-2017,52
+Oregon,10,High,Jan-06-2018,1
+Oregon,10,High,Jan-13-2018,2
+Oregon,10,High,Jan-20-2018,3
+Oregon,10,High,Jan-27-2018,4
+Oregon,10,High,Feb-03-2018,5
+Oregon,9,High,Feb-10-2018,6
+Oregon,8,High,Feb-17-2018,7
+Oregon,7,Moderate,Feb-24-2018,8
+Oregon,6,Moderate,Mar-03-2018,9
+Oregon,4,Low,Mar-10-2018,10
+Oregon,5,Low,Mar-17-2018,11
+Oregon,5,Low,Mar-24-2018,12
+Oregon,4,Low,Mar-31-2018,13
+Oregon,3,Minimal,Apr-07-2018,14
+Oregon,2,Minimal,Apr-14-2018,15
+Oregon,2,Minimal,Apr-21-2018,16
+Oregon,1,Minimal,Apr-28-2018,17
+Oregon,1,Minimal,Oct-07-2017,40
+Oregon,1,Minimal,Oct-14-2017,41
+Oregon,1,Minimal,Oct-21-2017,42
+Oregon,1,Minimal,Oct-28-2017,43
+Oregon,2,Minimal,Nov-04-2017,44
+Oregon,2,Minimal,Nov-11-2017,45
+Oregon,2,Minimal,Nov-18-2017,46
+Oregon,3,Minimal,Nov-25-2017,47
+Oregon,3,Minimal,Dec-02-2017,48
+Oregon,4,Low,Dec-09-2017,49
+Oregon,5,Low,Dec-16-2017,50
+Oregon,9,High,Dec-23-2017,51
+Oregon,10,High,Dec-30-2017,52
+Pennsylvania,6,Moderate,Jan-06-2018,1
+Pennsylvania,7,Moderate,Jan-13-2018,2
+Pennsylvania,10,High,Jan-20-2018,3
+Pennsylvania,10,High,Jan-27-2018,4
+Pennsylvania,10,High,Feb-03-2018,5
+Pennsylvania,10,High,Feb-10-2018,6
+Pennsylvania,10,High,Feb-17-2018,7
+Pennsylvania,10,High,Feb-24-2018,8
+Pennsylvania,9,High,Mar-03-2018,9
+Pennsylvania,6,Moderate,Mar-10-2018,10
+Pennsylvania,6,Moderate,Mar-17-2018,11
+Pennsylvania,5,Low,Mar-24-2018,12
+Pennsylvania,5,Low,Mar-31-2018,13
+Pennsylvania,4,Low,Apr-07-2018,14
+Pennsylvania,3,Minimal,Apr-14-2018,15
+Pennsylvania,2,Minimal,Apr-21-2018,16
+Pennsylvania,2,Minimal,Apr-28-2018,17
+Pennsylvania,1,Minimal,Oct-07-2017,40
+Pennsylvania,1,Minimal,Oct-14-2017,41
+Pennsylvania,1,Minimal,Oct-21-2017,42
+Pennsylvania,1,Minimal,Oct-28-2017,43
+Pennsylvania,2,Minimal,Nov-04-2017,44
+Pennsylvania,2,Minimal,Nov-11-2017,45
+Pennsylvania,2,Minimal,Nov-18-2017,46
+Pennsylvania,2,Minimal,Nov-25-2017,47
+Pennsylvania,2,Minimal,Dec-02-2017,48
+Pennsylvania,2,Minimal,Dec-09-2017,49
+Pennsylvania,3,Minimal,Dec-16-2017,50
+Pennsylvania,3,Minimal,Dec-23-2017,51
+Pennsylvania,6,Moderate,Dec-30-2017,52
+Puerto Rico,7,Moderate,Jan-06-2018,1
+Puerto Rico,10,High,Jan-13-2018,2
+Puerto Rico,8,High,Jan-20-2018,3
+Puerto Rico,9,High,Jan-27-2018,4
+Puerto Rico,10,High,Feb-03-2018,5
+Puerto Rico,10,High,Feb-10-2018,6
+Puerto Rico,10,High,Feb-17-2018,7
+Puerto Rico,7,Moderate,Feb-24-2018,8
+Puerto Rico,4,Low,Mar-03-2018,9
+Puerto Rico,6,Moderate,Mar-10-2018,10
+Puerto Rico,4,Low,Mar-17-2018,11
+Puerto Rico,4,Low,Mar-24-2018,12
+Puerto Rico,3,Minimal,Mar-31-2018,13
+Puerto Rico,3,Minimal,Apr-07-2018,14
+Puerto Rico,1,Minimal,Apr-14-2018,15
+Puerto Rico,1,Minimal,Apr-21-2018,16
+Puerto Rico,1,Minimal,Apr-28-2018,17
+Puerto Rico,1,Minimal,Oct-07-2017,40
+Puerto Rico,1,Minimal,Oct-14-2017,41
+Puerto Rico,1,Minimal,Oct-21-2017,42
+Puerto Rico,1,Minimal,Oct-28-2017,43
+Puerto Rico,3,Minimal,Nov-04-2017,44
+Puerto Rico,3,Minimal,Nov-11-2017,45
+Puerto Rico,6,Moderate,Nov-18-2017,46
+Puerto Rico,4,Low,Nov-25-2017,47
+Puerto Rico,6,Moderate,Dec-02-2017,48
+Puerto Rico,4,Low,Dec-09-2017,49
+Puerto Rico,7,Moderate,Dec-16-2017,50
+Puerto Rico,8,High,Dec-23-2017,51
+Puerto Rico,7,Moderate,Dec-30-2017,52
+Rhode Island,5,Low,Jan-06-2018,1
+Rhode Island,7,Moderate,Jan-13-2018,2
+Rhode Island,10,High,Jan-20-2018,3
+Rhode Island,10,High,Jan-27-2018,4
+Rhode Island,10,High,Feb-03-2018,5
+Rhode Island,10,High,Feb-10-2018,6
+Rhode Island,10,High,Feb-17-2018,7
+Rhode Island,10,High,Feb-24-2018,8
+Rhode Island,7,Moderate,Mar-03-2018,9
+Rhode Island,5,Low,Mar-10-2018,10
+Rhode Island,7,Moderate,Mar-17-2018,11
+Rhode Island,5,Low,Mar-24-2018,12
+Rhode Island,3,Minimal,Mar-31-2018,13
+Rhode Island,3,Minimal,Apr-07-2018,14
+Rhode Island,4,Low,Apr-14-2018,15
+Rhode Island,2,Minimal,Apr-21-2018,16
+Rhode Island,1,Minimal,Apr-28-2018,17
+Rhode Island,1,Minimal,Oct-07-2017,40
+Rhode Island,1,Minimal,Oct-14-2017,41
+Rhode Island,1,Minimal,Oct-21-2017,42
+Rhode Island,1,Minimal,Oct-28-2017,43
+Rhode Island,1,Minimal,Nov-04-2017,44
+Rhode Island,1,Minimal,Nov-11-2017,45
+Rhode Island,1,Minimal,Nov-18-2017,46
+Rhode Island,1,Minimal,Nov-25-2017,47
+Rhode Island,1,Minimal,Dec-02-2017,48
+Rhode Island,3,Minimal,Dec-09-2017,49
+Rhode Island,2,Minimal,Dec-16-2017,50
+Rhode Island,3,Minimal,Dec-23-2017,51
+Rhode Island,2,Minimal,Dec-30-2017,52
+South Carolina,10,High,Jan-06-2018,1
+South Carolina,10,High,Jan-13-2018,2
+South Carolina,10,High,Jan-20-2018,3
+South Carolina,10,High,Jan-27-2018,4
+South Carolina,10,High,Feb-03-2018,5
+South Carolina,10,High,Feb-10-2018,6
+South Carolina,10,High,Feb-17-2018,7
+South Carolina,10,High,Feb-24-2018,8
+South Carolina,10,High,Mar-03-2018,9
+South Carolina,9,High,Mar-10-2018,10
+South Carolina,9,High,Mar-17-2018,11
+South Carolina,7,Moderate,Mar-24-2018,12
+South Carolina,6,Moderate,Mar-31-2018,13
+South Carolina,5,Low,Apr-07-2018,14
+South Carolina,3,Minimal,Apr-14-2018,15
+South Carolina,2,Minimal,Apr-21-2018,16
+South Carolina,1,Minimal,Apr-28-2018,17
+South Carolina,2,Minimal,Oct-07-2017,40
+South Carolina,1,Minimal,Oct-14-2017,41
+South Carolina,2,Minimal,Oct-21-2017,42
+South Carolina,5,Low,Oct-28-2017,43
+South Carolina,6,Moderate,Nov-04-2017,44
+South Carolina,6,Moderate,Nov-11-2017,45
+South Carolina,6,Moderate,Nov-18-2017,46
+South Carolina,10,High,Nov-25-2017,47
+South Carolina,10,High,Dec-02-2017,48
+South Carolina,10,High,Dec-09-2017,49
+South Carolina,10,High,Dec-16-2017,50
+South Carolina,10,High,Dec-23-2017,51
+South Carolina,10,High,Dec-30-2017,52
+South Dakota,6,Moderate,Jan-06-2018,1
+South Dakota,7,Moderate,Jan-13-2018,2
+South Dakota,10,High,Jan-20-2018,3
+South Dakota,10,High,Jan-27-2018,4
+South Dakota,10,High,Feb-03-2018,5
+South Dakota,10,High,Feb-10-2018,6
+South Dakota,10,High,Feb-17-2018,7
+South Dakota,10,High,Feb-24-2018,8
+South Dakota,9,High,Mar-03-2018,9
+South Dakota,8,High,Mar-10-2018,10
+South Dakota,7,Moderate,Mar-17-2018,11
+South Dakota,6,Moderate,Mar-24-2018,12
+South Dakota,5,Low,Mar-31-2018,13
+South Dakota,3,Minimal,Apr-07-2018,14
+South Dakota,6,Moderate,Apr-14-2018,15
+South Dakota,1,Minimal,Apr-21-2018,16
+South Dakota,3,Minimal,Apr-28-2018,17
+South Dakota,1,Minimal,Oct-07-2017,40
+South Dakota,2,Minimal,Oct-14-2017,41
+South Dakota,2,Minimal,Oct-21-2017,42
+South Dakota,3,Minimal,Oct-28-2017,43
+South Dakota,3,Minimal,Nov-04-2017,44
+South Dakota,4,Low,Nov-11-2017,45
+South Dakota,6,Moderate,Nov-18-2017,46
+South Dakota,4,Low,Nov-25-2017,47
+South Dakota,4,Low,Dec-02-2017,48
+South Dakota,4,Low,Dec-09-2017,49
+South Dakota,4,Low,Dec-16-2017,50
+South Dakota,5,Low,Dec-23-2017,51
+South Dakota,8,High,Dec-30-2017,52
+Tennessee,10,High,Jan-06-2018,1
+Tennessee,10,High,Jan-13-2018,2
+Tennessee,10,High,Jan-20-2018,3
+Tennessee,10,High,Jan-27-2018,4
+Tennessee,10,High,Feb-03-2018,5
+Tennessee,10,High,Feb-10-2018,6
+Tennessee,10,High,Feb-17-2018,7
+Tennessee,4,Low,Feb-24-2018,8
+Tennessee,1,Minimal,Mar-03-2018,9
+Tennessee,1,Minimal,Mar-10-2018,10
+Tennessee,1,Minimal,Mar-17-2018,11
+Tennessee,1,Minimal,Mar-24-2018,12
+Tennessee,1,Minimal,Mar-31-2018,13
+Tennessee,1,Minimal,Apr-07-2018,14
+Tennessee,1,Minimal,Apr-14-2018,15
+Tennessee,1,Minimal,Apr-21-2018,16
+Tennessee,1,Minimal,Apr-28-2018,17
+Tennessee,1,Minimal,Oct-07-2017,40
+Tennessee,1,Minimal,Oct-14-2017,41
+Tennessee,1,Minimal,Oct-21-2017,42
+Tennessee,1,Minimal,Oct-28-2017,43
+Tennessee,1,Minimal,Nov-04-2017,44
+Tennessee,1,Minimal,Nov-11-2017,45
+Tennessee,1,Minimal,Nov-18-2017,46
+Tennessee,1,Minimal,Nov-25-2017,47
+Tennessee,1,Minimal,Dec-02-2017,48
+Tennessee,1,Minimal,Dec-09-2017,49
+Tennessee,2,Minimal,Dec-16-2017,50
+Tennessee,9,High,Dec-23-2017,51
+Tennessee,7,Moderate,Dec-30-2017,52
+Texas,10,High,Jan-06-2018,1
+Texas,10,High,Jan-13-2018,2
+Texas,10,High,Jan-20-2018,3
+Texas,10,High,Jan-27-2018,4
+Texas,10,High,Feb-03-2018,5
+Texas,10,High,Feb-10-2018,6
+Texas,10,High,Feb-17-2018,7
+Texas,10,High,Feb-24-2018,8
+Texas,10,High,Mar-03-2018,9
+Texas,5,Low,Mar-10-2018,10
+Texas,2,Minimal,Mar-17-2018,11
+Texas,1,Minimal,Mar-24-2018,12
+Texas,1,Minimal,Mar-31-2018,13
+Texas,1,Minimal,Apr-07-2018,14
+Texas,1,Minimal,Apr-14-2018,15
+Texas,1,Minimal,Apr-21-2018,16
+Texas,1,Minimal,Apr-28-2018,17
+Texas,1,Minimal,Oct-07-2017,40
+Texas,1,Minimal,Oct-14-2017,41
+Texas,1,Minimal,Oct-21-2017,42
+Texas,1,Minimal,Oct-28-2017,43
+Texas,3,Minimal,Nov-04-2017,44
+Texas,3,Minimal,Nov-11-2017,45
+Texas,5,Low,Nov-18-2017,46
+Texas,5,Low,Nov-25-2017,47
+Texas,7,Moderate,Dec-02-2017,48
+Texas,9,High,Dec-09-2017,49
+Texas,10,High,Dec-16-2017,50
+Texas,10,High,Dec-23-2017,51
+Texas,10,High,Dec-30-2017,52
+Utah,3,Minimal,Jan-06-2018,1
+Utah,4,Low,Jan-13-2018,2
+Utah,5,Low,Jan-20-2018,3
+Utah,3,Minimal,Jan-27-2018,4
+Utah,4,Low,Feb-03-2018,5
+Utah,6,Moderate,Feb-10-2018,6
+Utah,7,Moderate,Feb-17-2018,7
+Utah,7,Moderate,Feb-24-2018,8
+Utah,3,Minimal,Mar-03-2018,9
+Utah,4,Low,Mar-10-2018,10
+Utah,3,Minimal,Mar-17-2018,11
+Utah,2,Minimal,Mar-24-2018,12
+Utah,1,Minimal,Mar-31-2018,13
+Utah,2,Minimal,Apr-07-2018,14
+Utah,1,Minimal,Apr-14-2018,15
+Utah,1,Minimal,Apr-21-2018,16
+Utah,1,Minimal,Apr-28-2018,17
+Utah,1,Minimal,Oct-07-2017,40
+Utah,1,Minimal,Oct-14-2017,41
+Utah,1,Minimal,Oct-21-2017,42
+Utah,1,Minimal,Oct-28-2017,43
+Utah,1,Minimal,Nov-04-2017,44
+Utah,1,Minimal,Nov-11-2017,45
+Utah,1,Minimal,Nov-18-2017,46
+Utah,1,Minimal,Nov-25-2017,47
+Utah,1,Minimal,Dec-02-2017,48
+Utah,1,Minimal,Dec-09-2017,49
+Utah,1,Minimal,Dec-16-2017,50
+Utah,1,Minimal,Dec-23-2017,51
+Utah,4,Low,Dec-30-2017,52
+Vermont,4,Low,Jan-06-2018,1
+Vermont,5,Low,Jan-13-2018,2
+Vermont,7,Moderate,Jan-20-2018,3
+Vermont,10,High,Jan-27-2018,4
+Vermont,10,High,Feb-03-2018,5
+Vermont,10,High,Feb-10-2018,6
+Vermont,10,High,Feb-17-2018,7
+Vermont,10,High,Feb-24-2018,8
+Vermont,10,High,Mar-03-2018,9
+Vermont,6,Moderate,Mar-10-2018,10
+Vermont,4,Low,Mar-17-2018,11
+Vermont,4,Low,Mar-24-2018,12
+Vermont,4,Low,Mar-31-2018,13
+Vermont,4,Low,Apr-07-2018,14
+Vermont,3,Minimal,Apr-14-2018,15
+Vermont,2,Minimal,Apr-21-2018,16
+Vermont,3,Minimal,Apr-28-2018,17
+Vermont,1,Minimal,Oct-07-2017,40
+Vermont,1,Minimal,Oct-14-2017,41
+Vermont,1,Minimal,Oct-21-2017,42
+Vermont,1,Minimal,Oct-28-2017,43
+Vermont,1,Minimal,Nov-04-2017,44
+Vermont,1,Minimal,Nov-11-2017,45
+Vermont,1,Minimal,Nov-18-2017,46
+Vermont,1,Minimal,Nov-25-2017,47
+Vermont,1,Minimal,Dec-02-2017,48
+Vermont,1,Minimal,Dec-09-2017,49
+Vermont,1,Minimal,Dec-16-2017,50
+Vermont,1,Minimal,Dec-23-2017,51
+Vermont,3,Minimal,Dec-30-2017,52
+Virgin Islands,1,Minimal,Jan-06-2018,1
+Virgin Islands,0,Insufficient Data,Jan-13-2018,2
+Virgin Islands,2,Minimal,Jan-20-2018,3
+Virgin Islands,3,Minimal,Jan-27-2018,4
+Virgin Islands,1,Minimal,Feb-03-2018,5
+Virgin Islands,1,Minimal,Feb-10-2018,6
+Virgin Islands,1,Minimal,Feb-17-2018,7
+Virgin Islands,1,Minimal,Feb-24-2018,8
+Virgin Islands,1,Minimal,Mar-03-2018,9
+Virgin Islands,1,Minimal,Mar-10-2018,10
+Virgin Islands,1,Minimal,Mar-17-2018,11
+Virgin Islands,1,Minimal,Mar-24-2018,12
+Virgin Islands,1,Minimal,Mar-31-2018,13
+Virgin Islands,1,Minimal,Apr-07-2018,14
+Virgin Islands,1,Minimal,Apr-14-2018,15
+Virgin Islands,1,Minimal,Apr-21-2018,16
+Virgin Islands,1,Minimal,Apr-28-2018,17
+Virgin Islands,0,Insufficient Data,Oct-14-2017,41
+Virgin Islands,0,Insufficient Data,Oct-21-2017,42
+Virgin Islands,0,Insufficient Data,Oct-28-2017,43
+Virgin Islands,0,Insufficient Data,Nov-04-2017,44
+Virgin Islands,0,Insufficient Data,Nov-11-2017,45
+Virgin Islands,1,Minimal,Nov-18-2017,46
+Virgin Islands,1,Minimal,Nov-25-2017,47
+Virgin Islands,0,Insufficient Data,Dec-02-2017,48
+Virgin Islands,0,Insufficient Data,Dec-09-2017,49
+Virgin Islands,1,Minimal,Dec-16-2017,50
+Virgin Islands,0,Insufficient Data,Dec-23-2017,51
+Virgin Islands,0,Insufficient Data,Dec-30-2017,52
+Virginia,10,High,Jan-06-2018,1
+Virginia,10,High,Jan-13-2018,2
+Virginia,10,High,Jan-20-2018,3
+Virginia,10,High,Jan-27-2018,4
+Virginia,10,High,Feb-03-2018,5
+Virginia,10,High,Feb-10-2018,6
+Virginia,10,High,Feb-17-2018,7
+Virginia,10,High,Feb-24-2018,8
+Virginia,10,High,Mar-03-2018,9
+Virginia,9,High,Mar-10-2018,10
+Virginia,9,High,Mar-17-2018,11
+Virginia,8,High,Mar-24-2018,12
+Virginia,8,High,Mar-31-2018,13
+Virginia,6,Moderate,Apr-07-2018,14
+Virginia,4,Low,Apr-14-2018,15
+Virginia,3,Minimal,Apr-21-2018,16
+Virginia,3,Minimal,Apr-28-2018,17
+Virginia,1,Minimal,Oct-07-2017,40
+Virginia,1,Minimal,Oct-14-2017,41
+Virginia,2,Minimal,Oct-21-2017,42
+Virginia,2,Minimal,Oct-28-2017,43
+Virginia,2,Minimal,Nov-04-2017,44
+Virginia,3,Minimal,Nov-11-2017,45
+Virginia,3,Minimal,Nov-18-2017,46
+Virginia,4,Low,Nov-25-2017,47
+Virginia,4,Low,Dec-02-2017,48
+Virginia,4,Low,Dec-09-2017,49
+Virginia,5,Low,Dec-16-2017,50
+Virginia,6,Moderate,Dec-23-2017,51
+Virginia,9,High,Dec-30-2017,52
+Washington,10,High,Jan-06-2018,1
+Washington,9,High,Jan-13-2018,2
+Washington,8,High,Jan-20-2018,3
+Washington,9,High,Jan-27-2018,4
+Washington,7,Moderate,Feb-03-2018,5
+Washington,5,Low,Feb-10-2018,6
+Washington,4,Low,Feb-17-2018,7
+Washington,4,Low,Feb-24-2018,8
+Washington,3,Minimal,Mar-03-2018,9
+Washington,3,Minimal,Mar-10-2018,10
+Washington,4,Low,Mar-17-2018,11
+Washington,3,Minimal,Mar-24-2018,12
+Washington,3,Minimal,Mar-31-2018,13
+Washington,2,Minimal,Apr-07-2018,14
+Washington,1,Minimal,Apr-14-2018,15
+Washington,1,Minimal,Apr-21-2018,16
+Washington,1,Minimal,Apr-28-2018,17
+Washington,1,Minimal,Oct-07-2017,40
+Washington,1,Minimal,Oct-14-2017,41
+Washington,1,Minimal,Oct-21-2017,42
+Washington,1,Minimal,Oct-28-2017,43
+Washington,1,Minimal,Nov-04-2017,44
+Washington,1,Minimal,Nov-11-2017,45
+Washington,1,Minimal,Nov-18-2017,46
+Washington,1,Minimal,Nov-25-2017,47
+Washington,1,Minimal,Dec-02-2017,48
+Washington,1,Minimal,Dec-09-2017,49
+Washington,1,Minimal,Dec-16-2017,50
+Washington,1,Minimal,Dec-23-2017,51
+Washington,10,High,Dec-30-2017,52
+West Virginia,10,High,Jan-06-2018,1
+West Virginia,10,High,Jan-13-2018,2
+West Virginia,10,High,Jan-20-2018,3
+West Virginia,10,High,Jan-27-2018,4
+West Virginia,10,High,Feb-03-2018,5
+West Virginia,10,High,Feb-10-2018,6
+West Virginia,10,High,Feb-17-2018,7
+West Virginia,6,Moderate,Feb-24-2018,8
+West Virginia,5,Low,Mar-03-2018,9
+West Virginia,3,Minimal,Mar-10-2018,10
+West Virginia,2,Minimal,Mar-17-2018,11
+West Virginia,3,Minimal,Mar-24-2018,12
+West Virginia,4,Low,Mar-31-2018,13
+West Virginia,4,Low,Apr-07-2018,14
+West Virginia,3,Minimal,Apr-14-2018,15
+West Virginia,2,Minimal,Apr-21-2018,16
+West Virginia,1,Minimal,Apr-28-2018,17
+West Virginia,1,Minimal,Oct-07-2017,40
+West Virginia,1,Minimal,Oct-14-2017,41
+West Virginia,1,Minimal,Oct-21-2017,42
+West Virginia,1,Minimal,Oct-28-2017,43
+West Virginia,1,Minimal,Nov-04-2017,44
+West Virginia,1,Minimal,Nov-11-2017,45
+West Virginia,1,Minimal,Nov-18-2017,46
+West Virginia,3,Minimal,Nov-25-2017,47
+West Virginia,1,Minimal,Dec-02-2017,48
+West Virginia,1,Minimal,Dec-09-2017,49
+West Virginia,5,Low,Dec-16-2017,50
+West Virginia,9,High,Dec-23-2017,51
+West Virginia,10,High,Dec-30-2017,52
+Wisconsin,7,Moderate,Jan-06-2018,1
+Wisconsin,8,High,Jan-13-2018,2
+Wisconsin,7,Moderate,Jan-20-2018,3
+Wisconsin,9,High,Jan-27-2018,4
+Wisconsin,10,High,Feb-03-2018,5
+Wisconsin,10,High,Feb-10-2018,6
+Wisconsin,8,High,Feb-17-2018,7
+Wisconsin,7,Moderate,Feb-24-2018,8
+Wisconsin,6,Moderate,Mar-03-2018,9
+Wisconsin,6,Moderate,Mar-10-2018,10
+Wisconsin,3,Minimal,Mar-17-2018,11
+Wisconsin,2,Minimal,Mar-24-2018,12
+Wisconsin,1,Minimal,Mar-31-2018,13
+Wisconsin,2,Minimal,Apr-07-2018,14
+Wisconsin,2,Minimal,Apr-14-2018,15
+Wisconsin,2,Minimal,Apr-21-2018,16
+Wisconsin,2,Minimal,Apr-28-2018,17
+Wisconsin,1,Minimal,Oct-07-2017,40
+Wisconsin,1,Minimal,Oct-14-2017,41
+Wisconsin,1,Minimal,Oct-21-2017,42
+Wisconsin,1,Minimal,Oct-28-2017,43
+Wisconsin,1,Minimal,Nov-04-2017,44
+Wisconsin,1,Minimal,Nov-11-2017,45
+Wisconsin,1,Minimal,Nov-18-2017,46
+Wisconsin,1,Minimal,Nov-25-2017,47
+Wisconsin,1,Minimal,Dec-02-2017,48
+Wisconsin,2,Minimal,Dec-09-2017,49
+Wisconsin,1,Minimal,Dec-16-2017,50
+Wisconsin,4,Low,Dec-23-2017,51
+Wisconsin,5,Low,Dec-30-2017,52
+Wyoming,10,High,Jan-06-2018,1
+Wyoming,10,High,Jan-13-2018,2
+Wyoming,10,High,Jan-20-2018,3
+Wyoming,10,High,Jan-27-2018,4
+Wyoming,10,High,Feb-03-2018,5
+Wyoming,10,High,Feb-10-2018,6
+Wyoming,10,High,Feb-17-2018,7
+Wyoming,10,High,Feb-24-2018,8
+Wyoming,10,High,Mar-03-2018,9
+Wyoming,10,High,Mar-10-2018,10
+Wyoming,10,High,Mar-17-2018,11
+Wyoming,8,High,Mar-24-2018,12
+Wyoming,5,Low,Mar-31-2018,13
+Wyoming,2,Minimal,Apr-07-2018,14
+Wyoming,1,Minimal,Apr-14-2018,15
+Wyoming,1,Minimal,Apr-21-2018,16
+Wyoming,1,Minimal,Apr-28-2018,17
+Wyoming,1,Minimal,Oct-07-2017,40
+Wyoming,3,Minimal,Oct-14-2017,41
+Wyoming,1,Minimal,Oct-21-2017,42
+Wyoming,3,Minimal,Oct-28-2017,43
+Wyoming,3,Minimal,Nov-04-2017,44
+Wyoming,2,Minimal,Nov-11-2017,45
+Wyoming,1,Minimal,Nov-18-2017,46
+Wyoming,1,Minimal,Nov-25-2017,47
+Wyoming,2,Minimal,Dec-02-2017,48
+Wyoming,3,Minimal,Dec-09-2017,49
+Wyoming,3,Minimal,Dec-16-2017,50
+Wyoming,5,Low,Dec-23-2017,51
+Wyoming,10,High,Dec-30-2017,52

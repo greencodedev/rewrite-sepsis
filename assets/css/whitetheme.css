@@ -1,0 +1,401 @@
+.map-container {
+	/*		fallback*/
+	background: #fff;
+	color: #062E61;
+	background: -moz-radial-gradient(center, ellipse cover, #ffffff 56%, #e5e5e5 100%);
+	/* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 56%, #e5e5e5 100%
+		);
+	/* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #ffffff 56%, #e5e5e5 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#e5e5e5', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+}
+
+#logo {
+
+}
+
+#logo path {
+	fill: #156f38;
+}
+
+.map-container .tooltip {
+	background: #fff;
+	color: #062E61;
+	border: 1px solid #062E61;
+}
+
+.map-container .tooltip .tipfirst {
+	color: #5fba46;
+}
+
+.selections ul li:hover {
+	color: #161616;
+}
+
+ul#accelselector:hover {
+	color: #161616;
+}
+
+.selections ul li {
+
+}
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/*
+select {
+	color: #161616;
+	border-color: #6B6B6B;
+	border: 1px solid;
+	border-radius: 0px;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+*/
+
+/* .selectdiv:after {
+  content: url(../../img/dropdownarrow.jpg);
+  font-size: 16px;
+  font-family:'Raleway', sans-serif;
+  color: #333;
+  right: 1px;
+  position: absolute;
+  pointer-events: none;
+  margin-top: 5px;
+} */
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 10px;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+.selector.selected {
+	color: #161616;
+}
+
+.districts {
+	stroke: #A7A9AA;
+}
+
+.states {
+	stroke: #A7A9AA;
+}
+
+.counties.poordata {
+	/*			fill: green;*/
+	/*			 mask: url(#mask-stripe)*/
+
+}
+
+.type.awards {
+	text-decoration-line: none;
+	text-align: center;
+	font-weight: 300;
+	font-size: 150%;
+	margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.seperate {
+	width: 100%;
+    height: 1px;
+    background-color: #CCCCCC;
+    margin-top: 40px;
+}
+
+.type.productbox {
+	top: 0px;
+    border: none;
+    margin: 0px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: none;
+    transform: none;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.county {
+	stroke: #5FBB46;
+}
+
+.background {
+	fill: none;
+}
+
+.departments {
+	fill: #FF9103;
+	stroke: #FF9103;
+}
+
+.departments circle:hover {
+
+}
+
+.counties {
+
+}
+
+@media(min-width: 360px) and (max-width: 1024px) {
+	.dottip {
+		border-left: 2px solid #5FBB46;
+		color: #062E61;
+		position: relative;
+		font-size: 14px;
+	}
+}
+
+@media(min-width: 1024px) {
+	.dottip {
+		position: absolute;
+		/* z-index: 1000 !important; */
+		right: 0;
+		background-color: lightgrey;
+		color: grey;
+	}
+}
+
+/* .dottip .tipContainer {
+	padding: 3em;
+} */
+
+.dottip .tipFirst {
+	color: #5FBB46;
+}
+
+.dottip a {
+	color: #5FBB46;
+}
+
+.dottip a:hover {
+	color: #85d86f;
+}
+
+.spotLocations {
+	fill: #5FBB46;
+	stroke: #5FBB46;
+}
+
+.active {
+	stroke: #5FBB46 !important;
+}
+
+.dottip .tipBody {
+
+}
+
+.dottip #tipLogo {
+	background: linear-gradient(rgb(155, 155, 155) 5%,
+		rgba(125, 125, 125, 0.45) 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+.dottip #tipLogo.shaded {
+	/*    background: linear-gradient(to bottom, #fff 5%, #ffffff73 80%, #ffffff00 100%);*/
+	background: none;
+}
+
+#tipLogo {
+
+}
+
+#tipLogo img {
+
+}
+
+svg {
+
+}
+
+.key {
+	fill: #062E61;
+}
+
+.key .tick text {
+	fill: #062E61;
+}
+
+.key .tick line {
+	stroke: #062E61;
+}
+
+.keybg {
+	fill: #fff;
+}
+
+.stripeline {
+	stroke: #000;
+	stroke-width: 2;
+}
+
+.sources {
+	color: #828383;
+}
+/*slider*/
+.slider text {
+	fill: #062E61;
+}
+
+.slider.ticks line {
+	stroke: #1e1e1e;
+}
+
+.track, .track-inset, .track-overlay {
+
+}
+
+.track {
+	stroke: #062E61;
+}
+
+.track-inset {
+	stroke: #fff;
+}
+
+.track-overlay {
+	stroke: transparent;
+}
+
+.handle {
+	fill: #5FBB46;
+	stroke: #5FBB46;
+}
+
+#play-button {
+	FILL: #041526;
+	stroke: #a7d3d0;
+}
+
+#play-button .playstatus {
+	fill: #5FBB46;
+}
+
+#play-button .playstatus:hover {
+	fill: #85d86f;
+}
+/*end slider*/
+#internat_label {
+	fill: #062E61;
+}
+
+
+/* Responsive Arrows */
+.selectdiv {
+  width: 260px;
+  position: relative;
+}
+
+@media(min-width: 360px) and (max-width: 640px) {
+  .selectdiv {
+    width: 250px !important;
+  }
+  .new-button:after {
+	right: 10px !important;
+  }
+  .dottip {
+	  width: 100%;
+  }
+}
+
+
+@media(min-width: 411px) and (max-width: 768px) {
+  /* .selectdiv {
+    width: 290px !important;
+  } */
+  .new-button:after {
+	right: 0px !important;
+  }
+  .dottip {
+	width: 100%;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1020px) {
+	.selectdiv {
+		width: 280px;
+	}
+	.dottip {
+		width: 100%;
+	}
+}
+
+@media(min-width: 1024px) and (max-width: 1300px) {
+  .selectdiv {
+    width: 200px;
+  }
+
+  .new-button:after {
+	right: 0px !important;
+  }
+
+  /* .selectdiv:after {
+    right: 1px !important;
+  } */
+}
+
+@media(min-width: 320px) and (max-width: 568px) {
+  .selectdiv {
+    width: 200px;
+  }
+}
+
+@media(min-width: 375px) and (max-width: 667px) {
+  /* .selectdiv:after {
+    right: 20px !important;
+  } */
+  .new-button:after {
+	right: 1px !important;
+  }
+}
+
+@media(min-width: 414px) and (max-width: 736px) {
+  /* .selectdiv:after {
+    right: 40px !important;
+  } */
+  .new-button:after {
+	right: 1px !important;
+  }
+}
+
+
+.new-button:after {
+	content: url(../images/dropdownarrow.jpg);
+	font-size: 16px;
+	font-family:'Raleway', sans-serif;
+	color: #333;
+	right: 1px;
+	position: absolute;
+	pointer-events: none;
+	margin-top: 5px;
+	top: 25px;
+}

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="assets/images/assets/images/drive-icon.png" />
+	<link rel="apple-touch-icon" href="assets/images/drive-apple-icon.png" />
+
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="DRIVe is transforming health security innovation to protect Americans from 21st century health security threats" />
+	<meta name="author" content="Barda DRIVe" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@BARDA" />
+	<meta name="twitter:title" content="ENACT" />
+	<meta name="twitter:description" content="Pathogen and Insult agnostic technology solutions that bridge the gap between detection of infection and treatment" />
+	<meta name="twitter:image" content="https://drive.hhs.gov/assets/images/twitter_card_enact.png" />
+	<meta name="twitter:image:alt" content="Banner for DRIVe ENACT" />
+
+	<title>DRIVe</title>
+	<!--	
+		<meta http-equiv="Refresh" content="0; url=https://www.google.com">
+	-->
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Version 5.0 for checkmark -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/theme.css" rel="stylesheet">
+
+	<link href="assets/css/flipclock.css" rel="stylesheet">
+	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="/drivepubhtml/js/ie/html5shiv.js"></script>
+		<script src="/drivepubhtml/js/ie/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- D3.js -->
+	<script src="assets/javascript/global/d3.v4.min.js"></script>
+	<script src="assets/javascript/global/d3-scale-chromatic.v1.min.js"></script>
+
+	<!-- jQuery -->
+	<script src="assets/javascript/global/jquery-min.js"></script>
+
+	<!-- Needed for tooltips -->
+	<script src="assets/javascript/global/popper.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="assets/javascript/global/bootstrap.min.js"></script>
+
+	<!-- ParaParse -->
+	<script src="assets/javascript/global/PapaParse-4.6.0/papaparse.min.js"></script>
+
+	<!-- Make portfolio -->
+	<script src="assets/javascript/custom/makePortfolio.js"></script>
+
+	<!-- FlipClock Counter -->
+	<script src="assets/javascript/global/flipclock.min.js"></script>
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+	<!-- Flipclock -->
+	<style>
+		
+	</style>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+
+	<link href="assets/javascript/global/FlipClockCountdown/src/jquery.counter-analog.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="assets/javascript/global/FlipClockCountdown/src/jquery.counter-analog2.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="assets/javascript/global/FlipClockCountdown/src/jquery.counter-analog3.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="assets/css/solvingsepsis.css" rel="stylesheet" type="text/css">
+	<script src="assets/javascript/global/FlipClockCountdown/src/jquery.counter.js" type="text/javascript"></script>
+
+	<script>
+		function makeCounter(startingValue, timeInterval, idOfHTML) {
+			var clock = $(idOfHTML).FlipClock(startingValue, {
+				clockFace: 'Counter'
+			});
+			var count = 0;
+			setTimeout(function () {
+				setInterval(function () {
+					clock.increment();
+				},
+				timeInterval);
+			});
+		};
+
+		// 86400 seconds per day
+		const msPerDay = 86400 * 1000; // 60 * 60 * 24 = 86400
+
+		const casesPerDay = 4658; // = 1.7M / 365 days
+		// const deathsPerDay = 740;
+		var msPerCase = msPerDay / casesPerDay;
+		// var msPerDeath = msPerDay / deathsPerDay;
+
+		// Find out how many milliseconds have elapsed thus far this year (automatically updating for each year)
+		var msTotalThisYear = new Date() - new Date("1/1/" + (new Date()).getFullYear());
+
+		$(function () {
+			$("#includefooter").load("templates/footer.html");
+			$("#includeheader").load("templates/header.html");
+			var csvfile = "data/ProductList_20180913.csv";
+			parseCSVToCallbackUpdate(csvfile, "All", false);
+			parseCSVsForFilter();
+			makeCounter(Math.round(msTotalThisYear / msPerCase), msPerCase, "#counter-diagnoses");
+		});
+	</script>
+
+	<style>
+		.flipcounter {
+			transform-origin: 0 0;
+			transform: scale(.30);
+			-ms-transform: scale(.30);
+			-webkit-transform-origin: 0 0;
+			-webkit-transform: scale(.80);
+			-o-transform-origin: 0 0;
+			-o-transform: scale(.30);
+			-moz-transform-origin: 0 0;
+			-moz-transform: scale(.70);
+			margin-left: 60px;
+		}
+		.productbox {
+			top: 20px;
+			border: 3px solid #DDDDDD;
+			margin: 20px;
+			height: 230px;
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: perspective(1px) translateZ(0);
+			transform: perspective(1px) translateZ(0);
+			position: relative;
+			overflow: hidden;
+			background-color: #FFFFFF;
+			text-align: center;
+		}
+
+		.productbox:before {
+			padding-top: 7px;
+			border: 1px;
+			border-width: solid #DDDDDD;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			right: 100%;
+			top: 0;
+			background: #5fbb46;
+			height: 5px;
+			-webkit-transition-property: right;
+			transition-property: right;
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-timing-function: ease-out;
+			transition-timing-function: ease-out;
+		}
+
+		.productbox:hover:before,
+		.productbox:focus:before,
+		.productbox:active:before {
+			right: 0;
+		}
+
+		.full-profile {
+			font-size: 12px;
+			padding-top: 10px;
+			color: #636363;
+			position: absolute;
+			bottom: 0px;
+			width: 87%;
+			text-align: center;
+		}
+
+		.full-profile:hover {
+			text-decoration: none;
+		}
+
+		.product-content {
+			position: relative;
+			float: center;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.sub-menu {
+			width: 100%;
+			margin: auto;
+			justify-content: center;
+			text-align: center;
+			text-align: -webkit-center;
+		}
+
+		.sub-menu.active {
+			display: block;
+		}
+
+		.submenu-list {
+			list-style: none;
+			padding: 10px;
+			margin: auto;
+			width: 80%;
+			position: relative !important;
+		}
+
+		ul.product-menu {
+			width: 100%;
+			height: 50px;
+			background-color: #3598DC !important;
+			padding-top: 10px;
+			border-radius: 15px;
+		}
+
+		.product-menu .dropdown a, 
+		.product-menu .dropdown a:focus,
+		.product-menu .dropdown a:hover {
+			color: white;
+			font-weight: 500;
+			text-decoration: none;
+			font-size: 18px;
+		}
+
+		.submenu-list {
+			text-align: center;
+			margin-top: 5px;
+		}
+		.product-menu .submenu-list a,
+		.product-menu .submenu-list a:focus,
+		.product-menu .submenu-list a:hover {
+			color: #161616;
+			text-decoration: none;
+			width: 100%;
+			display: block;
+			font-size: 16px;
+		}
+
+		.product-menu .submenu-list li:hover {
+			background-color: #3598DC;
+		}
+
+		.product-menu .submenu-list li:hover a {
+			color: white;
+		}
+
+		.menu-item {
+			padding: 2px 0px;
+		}
+
+		.mt-overlay-1 {
+			width: 100%;
+			float: left;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			cursor: default;
+		}
+
+		.mt-overlay-1.mt-scroll-left .mt-overlay {
+			right: -100%;
+			left: auto;
+		}
+
+		.mt-overlay-1 .mt-overlay {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			background-image: 
+			linear-gradient(#4B77BE 10%,#fff 100%);
+			transition: all .5s cubic-bezier(.645,.045,.355,1);
+			/* -webkit-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out; */
+		}
+
+		.mt-overlay-1.mt-scroll-left:hover .mt-overlay {
+			right: 0;
+		}
+
+		.mt-overlay-1:hover .mt-overlay {
+			opacity: 0.7;
+			filter: alpha(opacity=100);
+			-webkit-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+
+		.productbox.inactive-gray {
+			/* background-color: #DfDfDf; */
+		}
+
+		.productbox:before {
+			background: none;
+		}
+
+		.active-product:hover {
+			/* background-image: linear-gradient(to right,#3598DC,#ee076e);
+			transition: all .5s cubic-bezier(.645,.045,.355,1); */
+			/* transform: translateY(-5px); */
+		}
+
+		.product-item:hover {
+			/* background-image: linear-gradient(to right,#3598DC,#ee076e);
+			transition: all .5s cubic-bezier(.645,.045,.355,1); */
+			transform: translateY(-5px);
+		}
+
+		.toggle-handle,
+		.toggle-handle:hover {
+			background-color: #eeeeee !important;
+		}
+
+		div.row.equal {
+			justify-content: center;
+		}
+
+		.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+			color: #fff;
+			background-color: #82bff5 !important;
+			border-color: #82bff5 !important;
+		}
+
+		.btn.btn-primary, .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+			background-color:#3598DC !important;
+			border-color:#3598DC !important;
+			color: #fff;
+		}
+
+		.btn-danger,
+		.btn-danger:hover {
+			background-color: #82bff5;
+			border-color: #82bff5;
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+			$("[data-toggle='tooltip']").tooltip();
+			$(".nav-item").mouseover(function (e) {
+				$(".nav-item").removeClass("active");
+				$(".nav-item ul.submenu-list").removeClass("show");
+				$(this).addClass("active");
+				$(this).children("div.sub-menu").children("ul.submenu-list").addClass("show");
+			});
+			$(".nav-item").mouseout(function (e) {
+				$(".nav-item").removeClass("active");
+				$(".nav-item ul.submenu-list").removeClass("show");
+			});
+			$('#toggle-event').change(function() {
+				const status = $(this).prop('checked') ? "Active" : "InActive";
+				showProductsByStatus(status);
+			});
+		});
+	</script>
+</head>
+
+<body id="page-top" class="index" style="background-color: #EEEEEE;">
+	<!-- Google Tag Manager -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-122497508-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Navigation -->
+	<div id="includeheader"></div>
+	<!-- End Navigation -->
+	<!-- Header -->
+	<!-- Header -->
+	<header id="banner">
+		<div class="jumbotron services">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 banner-text-container">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #efefef; padding: 10px">
+                            <div class="collapse navbar-collapse" id="navbarSupported">
+                                <ul class="nav navbar-nav product-menu row" style="width: 100%; margin: 0px;">
+                                    <li class="nav-item dropdown col-md-3" id="menudrop-impact-area-drop-down">
+										<div class="menu-title">
+											<a id="impact-area" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+												IMPACT AREA
+											</a>
+										</div>
+                                    </li>
+                                    <li class="nav-item dropdown col-md-3" id="menudrop-product-type-drop-down">
+										<div class="menu-title">
+											<a id="product-type" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+												PRODUCT TYPE
+											</a>
+										</div>
+                                    </li>
+                                    <li class="nav-item dropdown col-md-3" id="menudrop-technology-level-drop-down">
+										<div class="menu-title">
+											<a id="tech-level" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+												TECHNOLOGY LEVEL
+											</a>
+										</div>
+                                    </li>
+                                    <li class="nav-item dropdown col-md-3" id="menudrop-country-drop-down">
+										<div class="menu-title">
+											<a id="country" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+												COUNTRY
+											</a>
+										</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div style="margin-top: 10px;" class="container">
+		<div class="row">
+			<div class="col-12">
+                <div role="tabpanel" class="tab-pane">
+                    <div class="row">
+						<!-- 03-03 -->
+						<div class="col-sm-12" style="justify-content: center; text-align: center;">
+							<input id="toggle-event" type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="InActive" data-onstyle="primary" data-offstyle="danger">
+						</div>
+                        <div class="col-sm-12 mx-auto">
+                            <div id="gallery-content"></div>
+                            <div class="row">
+                                <!-- 03-03 -->
+								<div class="col-12">
+								</div>
+                            </div>
+                            <br>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11 mx-auto">
+                        <div class="row">
+                            <div class="col-12">
+                            </div>
+                        </div>
+                        <br>
+                    </div><br />
+                </div>
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-11 mx-auto">
+						<div id="gallery-content"></div>
+						<div class="row">
+							<div class="col-12">
+							</div>
+						</div>
+						<br>
+					</div><br />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- </div>
+	</div> -->
+	<!-- End tabs -->
+	<br /><br />
+	<div class="container">
+		<div style="text-align: center">For more information, please contact us at 
+			<a href="mailto:ENACT@hhs.gov">ENACT@hhs.gov</a>
+		</div>
+		<br>
+	</div>
+	<hr />
+	<section>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-xs-12" style="padding: 40px;">
+					<p> <strong>DRIVe</strong> (<strong>D</strong>ivision of <strong>R</strong>esearch,
+						<strong>I</strong>nnovation,
+						and <strong>Ve</strong>ntures) was established by the <strong>B</strong>iomedical
+						<strong>A</strong>dvanced <strong>R</strong>esearch and <strong>D</strong>evelopment
+						<strong>A</strong>uthority (<a href="https://medicalcountermeasures.gov/"
+							target="_blank"><strong>BARDA</strong></a>),
+						part of the <strong>A</strong>ssistant <strong>S</strong>ecretary for
+						<strong>P</strong>reparedness
+						and <strong>R</strong>esponse (<a href="http://www.phe.gov/"
+							target="_blank"><strong>ASPR</strong></a>), within the United States
+						Department of <strong>H</strong>ealth and <strong>H</strong>uman <strong>S</strong>ervices (<a
+							href="http://www.hhs.gov/" target="_blank"><strong>HHS</strong></a>). </p>
+					<div class="text-center footer_logos" style="margin-top: 20px; margin-bottom: 20px;">
+						<a target="_blank" href="https://hhs.gov">
+							<img alt="Department of Health &amp; Human Services - USA" src="assets/images/logos/dhhs.png"	style="height: 100px;">
+						</a> 
+						<a target="_blank" href="https://phe.gov">
+							<img alt="ASPR" src="assets/images/logos/aspr.png" style="height: 80px;">
+						</a> 
+						<a target="_blank" href="https://medicalcountermeasures.gov/">
+							<img alt="BARDA logo" src="assets/images/logos/barda.png"	style="height: 80px;" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--   END: TAB CONTENT -->
+	<div class="example">
+		<p>
+			<b class="timer" id="lollipop" data-to="999999" data-from="functon() {100000/4;};" data-speed="10000" data-refresh-interval="60000"></b>
+		</p>
+	</div>
+	<!-- Footer -->
+	<div id="includefooter"></div>
+	<!-- Footer --------->
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div id="scroll-top-link" class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#page-top"> 
+			<i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+</body>
+
+</html>

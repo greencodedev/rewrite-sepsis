@@ -1,0 +1,9 @@
+EventName,EventType,EventDate,Who,Where,Website,Description,Banner,AlwaysDisplay
+Joe goes to Florida,Illness,2/25/19,Joe,Home,https://hhs.gov,Joe gets a cold. And begins to feel better.,img/audience1.jpg,FALSE
+Joe getting a cold,Illness,1/10/19,Joe,Home,https://hhs.gov,Joe gets a cold. And stays home,img/audience1.jpg,TRUE
+Tyler at HHS in NYC,Generic,5/1/19,Tyler,NYC,https://hhs.gov,Tyler talks. Lots of text goes here. Much much text. More text than should go here goes here.,img/modal3.jpg,TRUE
+Joe goes to Florida,Illness,2/26/19,Joe,Home,https://hhs.gov,Joe gets a cold. And stays home,img/modal2.jpg,FALSE
+Joe goes to Florida,Illness,5/1/19,Joe,Home,https://hhs.gov,Joe gets a cold. And stays home,img/audience1.jpg,FALSE
+Joe goes to Florida,Illness,1/1/19,Joe,Home,https://hhs.gov,Joe gets a cold. And stays home,img/audience1.jpg,TRUE
+Joe goes to Florida,Illness,6/1/19,Joe,Home,https://hhs.gov,Joe gets a cold. And stays home,img/audience1.jpg,TRUE
+Joe goes to Florida,Illness,10/1/19,Joe,Home,https://hhs.gov,Joe gets a cold. And stays home,img/audience1.jpg,TRUE

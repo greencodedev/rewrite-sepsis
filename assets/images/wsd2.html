@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="icon" href="assets/images/drive-icon.png" />
+<link rel="apple-touch-icon" href="assets/images/drive-apple-icon.png" />
+
+<meta name="robots" content="index,follow" />
+
+<meta name="keywords" content="" />
+<meta name="description" content="DRIVe" />
+<meta name="author" content="RTI International" />
+
+<title>DRIVe</title>
+
+<!-- Custom Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="assets/css/theme.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		<script src="/drivepubhtml/js/ie/html5shiv.js"></script>
+		<script src="/drivepubhtml/js/ie/respond.min.js"></script>
+	<![endif]-->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="assets/javascript/global/bootstrap.min.js"></script>
+
+<script>
+	$(function() {
+		$('[data-toggle="tooltip"]').tooltip();
+	})
+</script>
+	
+<style>
+.holder {
+  position: relative;
+  width: 50%;
+}
+
+	
+.holder_2 {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #135690;
+}
+	
+.overlay_2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #428230;
+}
+
+.holder:hover .overlay {
+  opacity: 1;
+}
+	
+.holder_2:hover .overlay_2 {
+  opacity: 1;
+}
+	
+	
+.ImageBorder
+{
+    border-width: 2px;
+    border-color: #FFFFFF;
+	border-style:solid;
+}
+
+.text_h {
+  color: white;
+  font-size: 15px;
+  font-family: Arial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+</style>
+
+</head>
+
+<body id="page-top" class="index">
+    <!-- Google Tag Manager -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-122497508-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- End Google Tag Manager -->
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html" title="Go to home page">
+					<img src="img/drive-logo.png" alt="DRIVe" />
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden"><a href="#page-top"></a></li>
+					<li class="page-scroll hidden-sm"><a style="color: #595959" href="about.html">About</a>
+					</li>
+					<li class="page-scroll hidden-sm"><a style="color: #595959" href="impactareas.html">Impact
+							Areas</a></li>
+					<li class="page-scroll hidden-sm"><a style="color: #595959" href="map/index.html">Portfolio</a>
+					</li>
+					<li class="page-scroll hidden-sm"><a style="color: #595959"
+						class="dropdown-toggle" data-toggle="dropdown" href="#">Partner With Us
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="page-scroll"><a style="color: #595959"
+								href="partner.html">Introduction</a></li>
+							<li class="page-scroll"><a style="color: #595959"
+								href="partner.html?id=applyNow">Apply Now</a></li>
+							<li class="page-scroll"><a style="color: #595959"
+								href="partner.html?id=partneringApproaches">Partnering Approaches</a></li>
+						</ul>
+					</li>
+					<li class="page-scroll"><a style="color: #595959" href="resources.html">Resources</a>
+					<li class="page-scroll">
+						<a style="color: #595959" href="news.html">News</a>
+					</li>
+					<li class="page-scroll"><span class="org-header-logo-big"><a
+							target="_blank" href="https://hhs.gov"><img
+								alt="Department of Health &amp; Human Services - USA"
+								src="img/logos/dhhs.png" /></a></span></li>
+					<li class="page-scroll"><span class="org-header-logo"><a
+							target="_blank" href="https://phe.gov"><img alt="ASPR"
+								src="img/logos/aspr.png" /></a></span></li>
+					<li class="page-scroll"><span class="org-header-logo"><a
+							target="_blank" href="https://medicalcountermeasures.gov/"><img
+								alt="BARDA" src="img/logos/barda.png" /></a></span></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<!-- START: CONTENT
+<script>
+function swapBackground() {
+	if($("#banner").hasClass("banner-background")) {}
+	else {
+		$("#home-video").hide();
+		$("#banner").addClass("banner-background");
+	}
+}
+</script> -->
+	<!-- Header -->
+	<header id="banner">
+	<!-- 	<div class="jumbotron">
+			<video id="home-video" loop autoplay muted
+				style="width: 100%; position: fixed; top: 121px; left: 0px; z-index: -1;"
+				class="hidden-xs hidden-sm" poster="img/video-frame.jpg">
+				<source src="img/video.mov" type="video/mp4" />
+			</video>
+			<div
+				style="width: 100%; height: 100%; position: fixed; top: 70px; left: 0px; z-index: -1; background-image: url('img/video-frame.jpg'); background-size: cover; background-position: center center;"
+				class="hidden-md hidden-lg"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 banner-text-container">
+						<div class="banner-text">
+							<div class="banner-text-heading">
+								<div class="home-banner-heading">DRIVe is transforming
+									health security innovation to protect Americans from
+									21st-century health security threats.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</header>
+	
+	<section
+		style="background-color: #135690; color: #ffffff; padding: 0px; margin-top: 20px;">
+		<div class="container" style="background-color: #ffffff; width: 100%; height: 50px"></div>
+	</section>
+	
+	<div class="container" style="background-color: #ffffff; width: 100%; height: 50px"></div>
+
+	<div class="background-white">
+
+
+
+
+		
+
+		<section
+			style="background-color: #135690; color: #ffffff; padding: 0px; margin-top: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div>
+							<h1>World Sepsis Day</h1></div>
+					</div>
+				</div>
+			</div>
+		</section>
+				<section
+			style="background-color: #FFFFFF; color: #ffffff; padding: 0px; margin-top: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+				</div>
+			</div>
+		</section>
+		<section
+			style="border-bottom: 1px solid #f0f0f0; border-top: 1px solid #f0f0f0; background-color: #fafafa; padding: 0px 0px 20px 0px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div>
+						  <p>Interviews with the team.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+<div class="col-lg-12">
+<div class="holder_2">
+  <img src="img/wsd_drive.jpg" alt="Avatar" class="image">
+  <div class="overlay_2" align="center">
+
+<table width="500" border="0" class="text_h" >
+  <tr>
+    <td width="125"><img src="img/t_merkely.jpg" width="96" height="110" class="ImageBorder"></td>
+    <td colspan="2"><strong>Tyler Merkeley</strong><br>
+	Acting Division Director of BARDA's Division of Research Innovation and Ventures (DRIVe)</td>
+    </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="3">DRIVe is committed to making a difference to protect Americans against 21st Century threats. Sepsis is one of our most challenging problems and we are leading an effort to fight sepsis through innovative solutions.</td>
+    </tr>
+</table>
+	</div>
+  </div>
+
+<p>&nbsp;</p>
+	<div class="holder">
+  <img src="img/wsd_what.jpg" alt="Avatar" class="image">
+  <div class="overlay" align="center">
+ 
+<table width="500" border="0" class="text_h" >
+  <tr>
+    <td width="125"><img src="img/s_simpson.jpg" width="96" height="110" class="ImageBorder"></td>
+    <td colspan="2"><strong>Steve Simpson</strong><br>
+	Senior Advisor – IPA to Solving Sepsis Program</td>
+    </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="3">Sepsis is a life-threatening organ dysfunction caused by a dysregulated host response to infection. Over 1.7 million Americans develop sepsis each year, resulting in nearly 270,000 deaths. Sepsis affects approximately 6% of hospitalized patients and is the most common cause of death in American hospitals.  It is also the most expensive, with healthcare costs over 23 billion dollars a year.</td>
+    </tr>
+</table>
+	</div>
+  </div>
+	
+<p>&nbsp;</p>
+	<div class="holder">
+  <img src="img/wsd_aware.jpg" alt="Avatar" class="image">
+  <div class="overlay" align="center">
+ 
+<table width="500" border="0" class="text_h" >
+  <tr>
+    <td width="125"><img src="img/t_buchman.jpg" width="96" height="110" class="ImageBorder"></td>
+    <td colspan="2"><strong>Tim Buchman</strong><br>
+	Senior Advisor – IPA to Solving Sepsis</td>
+    </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="3">Any infection can lead to sepsis. Patients need to understand the symptoms: high fever, rapid heart rate, rapid breathing, changes in mental status, pale or mottled skin, low blood pressure, and a feeling like they might be dying.<br><br> 
+
+Early, appropriate treatment is key to solving sepsis. Every hour a patient waits before receiving antibiotics reduces their survival by 8%</td>
+    </tr>
+</table>
+	</div>
+  </div>
+	
+<p>&nbsp;</p>
+	<div class="holder">
+  <img src="img/wsd_solve.jpg" alt="Avatar" class="image">
+  <div class="overlay" align="center">
+ 
+<table width="500" border="0" class="text_h" >
+  <tr>
+    <td width="125"><img src="img/s_simpson.jpg" width="96" height="110" class="ImageBorder"></td>
+    <td colspan="2"><strong>Kim Sciarretta</strong><br>
+	Acting Program Manager –Solving Sepsis</td>
+    </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="3">BARDA DRIVe wants to acknowledge Sepsis Awareness Month - September 2018.   DRIVe’s Solving Sepsis program is designed to reduce the incidence, morbidity, mortality, and healthcare costs associated with sepsis.  Our goal is to develop new strategies that address sepsis awareness and diagnosis. We aim to establish a comprehensive sepsis data network, implementing machine learning-based algorithms, and generate improved metrics to predict and prevent the onset of sepsis.  We also aim to improve patient care through the development of novel and individualized treatment plans. DRIVe is partnering across Government, Industry, Academia, and various other organizations to find the most innovative solutions to this complex disease.</td>
+    </tr>
+</table>
+	</div>
+  </div>
+</div>				
+					
+				</div>
+			</div>
+		</section>
+
+	
+		
+		<!-- 	
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12" style="margin-top: 100px;">
+						<p>
+							<b>DRIVe</b> (<b>D</b>ivision of <b>R</b>esearch, <b>I</b>nnovation,
+							and <b>Ve</b>ntures) was established by the <b>B</b>iomedical <b>A</b>dvanced
+							<b>R</b>esearch and <b>D</b>evelopment <b>A</b>uthority (<a
+								href="https://medicalcountermeasures.gov/" target="_blank"><b>BARDA</b></a>),
+							part of the <b>A</b>ssistant <b>S</b>ecretary for <b>P</b>reparedness
+							and <b>R</b>esponse (<a href="http://www.phe.gov/"
+								target="_blank"><b>ASPR</b></a>), within the United States
+							Department of <b>H</b>ealth and <b>H</b>uman <b>S</b>ervices (<a
+								href="http://www.hhs.gov/" target="_blank"><b>HHS</b></a>).
+						</p>
+						<div class="text-center"
+							style="margin-top: 20px; margin-bottom: 20px;">
+							<a target="_blank" href="https://hhs.gov"><img
+								alt="Department of Health &amp; Human Services - USA"
+								src="img/logos/dhhs.png" style="height: 100px;"></a> <a
+								target="_blank" href="https://phe.gov"><img alt="ASPR"
+								src="img/logos/aspr.png" style="height: 80px;"></a> <a
+								target="_blank" href="https://medicalcountermeasures.gov/"><img
+								alt="BARDA logo" src="img/logos/barda.png" style="height: 80px;" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		
+
+		
+		
+		
+		<div class="container" style="background-color: #ffffff; width: 100%; height: 50px">
+	</div>
+
+
+</div>
+
+	<!--   END: CONTENT -->
+	<!-- Footer -->
+	<footer class="text-center">
+		<div class="footer-above hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<a href="index.html">Home</a>
+						<a href="about.html">About</a>
+						<a href="impactareas.html">Impact Areas</a>
+						<a href="map/index.html">Portfolio</a>
+						<a href="partner.html">Partner with Us</a>
+						<a href="resources.html">Resources</a>
+						<a href="news.html">News</a>
+						<a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fdrive.hhs.gov%2Fimpactareas.html&ref_src=twsrc%5Etfw&screen_name=BARDA&tw_p=followbutton" target="_blank"  data-show-count="false"><img title="Follow BARDA on Twitter" src="img/twitter_rev_icon.png" width="25" height="20" alt="Follow BARDA on Twitter"/></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<a href="https://www.linkedin.com/showcase/barda/" target="_blank"  data-show-count="false"><img title="Follow BARDA on LinkedIn" src="img/linkedin_rev_icon.png" width="25" height="26" alt="Follow BARDA on LinkedIn"/></a>
+						<a href="https://cloud.connect.hhs.gov/drive" target="_blank"  data-show-count="false"><img title="Subscribe to DRIVe e-mail updates" src="img/connect_rev_icon.png" width="25" height="23" alt="Subscribe to DRIVe e-mail updates"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-below">
+			<a href="privacypolicy.html">Privacy Policy</a>  |  <a href="disclaimers.html">Website Disclaimers</a>  |   <a href="http://www.usa.gov/" target="_blank">USA.gov</a>  |   <a href="http://www.hhs.gov/asa/eeo/resources/index.html" target="_blank">No Fear Act</a>  |   <a href="http://www.hhs.gov/Accessibility.html#synopsis" target="_blank">Accessibility</a>  |   <a href="http://www.whitehouse.gov/" target="_blank">White House</a>  |   <a href="http://www.hhs.gov/foia/" target="_blank">FOIA</a>  | 
+			<a href="mailto:DRIVeWebmaster@hhs.gov">Contact Webmaster</a> | <a href="https://www.hhs.gov/plugins.html" target="_blank">Viewers & Players</a><br>
+			This is an official U.S. Government Web site managed by the <a href="http://www.hhs.gov/" target="_blank">U.S. Department of Health &amp; Human Services</a>.
+		</div>
+	</footer>
+
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div id="scroll-top-link"
+		class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#page-top"> <i
+			class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+
+	<script>
+		$(document).on("scroll", function() {
+			if ($(document).scrollTop() > 100) {
+				$(".navbar-fixed-top").addClass("navbar-shrink");
+				$(".navbar-brand").addClass("navbar-brand-shrink");
+			} else {
+				$(".navbar-fixed-top").removeClass("navbar-shrink");
+				$(".navbar-brand").removeClass("navbar-brand-shrink");
+			}
+		});
+	</script>
+</body>
+
+</html>
+

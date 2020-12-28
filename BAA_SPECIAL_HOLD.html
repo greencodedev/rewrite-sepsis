@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="assets/images/drive-icon.png" />
+	<link rel="apple-touch-icon" href="assets/images/drive-apple-icon.png" />
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="DRIVe is transforming health security innovation to protect Americans from 21st century health security threats" />
+	<meta name="author" content="DRIVe" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@BARDA" />
+	<meta name="twitter:title" content=" DRIVe: Transforming Health Security" />
+	<meta name="twitter:description" content="Revolutionizing the way we prevent, detect, and respond to major 21st-century health security threats." />
+	<meta name="twitter:image" content="https://drive.hhs.gov/img/drive-logo-plain.png" />
+	<meta name="twitter:image:alt" content="Banner for DRIVe Homepage" />
+	<title>DRIVe</title>
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-MJGSB2L');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/pbm1bix.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Custom styles for Website -->
+	<link href="assets/css/full-slider.css" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/grayscale.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/theme.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="/drivepubhtml/js/ie/html5shiv.js"></script>
+		<script src="/drivepubhtml/js/ie/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- jQuery -->
+	<script src="assets/javascript/global/jquery-min.js"></script>
+
+	<!-- Needed for tooltips -->
+	<script src="assets/javascript/global/popper.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="assets/javascript/global/bootstrap.min.js"></script>
+
+	<script>
+		$(function () {
+			$("#includefooter").load("templates/footer.html");
+			$("#includeheader").load("templates/header.html");
+			$('[data-toggle="tooltip"]').tooltip();
+		})
+	</script>
+
+	<style>
+		.btn_readmore:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+		/*Service Boxes */
+		.serviceBox {
+			padding: 35px 35px;
+			border-radius: 0px;
+			text-align: left;
+			overflow: hidden;
+			z-index: 1;
+			position: relative;
+		}
+
+		.serviceBox:before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			border-radius: 0px;
+			position: absolute;
+			top: 0;
+			left: -100%;
+			z-index: -1;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox:hover:before {
+			left: 0;
+		}
+
+		.serviceBox:after {
+			content: "";
+			width: 7px;
+			height: 0;
+			border-radius: 0px;
+			background: #5fbb46;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox:hover:after {
+			height: 100%;
+		}
+
+		.serviceBox .service-icon {
+			color: #161616;
+			margin-bottom: 10px;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox .service-icon i {
+			font-size: 30px;
+		}
+
+		.serviceBox .title {
+			display: inline-block;
+			font-size: 22px;
+			font-weight: 700;
+			text-transform: capitalize;
+			margin-right: 10px;
+		}
+
+		.serviceBox .description {
+			font-size: 15px;
+			color: #161616;
+			line-height: 25px;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox:hover .service-icon,
+		.serviceBox:hover .description {
+			color: #fff;
+		}
+
+		.enactService:hover {
+			background-image: url("assets/images/icons/smartwatch_bg_on.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.enactServiceOff {
+			background-image: url("assets/images/icons/smartwatch_bg_off.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.sepsisService:hover {
+			background-image: url("assets/images/icons/ivfluids_bg_on.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.sepsisServiceOff {
+			background-image: url("assets/images/icons/ivfluids_bg_off.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.otherService:hover {
+			background-image: url("assets/images/icons/microscope_bg_on.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.otherService {
+			background-image: url("assets/images/icons/microscope_bg_off.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+
+		@media only screen and (max-width:990px) {
+			.serviceBox {
+				margin-bottom: 30px;
+			}
+		}
+	</style>
+	<meta charset="UTF-8">
+	<title>SPECIAL BAA HOLD</title>
+</head>
+
+<body>
+	<div class="container">
+		<img class="img-fluid" src="assets/images/BAA_SPECIAL_ON_HOLD.jpg" alt="" />
+	</div>
+</body>
+
+</html>

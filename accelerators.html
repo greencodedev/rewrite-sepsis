@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="assets/images/drive-icon.png" />
+	<link rel="apple-touch-icon" href="assets/images/drive-apple-icon.png" />
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="DRIVe is transforming health security innovation to protect Americans from 21st century health security threats" />
+	<meta name="author" content="Barda DRIVe" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@BARDA" />
+	<meta name="twitter:title" content="Accelerating Innovation Across America." />
+	<meta name="twitter:description" content="DRIVe is decentralizing innovation across the country. Find out how." />
+	<meta name="twitter:image" content="https://drive.hhs.gov/img/twitter_card_accelerators2.png" />
+	<meta name="twitter:image:alt" content="Banner for DRIVe Accelerators" />
+
+	<title>DRIVe</title>
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!--parterships gray boxes -->
+	<link href="assets/css/grayscale.css" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!-- Custom CSS -->
+	<link href="assets/css/theme.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="/drivepubhtml/js/ie/html5shiv.js"></script>
+		<script src="/drivepubhtml/js/ie/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- jQuery -->
+	<script src="assets/javascript/global/jquery-min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="assets/javascript/global/bootstrap.min.js"></script>
+
+	<!--- Non-GOV Website Dialog popup -->
+	<script src="assets/javascript/custom/confirmExit.js"></script>
+
+	<script>
+		$(function () {
+			$("#includefooter").load("templates/footer.html");
+			$("#includeheader").load("templates/header.html");
+			$('[data-toggle="tooltip"]').tooltip();
+		})
+
+		function scrollRelativeTo(id, px) {
+			var x = $(id).position();
+			window.scrollTo(x.left, x.top + px)
+		}
+
+		$(document).ready(function () {
+			var scrollFactor = -100;
+			var href = window.location.href;
+			if (href.endsWith("id=applyNow")) {
+				scrollRelativeTo("#applyNow", scrollFactor);
+			}
+			else if (href.endsWith("id=partneringApproaches")) {
+				scrollRelativeTo("#partneringApproaches", scrollFactor);
+			}
+		});
+	</script>
+	<style>
+		.nav-tabs li {
+			font-size: 107%;
+		}
+
+		.nav-tabs li a {
+			color: #333333;
+		}
+
+		@media (min-width : 768px) {
+			.nav-tabs li {
+				font-size: 125%;
+			}
+		}
+
+		@media (min-width : 992px) {
+			.nav-tabs li {
+				font-size: 150%;
+			}
+		}
+
+		#portfolio-pipeline {
+			width: 90% !important;
+			height: auto !important;
+			margin-top: 10px;
+			margin-bottom: 30px !important;
+		}
+
+		#portfolio-pipeline-icon {
+			width: 140px;
+			height: 186px;
+		}
+
+		#portfolio-bargraph-atap {
+			width: 100% !important;
+			height: auto !important;
+			margin-top: 30px;
+			margin-bottom: 30px !important;
+		}
+
+		#portfolio-bargraph-atap img {
+			width: 100% !important;
+			height: auto !important;
+			margin: 0px !important;
+		}
+
+		#portfolio-bargraph-atap img:hover {
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			transition: all .5s;
+			filter: brightness(115%);
+		}
+
+		#portfolio-bargraph-adad {
+			width: 100% !important;
+			height: auto !important;
+			margin-top: 50px;
+			margin-bottom: 30px !important;
+		}
+
+		#portfolio-bargraph-adad img {
+			width: 100% !important;
+			height: auto !important;
+			margin: 0px !important;
+		}
+
+		#portfolio-bargraph-adad img:hover {
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			transition: all .5s;
+			filter: brightness(115%);
+		}
+
+		@media (min-width : 1200px) {
+			#portfolio-bargraph-atap {
+				width: 1140px !important;
+			}
+
+			#portfolio-bargraph-adad {
+				width: 994px !important;
+			}
+		}
+
+		#portfolio-content {
+			clear: both;
+			padding-bottom: 40px;
+		}
+
+		#portfolio-content img {
+			max-height: 80px;
+			max-width: 80px;
+			margin-bottom: 20px;
+			vertical-align: middle;
+		}
+
+		#portfolio-content img.wide {
+			max-height: 80px;
+			max-width: 160px;
+		}
+
+		#portfolio-content img.rect {
+			max-height: 80px;
+			max-width: 120px;
+		}
+
+		#portfolio-content-logo {
+			width: 150px;
+			margin: 30px;
+		}
+
+		@media (min-width : 768px) {
+			#portfolio-content-logo {
+				width: 250px;
+				margin: 30px;
+			}
+		}
+
+		@media (min-width : 992px) {
+			#portfolio-content-logo {
+				width: 300px;
+				margin: 40px;
+			}
+		}
+
+		.portfolio-panel-photo-container {
+			line-height: 120px;
+		}
+
+		@media (min-width : 992px) {
+			#portfolio-content img {
+				max-height: 100px;
+				max-width: 100px;
+				margin-bottom: 20px;
+			}
+
+			#portfolio-content img.wide {
+				max-height: 100px;
+				max-width: 200px;
+			}
+
+			#portfolio-content img.rect {
+				max-height: 100px;
+				max-width: 150px;
+			}
+
+			.portfolio-panel-photo-container {
+				line-height: 150px;
+			}
+		}
+
+		.portfolio-panels {
+			margin-top: 50px;
+		}
+
+		.portfolio-panels .panel {
+			width: 150px;
+			text-align: center;
+			display: inline-block !important;
+			vertical-align: top;
+			margin-right: 15px;
+		}
+
+		.portfolio-panels .panel:hover {
+			filter: brightness(1.05);
+		}
+
+		.portfolio-panels .panel-body {
+			padding: 5px;
+			overflow: hidden;
+		}
+
+		.portfolio-panels .panel img {
+			max-width: initial !important;
+			max-height: initial !important;
+			margin: 0px !important;
+			width: 100%;
+		}
+
+		#portfolio-info-modal-photo {
+			max-width: 120px;
+			margin: 0px;
+			padding: 0px 20px 10px 0px;
+			float: right;
+		}
+
+		#portfolio-info-modal-photo-text {
+			margin-left: 0px;
+			clear: both;
+		}
+
+		#portfolio-info-modal-info {
+			clear: both;
+			margin-top: 40px;
+		}
+
+		#portfolio-info-modal-info p {
+			font-size: 125%;
+		}
+
+		@media (min-width : 768px) {
+			.portfolio-panels .panel {
+				width: 150px;
+				margin-right: 20px;
+			}
+
+			#portfolio-info-modal-photo {
+				max-width: 180px;
+				margin: 0px;
+				padding: 0px 0px 10px 0px;
+				float: right;
+			}
+
+			#portfolio-info-modal-photo-text {
+				/*margin-left:190px;*/
+				clear: none;
+			}
+		}
+
+		@media (min-width : 992px) {
+			.portfolio-panels .panel {}
+
+			#portfolio-info-modal-photo {
+				max-width: 200px;
+				margin: 0px;
+				padding: 0px 20px 10px 0px;
+			}
+
+			#portfolio-info-modal-photo-text {
+				/*margin-left:220px;*/
+
+			}
+		}
+
+		@media (min-width : 1200px) {
+			.portfolio-panels .panel {
+				width: 180px;
+			}
+		}
+
+		#portfolio-info-modal-asset {
+			margin: 0px;
+		}
+
+		#portfolio-info-modal-app-category {
+			font-weight: bold;
+		}
+
+		.modal-footer {
+			clear: both;
+		}
+
+		.suny {
+			background-color: #0092d4;
+		}
+
+		img#portfolio-panel-photo-uml {
+			max-height: 150px !important;
+			max-width: 123px !important;
+		}
+
+		p#portfolio-info-modal-statement {
+			font-size: 20px;
+		}
+	</style>
+</head>
+
+<body id="page-top" class="index">
+	<!-- Google Tag Manager -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+			'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-122497508-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Navigation -->
+	<div id="includeheader"></div>
+	<!-- End Navigation -->
+
+
+	<!-- Header -->
+	<header style="border-bottom: 1px solid #efefef; padding-bottom: 50px;" id="banner">
+		<div class="jumbotron services" style="background-color: #FFFFFF;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 banner-text-container">
+						<div class="banner-text">
+							<div class=" green">
+								<div class="home-banner-heading">
+									<h3 class="title" style="letter-spacing: 8px; color: #282828; font-size: 40px;">
+										ACCELERATOR NETWORK</h3><br />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<br><br>
+
+	<div id="accelerator_announcement"></div>
+	<section style="padding-top: 15px; background-color: #FFFFFF;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div>
+						<h1 style="text-transform: none;">DRIVe Accelerators</h1>
+					</div>
+					<p>DRIVe is decentralizing innovation across the country. The
+						DRIVe Accelerator Network is working with regional accelerators,
+						chosen through a competitive process, to identify promising
+						innovation and provide wraparound technical and business
+						development support services. Click below to learn more about each
+						of our Accelerator partners.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="box">
+		<div class="container">
+			<div class="row row-eq-height">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="box-part text-center">
+						<img style="max-height: 90px;" class="img-fluid" alt="Center for Biotechnology"
+							id="portfolio-panel-photo-cfb" src="assets/images/portfolio/cfb.png" />
+						<br /><br />
+						<h5>Center for Biotechnology</h5>
+						<hr />
+						<div class="text">
+							<span>Established in 1983, the CfB implemented one of the nation’s first university-based seed funds... </span>
+						</div>
+						<a data-toggle="modal" data-target="#cfbmodal" href="#">Learn More</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="box-part text-center">
+						<img style="max-height: 90px;" class="img-fluid" alt="First Flight Venture Center" id="portfolio-panel-photo-first-flight" src="assets/images/portfolio/first_flight.png" />
+						<br /><br />
+						<h5>First Flight</h5>
+						<hr />
+						<div class="text">
+							<span>FFVC is a "High Science, High Impact" technology incubator whose resident startups work ...</span>
+						</div>
+						<a data-toggle="modal" data-target="#firstflightmodal" href="#">Learn More</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="box-part text-center">
+						<img style="height: 89px;" class="img-fluid" alt="Life Science Washington Institute" id="portfolio-panel-photo-life" src="assets/images/portfolio/life_science_washington.png" />
+						<br /><br />
+						<h5>Life Science Washington Institute</h5>
+						<hr />
+						<div class="text">
+							<span>Life Science Washington Institute (LSWI) is a 501(c)(3) non-profit organization that was chartered out of Life Science Washington... </span>
+						</div>
+						<a data-toggle="modal" data-target="#lifesciencemodal" href="#">Learn More</a>
+						<br />
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 row-eq-height">
+					<div class="box-part text-center">
+						<img class="img-fluid"
+							alt="University of Massachusetts, Massachusetts Medical Device Development Center"
+							id="portfolio-panel-photo-uml" src="assets/images/AccelLogos/M2D2_logo.png" />
+
+						<br /><br />
+						<h5>University of Massachusetts</h5>
+						<hr />
+						<div class="text">
+							<span>The Massachusetts Medical Device Development (M2D2) Center is a highly successful
+								medical device accelerator...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#massmodal" href="#">Learn More</a>
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+					<div class="box-part text-center">
+
+						<img style="max-height: 50px;" class="img-fluid" alt="TMC Innovation"
+							id="portfolio-panel-photo-tmcx" src="assets/images/portfolio/tmc_innovation.png" />
+						<br /><br />
+						<h5>TMC Innovation</h5>
+						<hr />
+
+						<div class="text">
+							<span>The TMC Innovation Institute focuses on bringing the best solutions to unmet
+								healthcare needs by...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#tmcxmodal" href="#">Learn More</a>
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+					<div class="box-part text-center">
+
+						<img style="max-height: 27px;" class="img-fluid" alt="New Orleans BioInnovation Center"
+							id="portfolio-panel-photo-neworleansbio"
+							src="assets/images/portfolio/new_orleans_bioInnovation.png" /><br>
+						<br /><br />
+						<h5>New Orleans BioInnovation Center</h5>
+						<hr />
+
+						<div class="text">
+							<span>The New Orleans BioInnovation Center is a private, not-for-profit life science
+								business incubator...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#neworleansmodal" href="#">Learn More</a>
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 row-eq-height">
+
+					<div class="box-part text-center">
+
+						<img style="max-height: 100px;" class="img-fluid" alt="MEDTECH logo"
+							id="portfolio-panel-photo-medtech" src="assets/images/portfolio/medtech.png" />
+						<br /><br />
+						<h5>Medtech Innovator</h5>
+						<hr />
+
+						<div class="text">
+							<span>MedTech Innovator is a nonprofit global accelerator for medical device, digital
+								health, and diagnostic companies...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#medtechmodal" href="#">Learn More</a>
+
+					</div>
+				</div>
+
+
+
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+					<div class="box-part text-center">
+
+						<img style="max-height: 100px;" class="img-fluid" alt="New Orleans BioInnovation Center"
+							id="portfolio-panel-photo-lifescience"
+							src="assets/images/portfolio/university_city_science_center.png" />
+						<br /><br />
+						<h5>University City Science Center</h5>
+						<hr />
+
+						<div class="text">
+							<span>The Science Center is a mission-driven nonprofit organization that helps innovators
+								and entrepreneurs...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#ucscmodal" href="#">Learn More</a>
+
+					</div>
+
+
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+					<div class="box-part text-center">
+
+						<img style="max-height: 100px;" class="img-fluid" alt="Purdue University Logo"
+							id="portfolio-panel-photo-purdue" src="assets/images/purdue_logo.png" />
+						<br /><br />
+						<h5>Purdue University</h5>
+						<hr />
+
+						<div class="text">
+							<span>The Purdue Discovery to Innovation Accelerator, located in Discovery Park’s Bindley
+								Bioscience Center...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#purduemodal" href="#">Learn More</a>
+
+					</div>
+
+
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 row-eq-height">
+
+					<div class="box-part text-center">
+
+						<img style="max-height: 100px;" class="img-fluid" alt="PLUG AND PLAY logo"
+							id="portfolio-panel-photo-plugandplay" src="assets/images/AccelLogos/plugandplay-logo.png" />
+						<br /><br />
+						<h5>Plug And Play Health</h5>
+						<hr />
+
+						<div class="text">
+							<span>Plug and Play Health connects the best startups in the world to healthcare
+								corporations who want to disrupt...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#pandpmodal" href="#">Learn More</a>
+
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 row-eq-height">
+
+					<div class="box-part text-center">
+
+						<img style="max-height: 65px" class="img-fluid" alt="UEL logo" id="portfolio-panel-photo-tmcx"
+							src="assets/images/uel_logo.png" />
+						<br /><br />
+						<h5>University Enterprise Laboratories &amp; gener8tor</h5>
+						<hr />
+
+						<div class="text">
+							<span>A non-profit 501(c)(3) organization, established in 2004, University Enterprise
+								Laboratories (UEL) are a connector...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#uelmodal" href="#">Learn More</a>
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 row-eq-height">
+
+					<div class="box-part text-center">
+
+						<img style="max-height: 62px;" class="img-fluid" alt="University of Missouri"
+							id="portfolio-panel-photo-missouri" src="assets/images/bioaccelerator_logo.png" />
+						<br /><br />
+						<h5>University of Missouri</h5>
+						<hr />
+
+						<div class="text">
+							<span>The University of Missouri Midwest BioAccelerator (MU-MBar) is focused on boosting
+								biosecurity and biodefense research...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#missourimodal" href="#">Learn More</a>
+
+					</div>
+				</div>
+
+
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 row-eq-height">
+
+					<div class="box-part text-center">
+
+						<img style="max-height: 100px;" class="img-fluid" alt="Emory Universtity logo"
+							id="portfolio-panel-photo-emory" src="assets/images/Biolocity-logo-tag-color-0919.png" />
+						<br /><br /><br /><br />
+						<h5>Biolocity</h5>
+						<hr />
+
+						<div class="text">
+							<span>Biolocity is a philanthropic, multi-institutional network supporting university
+								medical technology commercialization in the southeast...</span>
+						</div>
+
+						<a data-toggle="modal" data-target="#emorymodal" href="#">Learn More</a>
+
+					</div>
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<!--	
+			
+			
+			<div class="row">
+				<div class="col-sm-12 text-center" role="tablist">
+					<div class="tab-content text-center">
+
+						<div role="tabpanel" class="tab-pane active" id="assets">
+							<div id="portfolio-content">
+								<div class="portfolio-panels">
+
+									<div id="portfolio-panel-cfb"
+										class="panel panel-default cursor-link">
+										<div class="panel-body">
+											<div class="portfolio-panel-photo-container" data-toggle="modal" data-target="#cfbmodal">
+												<img alt="Center for Biotechnology"
+													id="portfolio-panel-photo-cfb" src="assets/images/portfolio/cfb.png" />
+											</div>
+										</div>
+									</div>
+
+									<div id="portfolio-panel-first-flight"
+										class="panel panel-default cursor-link" data-toggle="modal" data-target="#firstflightmodal">
+										<div class="panel-body">
+											<div class="portfolio-panel-photo-container">
+												<img alt="First Flight Venture Center"
+													id="portfolio-panel-photo-first-flight"
+													src="assets/images/portfolio/first_flight.png" />
+											</div>
+										</div>
+									</div>
+
+									<div id="portfolio-panel-life"
+										class="panel panel-default cursor-link" data-toggle="modal" data-target="#lifesciencemodal">
+										<div class="panel-body">
+											<div class="portfolio-panel-photo-container">
+												<img alt="Life Science Washington Institute"
+													id="portfolio-panel-photo-life"
+													src="assets/images/portfolio/life_science_washington.png" />
+											</div>
+										</div>
+									</div>
+
+									<div id="portfolio-panel-uml"
+										class="panel panel-default cursor-link" data-toggle="modal" data-target="#massmodal">
+										<div class="panel-body">
+											<div class="portfolio-panel-photo-container">
+												<img
+													alt="University of Massachusettes, Massachusettes Medical Device Development Center"
+													id="portfolio-panel-photo-uml"
+													src="assets/images/portfolio/umass_lowell.png" />
+											</div>
+										</div>
+									</div>
+
+									<div id="portfolio-panel-medtech"
+										class="panel panel-default cursor-link" data-toggle="modal" data-target="#medtechmodal">
+										<div class="panel-body">
+											<div class="portfolio-panel-photo-container">
+												<img alt="Medtech Innovator"
+													id="portfolio-panel-photo-medtech"
+													src="assets/images/portfolio/medtech.png" />
+											</div>
+										</div>
+									</div>
+
+									<div id="portfolio-panel-neworleansbio"
+										class="panel panel-default cursor-link" data-toggle="modal" data-target="#neworleansmodal">
+										<div class="panel-body">
+											<div class="portfolio-panel-photo-container">
+												<img alt="New Orleans BioInnovation Center"
+													id="portfolio-panel-photo-neworleansbio"
+													src="assets/images/portfolio/new_orleans_bioInnovation.png" />
+											</div>
+										</div>
+									</div>
+
+									<div id="portfolio-panel-tmcx"
+										class="panel panel-default cursor-link"  data-toggle="modal" data-target="#tmcxmodal">
+										<div class="panel-body">
+											<div class="portfolio-panel-photo-container">
+												<img alt="TMC Innovation" id="portfolio-panel-photo-tmcx"
+													src="assets/images/portfolio/tmc_innovation.png" />
+											</div>
+										</div>
+									</div>
+
+									<div id="portfolio-panel-ucsc"
+										class="panel panel-default cursor-link" data-toggle="modal" data-target="#ucscmodal">
+										<div class="panel-body">
+											<div class="portfolio-panel-photo-container">
+												<img alt="University City Science Center"
+													id="portfolio-panel-photo-ucsc"
+													src="assets/images/portfolio/university_city_science_center.png" />
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div> -->
+	</div>
+	</section>
+
+	<div id="cfbmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Center For Biotechnology</h3>
+					</div>
+					<div class="modal-body">
+						<br>
+
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 15px; padding-bottom: 25px;" alt="CFB Logo" width="300px"
+										src="assets/images/portfolio/cfb.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 10px;" class="col-5 row ">
+									<br>
+									<!--<div id="cohort_container" ><a href="#"><img class="callout" style="padding: 5px; height: 70px;" alt="cohort icon" src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>
+		<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"  alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking Space</span></a></div>
+		<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"  alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab Space</span></a></div>-->
+								</div>
+							</div>
+						</div>
+
+
+
+						<p>Established in 1983, the CfB implemented one of the nation’s first university-based "seed
+							funds," and has contributed to the development of dozens of commercial products from the
+							academic sector, including ReoPro®, Xiaflex® and Periostat®, and company formation including
+							Collagenex, Codagenix, Celmatix and Applied DNA Sciences.</p>
+						<p>Bioengineering Building, Level 2, Stony Brook University, Stony Brook, NY 11794-5281</p>
+						<a target="_blank" onclick="return confirmExit()" href="http://centerforbiotechnology.org/">
+							http://centerforbiotechnology.org/</a><br>
+						<a
+							href="mailto:center_for_biotechnology@stonybrook.edu">center_for_biotechnology@stonybrook.edu</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="firstflightmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>First Flight Venture Center</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img alt="First Flight Logo" width="250px"
+										src="assets/images/portfolio/first_flight.png"><br /><br />
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 50px;" class="col-5 row">
+									<br><br><br>
+									<!--<div id="cohort_container2" ><a href="#"><img class="callout" style="padding: 5px; height: 70px;" alt="cohort icon" src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>-->
+									<div id="cowork_container2"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container2"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>FFVC is a "High Science, High Impact" technology incubator whose resident startups work on
+							solving important issues related to healthcare, energy, materials, and IT.</p>
+						<p>2 Davis Drive, Research Triangle Park, NC 27709, USA</p>
+
+						<a target="_blank" onclick="return confirmExit()" href=" https://ffvcnc.org/">
+							https://ffvcnc.org/</a><br>
+						<a href="mailto:info@firstflightventure.org">info@firstflightventure.org</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="lifesciencemodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Life Science Washington Institute</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 25px; padding-bottom: 25px;" alt="Life Science Logo"
+										width="250px" src="assets/images/portfolio/life_science_washington.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 10px;" class="col-5 row">
+									<br>
+									<div id="cohort_container3"><a href="#"><img class="callout"
+												style="padding: 5px; height: 70px;" alt="cohort icon"
+												src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>
+									<!--<div id="cowork_container3"><a href="#"><img style="padding: 5px; height: 70px;"  alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking Space</span></a></div>
+		<div id="lab_container3"><a href="#"><img height="70px;" style="padding: 5px;"  alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab Space</span></a></div>-->
+								</div>
+							</div>
+						</div>
+						<p>Life Science Washington Institute (LSWI) is a 501(c)(3) non-profit organization that was
+							chartered out of Life Science Washington to help support and develop the entrepreneurial
+							community. LSWI aims to assist life science researchers, entrepreneurs, and companies in
+							bridging the gap between discovery and commercialization through a broad range of
+							activities, including consulting services, regular educational and company showcase events
+							and the creation of resources pertinent to the issues associated with technology
+							commercialization in Washington state. </p>
+						<p>1551 Eastlake Ave E, Suite 300, Seattle, WA 98102, USA</p>
+
+						<a target="_blank" onclick="return confirmExit()" href="https://www.lswinstitute.org/">
+							https://www.lswinstitute.org/</a><br>
+						<a href="mailto:info@lswinstitute.org">info@lswinstitute.org</a>
+
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="massmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Massachusetts Medical Device Development Center</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 15px; padding-bottom: 25px;" alt="University of MASS Logo"
+										width="250px" src="assets/images/portfolio/umass_lowell.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div class="col-5 row ">
+									<br>
+									<!--<div id="cohort_container" ><a href="#"><img class="callout" style="padding: 5px; height: 70px;" alt="cohort icon" src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>-->
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>The Massachusetts Medical Device Development (M2D2) Center is a highly successful medical
+							device accelerator and incubator. This center combines the engineering and business
+							expertise of University of Massachusetts Lowell with the clinical development expertise of
+							University of Massachusetts Medical School. We have an existing leadership and governance
+							model that is readily adapted to the needs of the PAHS@M2D2.</p>
+						<p>One University Avenue, Lowell, MA 01854, USA</p>
+
+						<a target="_blank" onclick="return confirmExit()"
+							href="https://www.uml.edu/Research/M2D2/">https://www.uml.edu/Research/M2D2/</a><br>
+						<a href="mailto:M2D2@uml.edu">M2D2@uml.edu</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="medtechmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Medtech Innovator</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 10px; padding-bottom: 25px;" alt="MedTech Innovator Logo"
+										width="250px" src="assets/images/portfolio/medtech.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 20px;" class="col-5 row ">
+									<br>
+									<div id="cohort_container"><a href="#"><img class="callout"
+												style="padding: 5px; height: 70px;" alt="cohort icon"
+												src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding:5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>MedTech Innovator is a nonprofit global accelerator for medical device, digital health, and
+							diagnostic companies. Since 2013, MedTech Innovator has graduated 135 startups that have
+							raised nearly $550M in follow-on funding, launched 24 products on the market, and achieved
+							five exits. MedTech Innovator has established partnerships with Amgen, BTG, Baxter, BD,
+							EdgeOne Medical, HOYA, Johnson & Johnson, Nipro, Olympus, RCT Ventures, W. L. Gore, and
+							Ximedica.</p>
+						<p>10958 Weyburn Ave, Ste 216, Los Angeles, CA 90024, USA</p>
+
+						<a target="_blank" onclick="return confirmExit()"
+							href="https://medtechinnovator.org/">https://medtechinnovator.org/</a><br>
+						<a href="mailto:info@medtechinnovator.org">info@medtechinnovator.org</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="neworleansmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>New Orleans BioInnovation Center</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3"><br><br>
+									<img alt="New Orleans BioInnovation Logo" width="350px"
+										src="assets/images/portfolio/new_orleans_bioInnovation.png"><br><br><br>
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 15px;" class="col-5 row ">
+									<br>
+									<div id="cohort_container"><a href="#"><img class="callout"
+												style="padding: 5px; height: 70px;" alt="cohort icon"
+												src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>The New Orleans BioInnovation Center is a private, not-for-profit life science business
+							incubator comprised of 3 divisions: (1) a 66,000 square foot wet-lab facility, (2) a
+							professional Commercialization Team, and (3) New Orleans BioFund, an independent subsidiary,
+							which provides early-stage capital for emerging ventures. The Center works directly with
+							entrepreneurs and researchers to commercialize new technologies spinning out of universities
+							and healthcare institutions, to start and scale globally competitive life science companies.
+						</p>
+						<p>1441 Canal St, New Orleans, LA 70112, USA</p>
+
+						<a target="_blank" onclick="return confirmExit()"
+							href="https://www.neworleansbio.com/">https://www.neworleansbio.com/</a><br>
+						<a href="mailto:info@neworleansbio.com">info@neworleansbio.com</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="tmcxmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Texas Medical Center Innovation Institute</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3"><br>
+									<img style="padding-top: 15px; padding-bottom: 25px;" alt="TMC Innovation Logo"
+										width="250px" src="assets/images/portfolio/tmc_innovation.png"><br>
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 20px;" class="col-5 row ">
+									<br>
+									<div id="cohort_container"><a href="#"><img class="callout"
+												style="padding: 5px; height: 70px;" alt="cohort icon"
+												src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>The TMC Innovation Institute focuses on bringing the best solutions to unmet healthcare needs
+							by providing the tools and action plans necessary to move products and companies forward,
+							regardless of their stage of development. It opens access to hospital stakeholders and key
+							opinion leaders across the TMC campus. The Innovation Institute is composed of leading
+							industry partners including Johnson&Johnson and AT&T Foundry.</p>
+						<p>2450 Holcombe Boulevard, Suite X, Houston, TX 77021, USA</p>
+
+						<a target="_blank" onclick="return confirmExit()"
+							href="http://www.tmc.edu/innovation/">http://www.tmc.edu/innovation/</a><br>
+						<a href="mailto:tmcx@tmc.edu">tmcx@tmc.edu</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="ucscmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>University City Science Center</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 15px; padding-bottom: 25px;" alt="UCSC Logo" width="200px"
+										src="assets/images/portfolio/university_city_science_center.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 60px;" class="col-5 row ">
+									<br>
+									<div id="cohort_container"><a href="#"><img class="callout"
+												style="padding: 5px; height: 70px;" alt="cohort icon"
+												src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>The Science Center is a mission-driven nonprofit organization that helps innovators and
+							entrepreneurs in Pennsylvania, New Jersey and Delaware bring world-changing technologies to
+							market. We provide innovators, entrepreneurs and companies at any stage of the business
+							lifecycle with support and access to resources, programming, capital, and space helping move
+							innovation from idea to IPO, and beyond.</p>
+						<p>3711 Market St, Philadelphia, PA 19104, USA</p>
+
+						<a target="_blank" onclick="return confirmExit()" href=" https://www.sciencecenter.org/">
+							https://www.sciencecenter.org/</a><br>
+						<a href="mailto:info@sciencecenter.org">info@sciencecenter.org</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="purduemodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Purdue University</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 15px; padding-bottom: 25px;" alt="UCSC Logo" width="200px"
+										src="assets/images/purdue_logo.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 60px;" class="col-5 row ">
+									<br>
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>The Purdue Discovery to Innovation Accelerator, located in Discovery Park’s Bindley
+							Bioscience Center, is tasked with launching life sciences discoveries down a
+							commercialization path. In close cooperation with comprehensive technical and business
+							partnerships at Purdue University and numerous industry and academic partners across the
+							state of Indiana, the goal is to ensure that the inventors of cutting-edge technologies with
+							biological/medical applications are supported as they advance from (A) proof of concept to
+							(Z) product launch. </p>
+						<p>Bindley Bioscience Center, 1203 W State St, West Lafayette, IN 47906</p>
+
+						<a target="_blank" onclick="return confirmExit()"
+							href="https://www.purdue.edu/discoverypark/bioscience/facilities/accelerator.php">https://www.purdue.edu/discoverypark/bioscience/facilities/accelerator.php</a><br>
+						<a href="mailto:mpoderyc@purdue.edu">mpoderyc@purdue.edu</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="pandpmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Plug And Play Health</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 15px; padding-bottom: 25px;" alt="Plug & Play Logo"
+										width="350px" src="assets/images/plugandplay-logo.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 60px;" class="col-5 row ">
+									<br>
+									<div id="cohort_container"><a href="#"><img class="callout"
+												style="padding: 5px; height: 70px;" alt="cohort icon"
+												src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>Plug and Play Health connects the best startups in the world to healthcare corporations who
+							want to disrupt the industry. Plug and Play Health focuses on digital health technologies
+							that challenge clinical practices, improve data analytics, and enhance the patient journey
+							across the continuum of care. Headquartered in Silicon Valley but with 28 offices all over
+							the globe, they've accelerated over two hundred startups in partnership with more than
+							twenty corporations.</p>
+						<p>440 N Wolfe Rd, Sunnyvale, CA 94085</p>
+
+						<a target="_blank" onclick="return confirmExit()"
+							href="https://www.plugandplaytechcenter.com/">https://www.plugandplaytechcenter.com/</a><br>
+						<a href="mailto:julia@pnptc.com">julia@pnptc.com</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="uelmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>University Enterprise Laboratories &amp; gener8tor</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 15px; padding-bottom: 25px;" alt="UEL Logo" width="350px"
+										src="assets/images/uel_logo.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 60px;" class="col-5 row ">
+									<br>
+									<div id="cohort_container"><a href="#"><img class="callout"
+												style="padding: 5px; height: 70px;" alt="cohort icon"
+												src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>A non-profit 501(c)(3) organization, established in 2004, University Enterprise Laboratories
+							(UEL) are a connector and active contributor to the Twin Cities’ innovation ecosystem. They
+							support growth in life sciences, biotech, healthcare, and other science/technology
+							industries. UEL is partnering with gener8tor to provide services for BARDA DRIVe.</p>
+						<p>1000 Westgate Drive, Saint Paul, MN 55114</p>
+
+						<a target="_blank" onclick="return confirmExit()"
+							href="https://www.uelmn.org/">https://www.uelmn.org/</a><br>
+						<a href="mailto:info@uelmn.org">info@uelmn.org</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="missourimodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>University of Missouri</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 15px; padding-bottom: 25px;"
+										alt="University of Missouri Logo" width="400px"
+										src="assets/images/bioaccelerator_logo.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 60px;" class="col-5 row ">
+									<br>
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>The University of Missouri Midwest BioAccelerator (MU-MBar) is focused on boosting
+							biosecurity and biodefense research, leveraging partnerships with industry leaders and
+							searching for solutions to national health security threats. With resources including the
+							USDA and the Midwest Research Institute in Kansas City, Washington University in St. Louis,
+							and the MU Research Reactor, among other research labs in Columbia, Missouri, the work will
+							focus on both human and animal health, creating development opportunities for new technology
+							associated with detecting and mitigating infectious diseases.</p>
+						<p>University of Missouri System, 321 University Hall, Columbia, MO 65211</p>
+
+						<a href="mailto:j.v.abbey@umsystem.edu">j.v.abbey@umsystem.edu </a>
+						<p>(Website Under Construction)</p>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="biolocitymodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Biolocity</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 60px;" class="col-5 row ">
+									<br>
+									<div id="cohort_container"><a href="#"><img class="callout"
+												style="padding: 5px; height: 70px;" alt="cohort icon"
+												src="assets/images/cohort_icon.png"><span>Cohort</span></a></div>
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>The Science Center is a mission-driven nonprofit organization that helps innovators and
+							entrepreneurs in Pennsylvania, New Jersey and Delaware bring world-changing technologies to
+							market. We provide innovators, entrepreneurs and companies at any stage of the business
+							lifecycle with support and access to resources, programming, capital, and space helping move
+							innovation from idea to IPO, and beyond.</p>
+						<p>3711 Market St, Philadelphia, PA 19104, USA</p>
+
+						<a target="_blank" onclick="return confirmExit()"
+							href="https://biolocity.gatech.edu/">https://biolocity.gatech.edu/</a><br>
+						<a href="mailto:info@sciencecenter.org">info@sciencecenter.org</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="emorymodal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="container-fluid">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Biolocity</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<img style="padding-top: 15px; padding-bottom: 25px;" alt="Biolocity Logo"
+										width="350px" src="assets/images/Biolocity-logo-tag-color-0919.png">
+								</div>
+								<div class="col-4">
+								</div>
+								<div style="padding-top: 60px;" class="col-5 row ">
+									<br>
+									<div id="cowork_container"><a href="#"><img style="padding: 5px; height: 70px;"
+												alt="coworking icon" src="assets/images/coworking_icon.png"><span>Coworking
+												Space</span></a></div>
+									<div id="lab_container"><a href="#"><img height="70px;" style="padding: 5px;"
+												alt="test tubes icon" src="assets/images/testtubes_icon.png"><span>Lab
+												Space</span></a></div>
+								</div>
+							</div>
+						</div>
+						<p>Biolocity is a philanthropic, multi-institutional network supporting university medical
+							technology commercialization in the southeast. Through a combination of investment, project
+							management, consulting, and educational programming, Biolocity provides early-stage, patient
+							impacting technologies with the resources needed to reach critical commercialization
+							milestones.</p>
+						<p>387 Technology Circle NW, Atlanta, GA 30313</p>
+
+						<a target="_blank" onclick="return confirmExit()"
+							href="https://biolocity.gatech.edu/">https://biolocity.gatech.edu/</a><br>
+						<a href="mailto:Biolocity@gatech.edu">Biolocity@gatech.edu</a>
+
+					</div>
+					<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<section>
+		<hr />
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-xs-12" style="padding: 40px;">
+					<p>
+						<b>DRIVe</b> (<b>D</b>ivision of <b>R</b>esearch, <b>I</b>nnovation,
+						and <b>Ve</b>ntures) was established by the <b>B</b>iomedical <b>A</b>dvanced
+						<b>R</b>esearch and <b>D</b>evelopment <b>A</b>uthority (<a
+							href="https://medicalcountermeasures.gov/" target="_blank"><b>BARDA</b></a>),
+						part of the <b>A</b>ssistant <b>S</b>ecretary for <b>P</b>reparedness
+						and <b>R</b>esponse (<a href="http://www.phe.gov/" target="_blank"><b>ASPR</b></a>), within the
+						United States
+						Department of <b>H</b>ealth and <b>H</b>uman <b>S</b>ervices (<a href="http://www.hhs.gov/"
+							target="_blank"><b>HHS</b></a>).
+					</p>
+					<div class="text-center footer_logos" style="margin-top: 20px; margin-bottom: 20px;">
+						<a target="_blank" href="https://hhs.gov"><img
+								alt="Department of Health &amp; Human Services - USA" src="assets/images/logos/dhhs.png"
+								style="height: 100px;"></a> <a target="_blank" href="https://phe.gov"><img alt="ASPR"
+								src="assets/images/logos/aspr.png" style="height: 80px;"></a> <a target="_blank"
+							href="https://medicalcountermeasures.gov/"><img alt="BARDA logo" src="assets/images/logos/barda.png"
+								style="height: 80px;" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--   END: CONTENT -->
+
+	<!-- Footer -->
+	<div id="includefooter"></div>
+	<!-- Footer --------->
+
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div id="scroll-top-link" class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#page-top"> <i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+
+	<script>
+		$(document).on("scroll", function () {
+			if ($(document).scrollTop() > 100) {
+				$(".navbar-fixed-top").addClass("navbar-shrink");
+				$(".navbar-brand").addClass("navbar-brand-shrink");
+			} else {
+				$(".navbar-fixed-top").removeClass("navbar-shrink");
+				$(".navbar-brand").removeClass("navbar-brand-shrink");
+			}
+		});
+	</script>
+</body>
+
+</html>

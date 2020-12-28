@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="assets/images/drive-icon.png" />
+	<link rel="apple-touch-icon" href="assets/images/drive-apple-icon.png" />
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="DRIVe is transforming health security innovation to protect Americans from 21st century health security threats" />
+	<meta name="author" content="Barda DRIVe" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@BARDA" />
+	<meta name="twitter:title" content="Solving Sepsis" />
+	<meta name="twitter:description" content="Someone you know will be impacted by sepsis. Learn how we’re solving sepsis together." />
+	<meta name="twitter:image" content="https://drive.hhs.gov/img/btn_twittercard.png" />
+	<meta name="twitter:image:alt" content="Banner for DRIVe Beyond The Needle" />
+	<title>DRIVe</title>
+	<!--	
+	<meta http-equiv="Refresh" content="0; url=https://www.google.com">
+	-->
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!-- Custom CSS -->
+	<link href="assets/css/theme.css" rel="stylesheet">
+
+	<link href="assets/css/flipclock.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="/drivepubhtml/js/ie/html5shiv.js"></script>
+		<script src="/drivepubhtml/js/ie/respond.min.js"></script>
+	<![endif]-->
+	<!-- D3.js 03/02/20 -->
+	<script src="assets/javascript/global/d3.v4.min.js"></script>
+	<script src="assets/javascript/global/d3-scale-chromatic.v1.min.js"></script>
+
+	<!-- jQuery -->
+	<script src="assets/javascript/global/jquery-min.js"></script>
+
+	<!-- Needed for tooltips -->
+	<script src="assets/javascript/global/popper.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="assets/javascript/global/bootstrap.min.js"></script>
+
+	<!-- ParaParse -->
+	<script src="assets/javascript/global/PapaParse-4.6.0/papaparse.min.js"></script>
+
+	<!-- Make portfolio -->
+	<script src="assets/javascript/custom/makePortfolio.js"></script>
+
+	<!-- FlipClock Counter -->
+	<script src="assets/javascript/global/flipclock.min.js"></script>
+
+	<!-- Flipclock -->
+	<style>
+		.flipcounter {
+			transform-origin: 0 0;
+			transform: scale(.30);
+			-ms-transform: scale(.30);
+			-webkit-transform-origin: 0 0;
+			-webkit-transform: scale(.80);
+			-o-transform-origin: 0 0;
+			-o-transform: scale(.30);
+			-moz-transform-origin: 0 0;
+			-moz-transform: scale(.70);
+			margin-left: 60px;
+		}
+	</style>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+	<link href="assets/javascript/global/FlipClockCountdown/src/jquery.counter-analog.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="assets/javascript/global/FlipClockCountdown/src/jquery.counter-analog2.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="assets/javascript/global/FlipClockCountdown/src/jquery.counter-analog3.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="assets/css/solvingsepsis.css" rel="stylesheet" type="text/css">
+	<script src="assets/javascript/global/FlipClockCountdown/src/jquery.counter.js" type="text/javascript"></script>
+
+	<script>
+		function makeCounter(startingValue, timeInterval, idOfHTML) {
+			var clock = $(idOfHTML).FlipClock(startingValue, {
+				clockFace: 'Counter'
+			});
+			var count = 0;
+			setTimeout(function () {
+				setInterval(function () {
+					clock.increment();
+				},
+					timeInterval);
+			});
+		};
+
+		// 86400 seconds per day
+		const msPerDay = 86400 * 1000; // 60 * 60 * 24 = 86400
+
+		const casesPerDay = 4658; // = 1.7M / 365 days
+		// const deathsPerDay = 740;
+		var msPerCase = msPerDay / casesPerDay;
+		// var msPerDeath = msPerDay / deathsPerDay;
+
+		// Find out how many milliseconds have elapsed thus far this year (automatically updating for each year)
+		var msTotalThisYear = new Date() - new Date("1/1/" + (new Date()).getFullYear());
+
+		// Once the page renders, start the counters
+		$(function () {
+			// Generate portfolio
+			$("#includefooter").load("templates/footer.html");
+			$("#includeheader").load("templates/header.html");
+			var csvfile = "data/ProductList_20180913.csv";
+			parseCSVToCallbackUpdate(csvfile, "BTN");
+			// Cases
+			makeCounter(Math.round(msTotalThisYear / msPerCase), msPerCase, "#counter-diagnoses");
+			// makeCounter(Math.round(msTotalThisYear / msPerDeath), msPerDeath, "#counter-deaths");
+		});
+	</script>
+
+	<style>
+		.productbox {
+			top: 20px;
+			border: 3px solid #DDDDDD;
+			margin: 20px;
+			height: 230px;
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: perspective(1px) translateZ(0);
+			transform: perspective(1px) translateZ(0);
+
+			position: relative;
+			overflow: hidden;
+			background-color: #FFFFFF;
+			text-align: center;
+		}
+
+		.productbox:before {
+			padding-top: 7px;
+			border: 1px;
+			border-width: solid #DDDDDD;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			right: 100%;
+			top: 0;
+			background: #5fbb46;
+			height: 5px;
+			-webkit-transition-property: right;
+			transition-property: right;
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-timing-function: ease-out;
+			transition-timing-function: ease-out;
+		}
+
+		.productbox:hover:before,
+		.productbox:focus:before,
+		.productbox:active:before {
+			right: 0;
+		}
+
+		.full-profile {
+			font-size: 12px;
+			padding-top: 10px;
+			color: #636363;
+			position: absolute;
+			bottom: 0px;
+			width: 87%;
+			text-align: center;
+		}
+
+		.full-profile:hover {
+			text-decoration: none;
+
+		}
+
+		.product-content {
+			position: relative;
+			float: center;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+
+	<script>
+		$(document).ready(function () {
+			$("[data-toggle='tooltip']").tooltip();
+		});
+	</script>
+
+</head>
+
+<body id="page-top" class="index">
+	<!-- Google Tag Manager -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-122497508-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Navigation -->
+	<div id="includeheader"></div>
+	<!-- End Navigation -->
+
+	<!-- Header -->
+	<header style="border-bottom: 1px solid #efefef; padding-bottom: 50px;" id="banner">
+		<div class="jumbotron services" style="background-color: #FFFFFF;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 banner-text-container">
+						<div class="banner-text">
+							<div class=" green">
+								<div class="home-banner-heading">
+									<h3 class="title" style="letter-spacing: 8px; color: #282828; font-size: 40px;">
+										BEYOND thE NEEDLE</h3>
+									<br />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<br><br>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 text-left"><br>
+					<div>
+						<h2 style="padding-left: 0px">What is Beyond The Needle</h2>
+						<p>Current vaccinations, involving injection of a liquid form of vaccine via needle and syringe,
+							place a tremendous burden on the healthcare system and supply chain, especially during a
+							pandemic. Beyond the Needle is developing alternative technologies that aim to transform the
+							paradigm making vaccines easier to administer and more widely available, without the need
+							for needles, syringes, vials, and cold-chain distribution burdens.
+						</p>
+					</div>
+				</div>
+				<div style="margin: 0px;" class="col-lg-4 text-center">
+					<img alt="syringe" style="max-height: 300px" class="img-fluid" src="assets/images/icons/syringe.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<div style="-webkit-box-shadow: -1px 11px 15px -5px rgba(0,0,0,0.35); box-shadow: -1px 11px 15px -5px rgba(0,0,0,0.35);" class="container">
+		<div class="row">
+			<div class="col-12">
+				<ul class="nav nav-tabs ">
+					<li><a role="tab" class="active" href="#tab1" data-toggle="tab">BtN Strategy</a></li>
+					<li><a role="tab" href="#tab2" data-toggle="tab">BtN Awards</a></li>
+					<!-- <li><a role="tab" href="#tab2" data-toggle="tab">BtN Awards</a></li>-->
+					<!--  <li><a role="tab" href="#tab3" data-toggle="tab">FAQ</a></li> -->
+					<!--  <li><a role="tab" href="#tab4" data-toggle="tab">Working Across Government</a></li>-->
+					<!--  <li><a role="tab" href="#tab5" data-toggle="tab">BtN is Personal</a></li>-->
+				</ul>
+				<div class="tab-content ">
+					<div role="tabpanel" class="tab-pane active" id="tab1">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<h3>Beyond The Needle Program Strategy</h3>
+								<hr />
+								<br>
+							</div>
+						</div>
+						<div class="row text-left">
+							<div style="padding-bottom: 30px;" class="col-sm-10 mx-auto">
+								<h2>Vision</h2>
+								<p>A world in which needles are no longer the default choice for vaccination or drug
+									delivery.</p>
+
+								<img class="img-fluid" src="assets/images/btn_strategy_chart.jpg">
+								<br>
+								<hr /><br>
+								<h2>Mission</h2>
+								<p>Transform vaccination and other drug delivery by helping bring new technologies into
+									market that offer alternative routes of administration so that needles and syringes
+									are no longer the default modality, making them easier to administer, in a broader
+									range of settings, without the need for needles, syringes, vials, and cold-chain
+									transport.</p>
+								Specifically, Beyond the Needle aims to:
+								<ul>
+									<li>Overcome the logistics burdens associated with manufacturing, storing, shipping
+										and distributing needles, syringes, and other ancillary supplies, and also with
+										cold-chain storage and transportation</li>
+									<li>Increase immunization compliance, with pain-free, easier (possibly self-)
+										administration and dose sparing for single-dose efficacy (vs. multiple boosters)
+									</li>
+									<li>Make vaccine more widely available, especially in resource-constrained settings
+										and during a pandemic or other public health emergency where qualified
+										healthcare professionals are in high demand and short supply</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="tab2">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<h3>Investing across the PARADIGM</h3>
+								<hr />
+							</div>
+						</div>
+						<div class="col-md-12"
+							style="float: right; justify-content: center; align-items: center; display: flex;">
+							<ul class="sub selectdiv" style="list-style: none;">
+								<li class="gallery-drop-down" id="zoomdrop-product-drop-down">Show products:</li>
+							</ul>
+						</div>
+						<!--</div>    -->
+						<!--</div> -->
+
+						<div class="row">
+							<!-- 03-03 -->
+							<div class="col-sm-1"></div>
+							<div class="col-sm-11 mx-auto">
+								<div id="gallery-content"></div>
+								<div class="row">
+									<!-- 03-03 -->
+									<div class="col-12"></div>
+								</div>
+								<br>
+							</div>
+							<br />
+						</div>
+					</div>
+					<!--
+					<div role="tabpanel" class="tab-pane" id="tab2">
+						<div class="container">
+							<div class="row">
+								<h2 style="text-align: center">UNDER CONSTRUCTION</h2>
+							</div>      
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<br /><br />
+	<!--   END: TAB CONTENT -->
+	<!-- Footer -->
+	<div id="includefooter"></div>
+	<!-- Footer --------->
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div id="scroll-top-link" class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#page-top"> <i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+</body>
+
+</html>

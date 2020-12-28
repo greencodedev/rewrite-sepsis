@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="assets/images/drive-icon.png" />
+	<link rel="apple-touch-icon" href="assets/images/drive-apple-icon.png" />
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="DRIVe is transforming health security innovation to protect Americans from 21st century health security threats" />
+	<meta name="author" content="Barda DRIVe" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@BARDA" />
+	<meta name="twitter:title" content="Solving Sepsis" />
+	<meta name="twitter:description" content="Someone you know will be impacted by sepsis. Learn how we’re solving sepsis together." />
+	<meta name="twitter:image" content="https://drive.hhs.gov/img/twitter_card_solvingsepsis.png" />
+	<meta name="twitter:image:alt" content="Banner for DRIVe Solving Sepsis" />
+	<title>DRIVe</title>
+	<!--	
+	<meta http-equiv="Refresh" content="0; url=https://www.google.com">
+	-->
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Version 5.0 for checkmark -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/theme.css" rel="stylesheet">
+	<link href="assets/css/flipclock.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="/drivepubhtml/js/ie/html5shiv.js"></script>
+		<script src="/drivepubhtml/js/ie/respond.min.js"></script>
+	<![endif]-->
+	<!-- D3.js 03/02/20 -->
+	<script src="assets/javascript/global/d3.v4.min.js"></script>
+	<script src="assets/javascript/global/d3-scale-chromatic.v1.min.js"></script>
+
+	<!-- jQuery -->
+	<script src="assets/javascript/global/jquery-min.js"></script>
+
+	<!-- Needed for tooltips -->
+	<script src="assets/javascript/global/popper.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="assets/javascript/global/bootstrap.min.js"></script>
+
+	<!-- ParaParse -->
+	<script src="assets/javascript/global/PapaParse-4.6.0/papaparse.min.js"></script>
+
+	<!-- Make portfolio -->
+	<script src="assets/javascript/custom/makePortfolio.js"></script>
+
+	<!-- FlipClock Counter -->
+	<script src="assets/javascript/global/flipclock.min.js"></script>
+
+	<!-- Flipclock -->
+
+	<style>
+		.flipcounter {
+			transform-origin: 0 0;
+			transform: scale(.30);
+			-ms-transform: scale(.30);
+			-webkit-transform-origin: 0 0;
+			-webkit-transform: scale(.80);
+			-o-transform-origin: 0 0;
+			-o-transform: scale(.30);
+			-moz-transform-origin: 0 0;
+			-moz-transform: scale(.70);
+			margin-left: 60px;
+		}
+	</style>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+
+	<link href="assets/javascript/global/FlipClockCountdown/src/jquery.counter-analog.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="assets/javascript/global/FlipClockCountdown/src/jquery.counter-analog2.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="assets/javascript/global/FlipClockCountdown/src/jquery.counter-analog3.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="assets/css/solvingsepsis.css" rel="stylesheet" type="text/css">
+	<script src="assets/javascript/global/FlipClockCountdown/src/jquery.counter.js" type="text/javascript"></script>
+
+	<!-- Generate portfolio -->
+	<script>
+		$(function () {
+			$("#includeheader").load("templates/header.html");
+			$("#includefooter").load("templates/footer.html");
+			var csvfile = "data/ProductList_20180913.csv";
+			parseCSVToCallbackUpdate(csvfile, "Sepsis");  // 03/02/20
+		})
+	</script>
+
+	<script>
+		function makeCounter(startingValue, timeInterval, idOfHTML) {
+			var clock = $(idOfHTML).FlipClock(startingValue, {
+				clockFace: 'Counter'
+			});
+			var count = 0;
+			setTimeout(function () {
+				setInterval(function () {
+					clock.increment();
+				},
+					timeInterval);
+			});
+		};
+
+		// 86400 seconds per day
+		const msPerDay = 86400 * 1000; // 60 * 60 * 24 = 86400
+
+		const casesPerDay = 4658; // = 1.7M / 365 days
+		// const deathsPerDay = 740;
+		var msPerCase = msPerDay / casesPerDay;
+		// var msPerDeath = msPerDay / deathsPerDay;
+
+		// Find out how many milliseconds have elapsed thus far this year (automatically updating for each year)
+		var msTotalThisYear = new Date() - new Date("1/1/" + (new Date()).getFullYear());
+
+		// Once the page renders, start the counters
+		$(function () {
+			// Cases
+			makeCounter(Math.round(msTotalThisYear / msPerCase), msPerCase, "#counter-diagnoses");
+			// makeCounter(Math.round(msTotalThisYear / msPerDeath), msPerDeath, "#counter-deaths");
+			$("[data-toggle='tooltip']").tooltip();
+		});
+	</script>
+
+	<!--<style>
+		.productbox {
+			top: 20px;
+			border: 3px solid #DDDDDD;
+			margin: 20px;
+			height: 230px;
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: perspective(1px) translateZ(0);
+			transform: perspective(1px) translateZ(0);
+			position: relative;
+			overflow: hidden;
+			background-color: #FFFFFF;
+			text-align: center;
+		}
+
+		.productbox:before {
+			padding-top: 7px;
+			border: 1px;
+			border-width:  solid #DDDDDD;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			right: 100%;
+			top: 0;
+			background: #5fbb46;
+			height: 5px;
+			-webkit-transition-property: right;
+			transition-property: right;
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-timing-function: ease-out;
+			transition-timing-function: ease-out;
+		}
+			
+		.productbox:hover:before, .productbox:focus:before, .productbox:active:before {
+			right: 0;
+		}
+
+		.full-profile {
+			font-size: 12px;
+			padding-top: 10px;
+			color: #636363;
+			position: absolute;
+			bottom: 0px;
+			width:87%;
+			text-align: center;
+		}
+
+		.full-profile:hover {
+			text-decoration: none;
+		}
+
+		.product-content {
+			position: relative;
+			float: center;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+				
+	</style> -->
+</head>
+
+<body id="page-top" class="index">
+	<!-- Google Tag Manager -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-122497508-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Navigation -->
+	<div id="includeheader"></div>
+	<!-- End Navigation -->
+
+	<!-- Header -->
+	<header style="border-bottom: 1px solid #efefef; padding-bottom: 50px;" id="banner">
+		<div class="jumbotron services" style="background-color: #FFFFFF;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 banner-text-container">
+						<div class="banner-text">
+							<div class=" green">
+								<div class="home-banner-heading">
+									<h3 class="title" style="letter-spacing: 8px; color: #282828; font-size: 40px;">
+										SOLVING SEPSIS</h3><br />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<br><br>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div style="margin: 0px;" class="col-lg-6 text-center">
+					<div style="background-image: url('assets/images/coronovirus4.png'); padding: 20px; border-radius: 20px;"
+						class=" text-center">
+						<br />
+						<h3 style="color: #FFFFFF" class="bolder">Share your sepsis story</h3><br>
+						<p style="color: #FFFFFF">Use <span style="font-weight: 700">#solvingsepsistogether
+								@BARDA</span> to join our mission and share your experience with sepsis.</p><br>
+					</div>
+				</div>
+				<div class="col-lg-5 text-left"><br>
+					<!--
+				  <h2>Estimated Americans with Sepsis (this year)<sup><a href="https://www.cdc.gov/sepsis/datareports/index.html" target="_blank;">1</a></sup> </h2>
+				<div style="text-align: center;" id="counter-diagnoses" class="flipcounter"></div>  -->
+					<div>
+						<h5>Each year:</h5>
+						<ul style="text-align: left">
+							<li>More than 1.7 million people in the U.S develop sepsis <sup>1</sup></li>
+							<li>Nearly 270,000 adult Americans die as a result of sepsis <sup>1</sup><br>
+							</li>
+							<li>More than $62 billion is spent on sepsis healthcare costs<sup>2</sup></li>
+						</ul>
+						<div class="citation"><sup>1</sup> <a href="https://www.cdc.gov/sepsis/"
+								target="_blank">https://www.cdc.gov/sepsis/</a><br></div>
+						<p class="citation"><sup>2</sup> <a
+								href="https://journals.lww.com/ccmjournal/Fulltext/2020/03000/Sepsis_Among_Medicare_Beneficiaries__3__The.4.aspx"
+								target="_blank">Buchman TG, Simpson SQ, Sciarretta KL, et al: Sepsis Among Medicare
+								Beneficiaries: 3. The Methods, Models, and Forecasts of Sepsis, 2012-2018. Crit Care Med
+								2020; 48:302-318</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div style="-webkit-box-shadow: -1px 11px 15px -5px rgba(0,0,0,0.35); box-shadow: -1px 11px 15px -5px rgba(0,0,0,0.35);" class="container">
+		<div class="row">
+			<div class="col-12">
+				<ul class="nav nav-tabs ">
+					<li><a role="tab" class="active" href="#tab1" data-toggle="tab">Solving Sepsis Strategy</a></li>
+					<li><a role="tab" href="#tab2" data-toggle="tab">Sepsis Awards</a></li>
+					<li><a role="tab" href="#tab3" data-toggle="tab">FAQ</a></li>
+					<li><a role="tab" href="#tab4" data-toggle="tab">Working Across Government</a></li>
+					<li><a role="tab" href="#tab5" data-toggle="tab">Sepsis is Personal</a></li>
+				</ul>
+				<div class="tab-content ">
+					<div role="tabpanel" class="tab-pane active" id="tab1">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<h3>Solving Sepsis Strategy</h3>
+								<hr />
+								<br>
+							</div>
+						</div>
+						<div class="row text-center">
+							<div style="padding-bottom: 30px;" class="col-sm-10 mx-auto"><img
+									style="padding-bottom: 20px;" class="img-fluid"
+									src="assets/images/Program_Strategy_Updated2020.jpg" alt="Sepsis Program Strategy" />
+								<br /><br />
+								<h5>DRIVe Solving Sepsis aims to reduce the incidence, morbidity, mortality and cost of
+									sepsis by investing in key strategic areas </h5>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="tab2">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<h3>Investing across the PARADIGM</h3>
+								<hr />
+								<p>The Solving Sepsis program is addressing the entire continuum of care of a sepsis
+									patient – from early pre-hospital interactions with healthcare providers, through
+									hospital care and discharge – seeking innovative interventions at each step to
+									identify sepsis early, address clinical management in order to improve patient
+									outcomes and decrease mortality. Solving Sepsis is partnering with industry,
+									academic and nonprofit groups to develop the following products to address sepsis.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-12"
+							style="float: right; justify-content: center; align-items: center; display: flex;">
+							<ul class="sub selectdiv" style="list-style: none;">
+								<li class="gallery-drop-down" id="zoomdrop-product-drop-down">Show products:</li>
+							</ul>
+						</div>
+						<div class="row width-100" style="margin: 0px;">
+							<!-- 03-03 -->
+							<div class="col-sm-1"></div>
+							<div class="col-sm-11 mx-auto">
+								<div id="gallery-content"></div>
+								<div class="row width-100">
+									<!-- 03-03 -->
+									<div class="col-12">
+									</div>
+								</div>
+								<br>
+							</div><br />
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="tab3">
+						<div class="row">
+							<br />
+							<div class="col-sm-12 text-center">
+								<h3>FAQ</h3>
+								<hr />
+							</div>
+							<div class="col-sm-8">
+								<br />
+								<p>Please carefully read the Solving Sepsis area of interest description in the EZ-BAA
+									solicitation on beta.sam.gov located <a
+										href="https://beta.sam.gov/opp/16232dc9fc0c4d46928f2c66804e2bea/view?keywords=BAA-20-100-SOL-0002&sort=-relevance&index=&is_active=true&page=1"
+										target="_blank">here</a>. If you have any questions not answered in the
+									solicitation or in these Frequently Asked Questions below, please email <a
+										href="mailto:SolvingSepsis@hhs.gov">SolvingSepsis@hhs.gov</a>. 
+								</p>
+								<div class="accordion" id="accordionExample">
+									<div class="card">
+										<div class="card-header" id="headingZero">
+											<h5 class="mb-0">
+												<a href="#" class="text-left" data-toggle="collapse"
+													data-target="#collapseZero" aria-expanded="true"
+													aria-controls="collapseZero">
+													<strong>Q: I know Solving Sepsis is interested in diagnostics but
+														are they also interested in therapeutics?</strong>
+												</a>
+											</h5>
+										</div>
+
+										<div id="collapseZero" class="collapse show " aria-labelledby="headingZero"
+											data-parent="#accordionExample">
+											<div class="card-body">A: Yes. The Solving Sepsis program is interested in
+												host-based therapeutics that include demonstration of efficacy in
+												sepsis-relevant models, with a clear regulatory plan for FDA approval.
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingOne">
+											<h5 class="mb-0">
+												<a href="#" class="collapsed text-left" data-toggle="collapse"
+													data-target="#collapseOne" aria-expanded="false"
+													aria-controls="collapseOne">
+													<strong>Q: Do we need to demonstrate our technology in a sepsis
+														population prior to submission?</strong>
+												</a>
+											</h5>
+										</div>
+										<div id="collapseOne" class="collapse" aria-labelledby="headineOne"
+											data-parent="#accordionExample">
+											<div class="card-body">
+												A: Proposed approaches should include demonstration of effectiveness in
+												sepsis relevant models (e.g. utilizing sepsis patient samples, sepsis
+												patient data).
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingThree">
+											<h5 class="mb-0">
+												<a href="#" class="collapsed" data-toggle="collapse"
+													data-target="#collapseThree" aria-expanded="false"
+													aria-controls="collapseThree">
+													<strong>Q: Are you interested in pathogen-based tools for sepsis or
+														just host-based ones?</strong>
+												</a>
+											</h5>
+										</div>
+										<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+											data-parent="#accordionExample">
+											<div class="card-body">
+												A: Solving Sepsis is interested in the host response to sepsis and
+												therefore is only interested in host-based approaches when considering
+												development of diagnostics, devices and therapeutics. BARDA has other
+												existing programs for pathogen-targeted approaches.
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingFour">
+											<h5 class="mb-0">
+												<a href="#" class=" collapsed text-left" data-toggle="collapse"
+													data-target="#collapseFour" aria-expanded="false"
+													aria-controls="collapseFour">
+													<strong>Q: How do I indicate references in my abstract
+														submission?</strong>
+												</a>
+											</h5>
+										</div>
+										<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+											data-parent="#accordionExample">
+											<div class="card-body">
+												A: References must be included in the technical description section of
+												the application but can be provided as a text link to a compiled list of
+												references. Additionally, a PMID can be provided instead of the full
+												reference.
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="card-header" id="headingFive">
+											<h5 class="mb-0">
+												<a href="#" class="collapsed text-left" data-toggle="collapse"
+													data-target="#collapseFive" aria-expanded="false"
+													aria-controls="collapseFive">
+													<strong>Q: My technology seeks to diagnose/treat bacterial-derived
+														sepsis- is this a sufficient<br> strategy for my
+														abstract?</strong>
+												</a>
+											</h5>
+										</div>
+										<div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+											data-parent="#accordionExample">
+											<div class="card-body">
+												A: Solving Sepsis is interested in medical countermeasures that address
+												sepsis of any etiology (i.e. bacterial, viral, other) versus approaches
+												that are limited to sepsis induced by a subset of pathogens.
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingSix">
+											<h5 class="mb-0">
+												<a href="#" class="collapsed text-left" data-toggle="collapse"
+													data-target="#collapseSix" aria-expanded="false"
+													aria-controls="collapseSix">
+													<strong>Q: What type of commercialization information should be
+														included in my application?</strong>
+												</a>
+											</h5>
+										</div>
+										<div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+											data-parent="#accordionExample">
+											<div class="card-body">
+												A: This may include establishment of partnerships with appropriate
+												device fabricators/manufacturers, addressing the potential to scale,
+												intellectual property and the means to address adoption in hospitals or
+												other clinical settings.
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="card-header" id="headingSeven">
+											<h5 class="mb-0"> 
+												<a href="#" class="collapsed text-left"
+													data-toggle="collapse" data-target="#collapseSeven"
+													aria-expanded="false" aria-controls="collapseSeven"> <strong>Q: I
+														have a technology that can address fluid management for patients
+														that should include sepsis. Is the Solving Sepsis program
+														interested?</strong> 
+												</a> 
+											</h5>
+										</div>
+										<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+											data-parent="#accordionExample">
+											<div class="card-body">
+												A: The technology must demonstrate improved outcomes for sepsis
+												patients. Please provide preliminary data to support the technology
+												evaluated in sepsis patients or in a sepsis model.
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="card-header" id="headingEight">
+											<h5 class="mb-0"> <a href="#" class="collapsed text-left"
+													data-toggle="collapse" data-target="#collapseEight"
+													aria-expanded="false" aria-controls="collapseEight"> <strong>Q: Is
+														it possible to work with both DRIVe and another BARDA division
+														on a project? How do I submit that idea?</strong> </a> </h5>
+										</div>
+										<div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+											data-parent="#accordionExample">
+											<div class="card-body">
+												A: Yes! Please reach out to <a
+													href="mailto:SolvingSepsis@hhs.gov">SolvingSepsis@hhs.gov</a> so
+												that we can coordinate with the appropriate division and discuss a
+												cross-collaboration idea as well as the best mechanism to submit the
+												idea.
+											</div>
+										</div>
+									</div>
+									<br />
+								</div>
+							</div>
+							<div class="col-sm-4 text-center">
+								<img class="img-fluid" src="assets/images/wsd_solve.jpg" width="450" height="338" alt="" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane" id="tab4">
+						<div class="row">
+							<div class="col-sm-12 text-left">
+								<h3 style="text-align: center">Working Across The Government</h3>
+								<hr />
+								<p>The Solving Sepsis program is forming key partnerships across the U.S. Government to
+									address sepsis by:</p>
+
+								<ul style="margin-left: 30px;">
+									<li>Examining the burden of sepsis in Medicare beneficiaries, conducting the largest
+										known study of sepsis inpatient admissions to date, analyzing more than 9.5
+										million inpatient stays from 2012-2018. </li>
+								</ul>
+
+								<!--	  
+								<h5 class="bolder">Center for Medicare and Medicaid Services (CMS)</h5>
+								<p>The Solving Sepsis program is collaborating with CMS to examine the burden of sepsis in Medicare beneficiaries. In partnership with Acumen, the largest known study of sepsis inpatient admissions was performed, analyzing more than 9.5 million inpatient stays from 2012-2018.</p>
+								<h6 style="text-decoration: underline">Critical insights<br></h6>
+								<h7><i>Burden:</i></h7>
+								<ul>
+									<li>In 2018 alone, costs to treat Medicare beneficiaries with sepsis (including inpatient and skilled nursing facility care) is estimated to be $41.5 billion. This is an increase from $27.7 billion in 2012. <sup>1</sup> </li> <br>
+									<li>Sepsis inpatient admissions are rising even faster than the Medicare beneficiary population. Between 2012 and 2018, the Medicare beneficiary population grew 22%, while the number of sepsis admissions grew approximately 40%. <sup>1</sup> </li> <br>
+									<li>The vast majority of sepsis cases among Medicare beneficiaries (>90% in 2018), originated outside of the hospital.<sup>1</sup></li><br>
+									<li>Claims paid to hospitals for the costs of care per admission among FFS beneficiaries has decreased from an average of $21,922 in 2012 to $19,738  in 2018.<sup>1</sup></li><br>
+									<li>Based on the known costs and rates of sepsis among Medicare benficiaries, athe costs of inpatient and skilled nursing care nationwide are estimated to exceed $62 billion a year.  <sup>3</sup></li><br>
+								</ul>
+								<h6><i>Patient Trajectories of Medicare beneficiaries:</i></h6>
+								<ul>
+									<li>Sepsis has markedly worse outcomes when compared to other hospital admissions with a 3-year mortality rate of 60% as opposed to 40% for non-sepsis admission as calcuated over the 7 year time period. This number increases to an astonishing 3-year mortality rate of 75% for septic shock. <sup>1</sup></li><br>
+									<li>Patients that are hospitalized for sepsis have similar medical histories to those admitted for other conditions. <sup>2</sup></li><br>
+								</ul>	
+								-->
+
+								<h6 style="margin-left: 40px;">References:</h6>
+								<p style="margin-left: 40px;"><a
+										href="https://journals.lww.com/ccmjournal/Fulltext/2020/03000/Sepsis_Among_Medicare_Beneficiaries__1__The.2.aspx"
+										target="_blank">Buchman TG, Simpson SQ, Sciarretta KL, et al: Sepsis Among
+										Medicare Beneficiaries: 1. The Burdens of Sepsis, 2012-2018. Crit Care Med 2020;
+										48:276-288.</a></p>
+
+								<p style="margin-left: 40px;"><a
+										href="https://journals.lww.com/ccmjournal/Fulltext/2020/03000/Sepsis_Among_Medicare_Beneficiaries__2__The.3.aspx"
+										target="_blank">Buchman TG, Simpson SQ, Sciarretta KL, et al: Sepsis Among
+										Medicare Beneficiaries: 2. The Trajectories of Sepsis, 2012-2018. Crit Care Med
+										2020; 48:289-301.</a></p>
+
+								<p style="margin-left: 40px;"><a
+										href="https://journals.lww.com/ccmjournal/Fulltext/2020/03000/Sepsis_Among_Medicare_Beneficiaries__3__The.4.aspx"
+										target="_blank">Buchman TG, Simpson SQ, Sciarretta KL, et al: Sepsis Among
+										Medicare Beneficiaries: 3. The Methods, Models, and Forecasts of Sepsis,
+										2012-2018. Crit Care Med 2020; 48:302-318</a></p>
+
+
+								<h6 style="margin-left: 40px;">Critical Care Medicine 2020; 48(3)</h6>
+								<p style="margin-left: 40px;">Open Access, Supplemental Digital Content, and
+									Visualizations
+									are all available from <a href="https://lippincott.shinyapps.io/BARDA_sepsis_study/"
+										target="_blank">the Society of Critical Care Medicine</a></p>.<br><br>
+
+								<ul style="margin-left: 30px;">
+									<li>Supporting BARDA partners to develop tools to raise awareness and educate on
+										sepsis among healthcare professionals and for special populations.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-11 mx-auto">
+								<div class="row">
+									<div class="col-12">
+									</div>
+								</div>
+								<br>
+							</div><br />
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane" id="tab5">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3"><img
+										style="max-width: 210px; border: 1px solid #636363; padding: 5px;"
+										alt="Tim Buchman" class="img-fluid" src="assets/images/tim_buchman.png"></div>
+								<div class="col-lg-6"><br><br>
+									<h5>Read the story of Solving Sepsis’ Dr. Tim Buchman and his encounter with sepsis:
+									</h5>
+									<a href="https://www.phe.gov/ASPRBlog/pages/BlogArticlePage.aspx?PostID=360"
+										target="_blank">Read More Here</a>
+								</div>
+							</div>
+
+							<div class="row">
+								<div style="border-top: 1px solid #C3C3C3; padding-top: 20px; margin-top: 20px">
+									<div class="col-lg-8"><br>
+										<h5>Read about CDC’s Division of Health Quality Promotion National Center for
+											Emerging and Zoonotic Infectious Diseases Director, Dr. Denise Cardo’s
+											statement on Why Each Person Matters:</h5>
+										<a href="https://blogs.cdc.gov/safehealthcare/sepsis-awareness-month-why-each-person-matters/?s_cid=NCEZID-Sepsis-133&deliveryName=USCDC_1181-DHQP-DM7951"
+											target="_blank">Read More Here</a>
+										<br><br>
+									</div>
+								</div>
+							</div>
+							<div style="border-top: 1px solid #C3C3C3; padding-top: 20px; margin-top: 20px" class="row">
+								<div class="col-lg-3"> <img
+										style="max-width: 210px; border: 1px solid #636363; padding: 5px;"
+										alt="Denise Headshot" class="img-fluid" src="assets/images/denise_headshot.png"></div>
+								<div class="col-lg-8"><br>
+									<h5>From providing care to becoming a patient: A Level One Trauma center nurse’s
+										experience with COVID-19 and Sepsis</h5>
+									<p>As a nurse practitioner in a Level One Trauma center at UF Health, I know the
+										signs of sepsis; I pay attention to the presentation with my trauma patients,
+										but I never imagined that I could develop sepsis if I ever fell ill. Like every
+										essential worker, I also was informed and alert about the risk of being exposed
+										to COVID-19 from my patients and from my coworkers... </p>
+
+									<a href="https://www.medicalcountermeasures.gov/barda/advancing-innovation/barda-sepsis-awareness-month/"
+										target="_blank">Read More Here</a>
+								</div>
+							</div>
+						</div>
+						<!--	<div class="container">
+		<div class="row">
+			<h3 style="text-align: center">Sepsis Is Personal</h3>	
+			 <div class="col-12"><p>The Solving Sepsis team has heard numerous personal stories about sepsis and sepsis loss and encountered many individuals whom are sepsis survivors.   This has strengthened our commitment to working across government and with our external partners to combat sepsis.</p><br>
+		</div>
+						
+  <div class="row">
+
+    <div class="col-3"> <h2><img  style="max-width: 210px; border: 1px solid #636363; padding: 5px;"   alt="Tim Buchman" class="img-fluid" src="assets/images/tim_buchman.png">
+</h2></div>
+    <div class="col-5"><p>Read the story of Solving Sepsis’ Dr. Tim Buchman and his encounter with sepsis:</p>
+<a href="https://www.phe.gov/ASPRBlog/pages/BlogArticlePage.aspx?PostID=360" target="_blank">Read More Here</a></div>
+    <div class="w-100"></div>
+    <div class="col">Column</div>
+    <div class="col"> <p>Read about CDC’s Division of Health Quality Promotion National Center for Emerging and Zoonotic Infectious Diseases Director, Dr. Denise Cardo’s statement on Why Each Person Matters:</p>
+<a href="https://blogs.cdc.gov/safehealthcare/sepsis-awareness-month-why-each-person-matters/?s_cid=NCEZID-Sepsis-133&deliveryName=USCDC_1181-DHQP-DM7951" target="_blank">Read More Here</a></div>
+  </div> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-11 mx-auto">
+					<div id="gallery-content"></div>
+					<div class="row">
+						<div class="col-12">
+						</div>
+					</div>
+					<br>
+				</div><br />
+			</div>
+		</div>
+	</div>
+	<br /><br />
+	<div class="container">
+		<div style="text-align: center"><a href="files/DRIVe _One_Pagers_Sepsis.pdf" target="new">Download the Solving
+				Sepsis Program Factsheet</a></div><br>
+		<div style="text-align: center">For more information, please contact us at <a
+				href="mailto:solvingsepsis@hhs.gov">solvingsepsis@hhs.gov</a></div><br>
+		<div style="text-align: center">Submit your <a href="partner.html#apply">EZ BAA Abstract</a></div>
+	</div>
+	<hr />
+	<section>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-xs-12" style="padding: 40px;">
+					<p> <strong>DRIVe</strong> (<strong>D</strong>ivision of <strong>R</strong>esearch,
+						<strong>I</strong>nnovation,
+						and <strong>Ve</strong>ntures) was established by the <strong>B</strong>iomedical
+						<strong>A</strong>dvanced <strong>R</strong>esearch and <strong>D</strong>evelopment
+						<strong>A</strong>uthority (<a href="https://medicalcountermeasures.gov/"
+							target="_blank"><strong>BARDA</strong></a>),
+						part of the <strong>A</strong>ssistant <strong>S</strong>ecretary for
+						<strong>P</strong>reparedness
+						and <strong>R</strong>esponse (<a href="http://www.phe.gov/"
+							target="_blank"><strong>ASPR</strong></a>), within the United States
+						Department of <strong>H</strong>ealth and <strong>H</strong>uman <strong>S</strong>ervices (<a
+							href="http://www.hhs.gov/" target="_blank"><strong>HHS</strong></a>). </p>
+					<div class="text-center footer_logos" style="margin-top: 20px; margin-bottom: 20px;">
+						<a target="_blank" href="https://hhs.gov"><img
+								alt="Department of Health &amp; Human Services - USA" src="assets/images/logos/dhhs.png"
+								style="height: 100px;"></a> <a target="_blank" href="https://phe.gov"><img alt="ASPR"
+								src="assets/images/logos/aspr.png" style="height: 80px;"></a> <a target="_blank"
+							href="https://medicalcountermeasures.gov/"><img alt="BARDA logo" src="assets/images/logos/barda.png"
+								style="height: 80px;" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--   END: TAB CONTENT -->
+	<div class="example">
+		<p>
+			<b class="timer" id="lollipop" data-to="999999" data-from="functon() {100000/4;};" data-speed="10000" data-refresh-interval="60000">
+			</b>
+		</p>
+	</div>
+	<!-- Footer -->
+	<div id="includefooter"></div>
+	<!-- Footer --------->
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div id="scroll-top-link" class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#page-top"> <i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+</body>
+
+</html>

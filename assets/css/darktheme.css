@@ -1,0 +1,272 @@
+.map-container {
+	background: radial-gradient(#2b5279, #041221);
+	color: #c7dee4;
+}
+
+::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: bisque;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: bisque;
+}
+
+:-ms-input-placeholder {
+	/* IE 10+ */
+	color: bisque;
+}
+
+:-moz-placeholder {
+	/* Firefox 18- */
+	color: bisque;
+}
+
+#logo {
+	
+}
+
+.selections ul {
+	
+}
+
+input {
+	background: #17334d;
+	border: 2px solid #496078 !important;
+}
+
+.map-container .tooltip {
+	background: #cde8f0;
+	color: #134677;
+	border: 1px solid #496078;
+}
+
+.selections ul li:nth-of-type(1) {
+	
+}
+
+.selections ul li:hover {
+	color: bisque;
+}
+
+.selector.selected {
+	color: bisque;
+}
+
+.selections ul li {
+	
+}
+
+.picholder {
+	/*		background: url(/images/E._coli_Bacteria_7316101966.jpg);*/
+	opacity: .1;
+	background-size: cover;
+}
+
+.districts {
+	fill: none;
+	fill-opacity: .4;
+	/* stroke: #cc8b206e; orangey to show on flu*/
+	stroke: #cbffec6e;
+}
+
+.districts:hover {
+	fill: orange;
+}
+
+.states {
+	fill: #fff;
+	fill-opacity: 0;
+	stroke: #7194ad;
+}
+
+.county {
+	stroke: #f89150;
+	stroke-width: 0;
+}
+/*
+	.statefill {
+		stroke: #f89150;
+		//stroke-width: 0;
+	}
+*/
+/*
+.county:hover {
+	    stroke: #c7dee4;
+	stroke-width: 2;
+	}
+*/
+.counties.poordata {
+	
+}
+
+.state-boundaries {
+	stroke: #be40a5;
+}
+
+.background {
+	/*		fill: none;*/
+	
+}
+
+.spotLocations {
+	fill: #ffc500;
+	fill-opacity: .7;
+	stroke: #ffc500;
+}
+
+.spotLocations.rfis {
+	fill: #ff7b00;
+	stroke: #ff9668;
+	/*    stroke: #14ff00;*/
+}
+
+.spotLocations:hover {
+	
+}
+
+.counties {
+	
+}
+
+.active {
+	stroke: #ffc500 !important;
+}
+
+.dottip {
+	/*		color: bisque;*/
+	border-left: 1px solid #ffc500;
+	/*
+		    background: #dce5e7;
+		color: #456;
+*/
+	/*		    background: linear-gradient(to bottom, #eef7ff 5%,#00041200 64%,#00041200 100%);*/
+	color: #d3dfe5;
+}
+
+.dottip a {
+	color: #cbf3f9;
+	text-decoration: none;
+	transition: 600ms ease all;
+	transition-timing-function: ease-out;
+}
+
+.dottip a:hover {
+	color: bisque;
+}
+
+.dottip .tipContainer {
+	padding: 1em;
+}
+
+.dottip .tipFirst {
+	/*		    color: #ffc501;*/
+	/*		color: #ffd95a;*/
+	color: #f2bb58;
+}
+
+.dottip .tipBody {
+	
+}
+
+.dottip #tipLogo.shaded {
+	background: linear-gradient(to bottom, #eef7ff 5%, #ffffff73 80%, #ffffff00 100%);
+}
+
+svg {
+	
+}
+
+.key {
+	fill: #c7dee4;
+}
+
+.key .tick text {
+	fill: #c7dee4;
+}
+
+.key .tick line {
+	stroke: #c7dee4;
+}
+
+.keybg {
+	fill: #204161;
+	opacity: 0;
+}
+
+.stripeline {
+	stroke: #fff;
+}
+
+.sources {
+	
+}
+/*slider*/
+.slider text {
+	fill: #c7dee4;
+}
+
+.ticks line {
+	stroke: #c7dee4;
+	stroke-opacity: .3
+}
+
+.track, .track-inset, .track-overlay {
+	/*      stroke-linecap: round;*/
+	
+}
+
+.track {
+	stroke: #d7f6ff;
+}
+/*
+    .track-inset {
+      stroke: #dcdcdc;
+      stroke-width: 8px;
+    }
+*/
+.track-inset {
+	stroke: #06182a;
+}
+
+.track-overlay {
+	stroke: transparent;
+}
+
+.handle {
+	fill: #d7f6ff;
+	stroke: #06182a;
+}
+
+#play-button .bg {
+	FILL: #041526;
+	fill-opacity: 0;
+	/*    color: #fff;*/
+	stroke: none;
+}
+
+#play-button .playstatus {
+	fill: #fec401;
+	stroke: none;
+	transition: 600ms all;
+}
+
+#play-button .playstatus:hover {
+	fill: bisque;
+}
+/*end slider*/
+
+ul#accelselector:hover {
+	color: bisque;
+}
+
+#internat_label {
+	text-anchor: end;
+	color: red;
+	stroke: none;
+	fill: #c7dee4;
+	font-family: 'Pathway Gothic One', sans-serif;
+	fill-opacity: 1;
+	letter-spacing: .05em;
+}

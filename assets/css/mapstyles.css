@@ -1,0 +1,590 @@
+.map-container {
+	position: relative;
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*			dark theme*/
+	/*		background: radial-gradient(#2b5279, #041221);*/
+	font-weight: 300;
+	/*margin: 0;*/
+	/*		overflow: hidden;*/
+	padding: 0;
+}
+
+svg text {
+	font-family: 'Raleway', sans-serif
+}
+
+#logo {
+	/*		width: 15%;*/
+	position: relative;
+	padding-left: 2em;
+	padding-top: 1em;
+}
+
+#logo svg {
+	width: 100%;
+}
+
+#logo path {
+	width: 20%;
+	position: absolute;
+	padding-left: 2em;
+	padding-top: 1em;
+}
+
+.mapholder {
+	width: 100%;
+	float: left;
+}
+
+.mapholder.accelmap {
+	/* width: 68%; */
+}
+
+@media (max-width: 1024px) and (min-width: 360px) {
+	.mapholder.accelmap {
+		width: 100%;
+	}	
+}
+
+
+.vizholder {
+	/*		width: 100%;*/
+	padding: 0 3em 1em 3em;
+	position: relative;
+	background-color: #d1d1d1;
+}
+
+.vizholder a {
+	color: #626262;
+}
+
+.vizholder a:hover {
+	color: #000;
+}
+
+.mapdiv {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.mapholder svg:first-of-type {
+	-webkit-box-shadow: 3px 3px 28px -2px rgba(30, 30, 33, 0.65);
+	-moz-box-shadow: 3px 3px 28px -2px rgba(30, 30, 33, 0.65);
+	box-shadow: 3px 0px 28px -2px rgb(30, 30, 33);
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.selections {
+	width: 100%;
+
+}
+
+.selections ul {
+	float: left;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 1.5em;
+	margin-top: .3em;
+}
+
+.map-container .tooltip {
+	padding: 1em;
+	/*		this REALLY needs to adjust with window size*/
+	font-size: .7em;
+	pointer-events: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.selections ul li:nth-of-type(1) {
+	padding-top: .5em
+}
+
+.selections ul li:hover {
+
+}
+
+.selector {
+	cursor: pointer;
+}
+
+.selections ul li {
+	font-family: 'Open Sans', sans-serif;
+	list-style: none;
+	padding-left: 1em;
+	font-size: .6em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	transition: 600ms ease all;
+	transition-timing-function: ease-out;
+}
+
+ul.sub li {
+	font-size: .52em;
+
+}
+
+.picholder {
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*		opacity: .1;*/
+	opacity: 0;
+	background-size: cover;
+	top: 0;
+}
+
+.slider path {
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.districts {
+	fill: none;
+	fill-opacity: 1;
+	/*		stroke:#DDE8F4;*/
+	stroke-width: .5px;
+	pointer-events: none;
+	/* transition: 800ms all; */
+}
+
+.states {
+	fill: none;
+	fill-opacity: 0;
+	stroke-width: 1;
+	/*		pointer-events: none;*/
+}
+
+.counties.poordata {
+
+}
+
+.background {
+	/*			transparent so click still works*/
+	fill: #fff0;
+}
+
+.spotLocations {
+	fill-opacity: .7;
+	/*		stroke: #ffc500;*/
+	stroke-width: 1;
+	/*
+		transition: 700ms ease all;
+		transition-timing-function: ease-out;
+*/
+}
+
+.spotLocations circle:hover {
+	fill-opacity: 1;
+}
+
+.counties {
+	fill: none;
+}
+/*
+.county{
+	transition: 500ms all;
+}
+*/
+.dottip {
+	/* position: absolute; */
+	float: left;
+	width: 30%;
+	/* border: 3px solid #ffc500; */
+	/* border-radius: 50%; */
+	/* padding: 3em; */
+	/*		color: bisque;*/
+	/* right: 0; */
+	/* top: 0; */
+	/* height: 10em; */
+	transition: 700ms ease all;
+	transition-timing-function: ease-out;
+	overflow-y: auto;
+}
+
+/* .dottip .tipContainer {
+	padding: 3em;
+} */
+
+.dottip .tipFirst {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 1.7em;
+	letter-spacing: .03em;
+	line-height: 1.1em;
+	/*		padding: 0 3em;*/
+}
+
+.dottip .tipBody {
+	font-size: .9em;
+	font-weight: 400;
+	line-height: 1.65em;
+	position: relative;
+	/* padding: 0 3em; */
+	padding-top: 1.5em;
+	letter-spacing: .02em;
+}
+/*
+	#tipLogo {
+
+		position: relative;
+		margin: auto;
+		padding: 2em 3em;
+
+	}
+*/
+.dottip .capes {
+	display: block;
+	padding-left: 1em;
+}
+
+#tipLogo.shaded {
+	min-height: 5em;
+}
+
+#tipLogo img {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	max-height: 9em;
+	object-fit: scale-down;
+}
+
+#tipLogo {
+	width: 100%;
+	/*  max-height: 9em;*/
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	margin: auto;
+	padding: 2em 3em;
+}
+
+.tipfield {
+	padding-bottom: .7em;
+	font-weight: 400;
+	overflow-wrap: break-word;
+}
+
+.tiplabel {
+	font-weight: 200;
+	font-size: .85em;
+	opacity: .8;
+}
+
+svg {
+	fill: none;
+}
+
+.key {
+	pointer-events: none;
+}
+
+.key .tick text {
+
+}
+
+.key .tick line {
+
+}
+
+.key .caption {
+	stroke: none;
+	font-weight: 400;
+}
+
+.stripeline {
+	stroke-width: 1;
+	stroke-opacity: .5;
+}
+
+.sources {
+	font-size: .65em;
+	float: left;
+	clear: both;
+}
+/*slider*/
+.slider text {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.ticks {
+	font-size: .8em;
+}
+
+.ticks .domain {
+	stroke: none;
+}
+
+.track, .track-inset, .track-overlay {
+	/*      stroke-linecap: round;*/
+
+}
+
+.track {
+	stroke-opacity: 1;
+	stroke-width: 6px;
+}
+/*
+    .track-inset {
+      stroke: #dcdcdc;
+      stroke-width: 8px;
+    }
+*/
+.track-inset {
+	stroke-width: 4px;
+	/* fill: orange; */
+}
+
+.track-overlay {
+	pointer-events: stroke;
+	stroke-width: 50px;
+	stroke: transparent;
+	/*		cursor: crosshair;*/
+	cursor: pointer;
+}
+
+.handle {
+	stroke-opacity: 1;
+	/*		cursor: pointer;*/
+	stroke-width: 1.25px;
+	/*		counterintuitive- but it is really just a marker not a grabber*/
+	pointer-events: none;
+}
+
+#play-button {
+	stroke: #a7d3d0;
+	stroke-width: .5;
+	cursor: pointer;
+}
+/*end slider*/
+#internat_label {
+	text-anchor: end;
+	stroke: none;
+	font-family: 'Pathway Gothic One', sans-serif;
+	fill-opacity: 1;
+	letter-spacing: .05em;
+}
+
+.reset_map {
+	z-index: 3;
+	text-align: right;
+	padding: .3em;
+	white-space: nowrap;
+	cursor: pointer;
+	transition-timing-function: ease-out;
+	right: 5px;
+}
+
+.reset_map:hover {
+	color: #5FBB46;
+}
+
+.reset_map.active {
+	color: #5FBB46;
+}
+
+#accelselector {
+	transition: 600ms ease all;
+	transition-timing-function: ease-out;
+}
+
+#instructions {
+	opacity: 0;
+	/*
+			padding-bottom: .5em;
+			padding-left: 4.2em;
+			 font-weight: 400;
+			padding-top: 2em;
+*/
+}
+
+#instructions {
+	margin-top: 1.5em;
+	position: absolute;
+	font-size: .5em
+}
+
+.ovelaytext {
+	transition: 500ms all;
+	font-size: .75em;
+	position: absolute;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+}
+
+#instructions h3 {
+	font-size: 1.7em;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: none;
+}
+
+#axislabel {
+	letter-spacing: .04em;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .85em
+}
+/*responsive sizing*/
+@media
+(
+max-width
+:
+576px)
+{
+.map-container {
+	font-size: 9px;
+}
+
+}
+@media
+(
+min-width
+:
+577px)
+{
+.map-container {
+	font-size: 11px;
+}
+
+}
+@media
+(
+min-width
+:
+768px)
+{
+.map-container {
+	font-size: 12px;
+}
+
+.dottip {
+	font-size: 12px;
+	width: 35%;
+}
+
+}
+@media
+(
+min-width
+:
+992px)
+{
+.map-container {
+	font-size: 14px;
+}
+
+}
+@media (min-width: 1024px) {
+	.dottip .tipContainer {
+		padding: 1em 2em;
+	}
+}
+@media
+(
+min-width
+:
+1200px)
+{
+.map-container {
+	font-size: 16px;
+}
+
+.dottip {
+	width: 35%;
+}
+
+.dottip .tipContainer {
+	padding: 1em 2em;
+	font-size: 15px;
+}
+
+.tipfield {
+	padding-bottom: .5em;
+	letter-spacing: .025em;
+}
+
+#tipLogo {
+	padding: 1em 3em 2em;
+}
+
+}
+@media ( min-width : 1400px) {
+	.dottip {
+		font-size: 14px;
+		width: 35%;
+	}
+	/*
+	.dottip .tipContainer {
+    padding: 1em 3em;
+}
+	.tipfield {
+    padding-bottom: .5em;
+}
+
+	#tipLogo {
+    padding: 1em 3em 2em;
+}
+*/
+}
+
+@media ( min-width : 1700px) {
+	.dottip {
+		font-size: 15px;
+		width: 33%;
+	}
+}
+
+@media
+(
+min-width
+:
+1900px)
+{
+.map-container {
+	font-size: 17px;
+}
+
+.dottip {
+	font-size: 17px;
+	width: 33%;
+}
+
+}
+/*test for large monitor-not showing at true pixel width*/
+@media ( min-width : 1100px) {
+	.mapholder.flumap {
+		width: 100%;
+	}
+}
+/*drop menu styles*/
+select:required:invalid {
+	color: gray;
+}
+
+option[value="select a state"] {
+	display: none;
+}
+
+option {
+	color: black;
+}
+
+select {
+	text-transform: none;
+	border-radius: 0;
+	background: #FFFFFF;
+	font-weight: 200;
+	font-size: 1em;
+}
+
+/* mmk additions */
+.map-col {
+	background-size: cover;
+}

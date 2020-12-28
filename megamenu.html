@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="assets/images/drive-icon.png" />
+	<link rel="apple-touch-icon" href="assets/images/drive-apple-icon.png" />
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="DRIVe is transforming health security innovation to protect Americans from 21st century health security threats" />
+	<meta name="author" content="DRIVe" />
+	<title>DRIVe</title>
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-MJGSB2L');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Font Awesome Version 5.0 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Custom styles for Website -->
+	<link href="assets/css/full-slider.css" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/grayscale.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/theme.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="/drivepubhtml/js/ie/html5shiv.js"></script>
+		<script src="/drivepubhtml/js/ie/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- jQuery -->
+	<script src="assets/javascript/global/jquery-min.js"></script>
+
+	<!-- Needed for tooltips -->
+	<script src="assets/javascript/global/popper.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="assets/javascript/global/bootstrap.min.js"></script>
+
+	<script>
+		$(function () {
+			$("#includefooter").load("templates/footer.html");
+			$("#includeheader").load("templates/header.html");
+			$('[data-toggle="tooltip"]').tooltip();
+		})
+	</script>
+
+	<style>
+		.btn_readmore:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+		/*Service Boxes */
+		.serviceBox {
+			padding: 35px 35px;
+			border-radius: 0px;
+			text-align: left;
+			overflow: hidden;
+			z-index: 1;
+			position: relative;
+		}
+
+		.serviceBox:before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			border-radius: 0px;
+			position: absolute;
+			top: 0;
+			left: -100%;
+			z-index: -1;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox:hover:before {
+			left: 0;
+		}
+
+		.serviceBox:after {
+			content: "";
+			width: 7px;
+			height: 0;
+			border-radius: 0px;
+			background: #5fbb46;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox:hover:after {
+			height: 100%;
+		}
+
+		.serviceBox .service-icon {
+			color: #161616;
+			margin-bottom: 10px;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox .service-icon i {
+			font-size: 30px;
+		}
+
+		.serviceBox .title {
+			display: inline-block;
+			font-size: 22px;
+			font-weight: 700;
+			text-transform: capitalize;
+			margin-right: 10px;
+		}
+
+		.serviceBox .description {
+			font-size: 15px;
+			color: #161616;
+			line-height: 25px;
+			transition: all 0.5s ease 0s;
+		}
+
+		.serviceBox:hover .service-icon,
+		.serviceBox:hover .description {
+			color: #fff;
+		}
+
+		.enactService:hover {
+			background-image: url("assets/images/icons/smartwatch_bg_on.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.enactServiceOff {
+			background-image: url("assets/images/icons/smartwatch_bg_off.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.sepsisService:hover {
+			background-image: url("assets/images/icons/ivfluids_bg_on.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.sepsisServiceOff {
+			background-image: url("assets/images/icons/ivfluids_bg_off.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.otherService:hover {
+			background-image: url("assets/images/icons/microscope_bg_on.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.otherService {
+			background-image: url("assets/images/icons/microscope_bg_off.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+
+		@media only screen and (max-width:990px) {
+			.serviceBox {
+				margin-bottom: 30px;
+			}
+		}
+	</style>
+</head>
+
+<body id="page-top" class="index">
+	<!-- Google Analytics Manager -->
+	<script>
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script',
+				'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-122497508-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJGSB2L" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- Navigation -->
+	<div id="includeheader"></div>
+	<!-- End Navigation -->
+
+	<br>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="carousel-design">
+					<br><br>
+					<h1 style=" text-align: center; color: #FFFFFF;">Transforming Health Security</h1>
+					<div>
+					</div><br>
+					<br><br>
+				</div>
+			</div>
+			<!--		
+	<div class="carousel-item" >
+	<div class="carousel-design-two">
+	<br><br>	
+	<div class="row">
+    <div class="mx-auto text-center">
+     <h1 style="color: #FFFFFF;">EZ BAA Portal Now Live</h1>
+	   </div>
+		</div>
+<div class="col-12">
+	<div class="row justify-content-center">
+    <div class="col-3 btn-dark-banner"><a href="https://drive.rti.org/" target="_blank">APPLY HERE</a></div>
+	  <div class="col-3 btn-dark-banner"><a href="partner.html#apply" target="_blank">READ MORE</a></div>
+       </div>
+		</div>
+    </div>
+	</div> -->
+
+			<!--		
+	<div class="carousel-item">
+	<div class="carousel-design-four">
+	<br><br>	
+	<div class="row">
+    <div class="mx-auto text-center">
+     <h1 style="color: #FFFFFF;">DRIVe BAA Special Instructions Released</h1>
+	   </div>
+		</div>
+<div class="col-12">
+	<div class="row justify-content-center">
+    <div class="col-3 btn-dark-banner"><a href="https://www.fbo.gov/index?s=opportunity&mode=form&id=dbf8256099b0dbb960adfd5095ac1221&tab=core&_cview=1" target="_blank">READ MORE</a></div>
+	  <div class="col-3 btn-dark-banner"><a href="partner.html#apply">SUBMISSION INSTRUCTIONS</a></div>
+       </div>
+		</div>
+    </div>
+	</div> -->
+			<!--		
+	<div class="carousel-item" >
+	<div class="carousel-design-five">
+	<div class="row justify-content-center">
+    <div class="col-md-5 offset-1">
+      <h1 style="color: #FFFFFF; font-weight: bolder">Need assistance?</h1> <h3>Our Accelerator Network may be able to help.</h3>
+    </div>
+    <div class="col-md-4 offset-1">
+      <div  class="btn-learnmore"><a href="partner.html#accelerator_announcement">LEARN MORE</a></div>
+    </div>
+  </div>
+    </div>
+	</div> -->
+			<div class="carousel-item">
+				<div class="carousel-design-three">
+					<div class="row justify-content-center">
+						<div class="col-md-2 offset-1">
+							<img class="drivelogo img-fluid" alt="DRIVe Logo" src="assets/images/powered-by-drive-logo-white.png">
+						</div>
+						<div class="col-md-1"></div>
+						<div class="col-md-4">
+							<div class="btn-learnmore"> <a href="map/index.html"><em>See Our Portfolio</em></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div class="background-white">
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center"><br>
+						<h4>Revolutionize the way we <strong>prevent, detect,</strong> and <strong>respond</strong> to
+							major 21<sup>st</sup> century health security threats.</h4>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr />
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h5>DRIVe takes a <b>new approach</b> to tackle the biggest national health security threats –
+							developing <b>innovative technologies and practices</b> for <b>transformative solutions</b>.
+						</h5><br />
+						<h5>We bring together the <b>best ideas</b> from the <b>medical and scientific communities</b>,
+							together with government and venture capital investment, to drive <b>innovation</b> that
+							will <b>strengthen</b> our nation’s health security.</h5><br>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="serviceBox enactService enactServiceOff">
+						<div class="service-icon">
+							<h3 class="title">ENACT</h3>
+						</div>
+						<p class="description">
+							Too often, people do not receive adequate and timely treatment for infectious diseases.
+							Early Notification to Act, Control, and Treat (ENACT) will empower individuals to be aware
+							of their health status and take action.
+						</p>
+						<br /><br />
+						<a class="btn_readmore" href="impactareas.html?id=enact">Read More</a><br />
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="serviceBox sepsisService sepsisServiceOff">
+						<div class="service-icon">
+							<h3 class="title">SEPSIS</h3>
+						</div>
+						<p class="description">
+							Sepsis is one the country's most urgent and costly systemic health threats. Solving Sepsis
+							will focus on approaches to empower the patient and clinician via new technologies to aid in
+							restoring a patient's homeostasis.
+						</p>
+						<br /><br />
+						<a class="btn_readmore" href="impactareas.html?id=sepsis">Read More</a><br />
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="serviceBox otherService">
+						<div class="service-icon">
+							<h3 class="title">OTHER AREAS</h3>
+							<!--  <i class="fas fa-microscope"></i> -->
+						</div>
+						<p class="description">
+							DRIVe will seek additional bold and disruptive innovative solutions to transform health
+							security. These include, creating universal treatment options for broad classes of
+							pathogens, ensuring access to life-saving medical countermeasures, and much more.
+						</p>
+						<br />
+						<a class="btn_readmore" href="impactareas.html?id=other-areas">Read More</a><br />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="carouselId" class="carousel slide" data-ride="carousel" data-interval="false">
+			<!-- Dot indicators that appear at the lower center and used for navigation. -->
+			<ol class="carousel-indicators">
+				<li data-target="#carouselId" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselId" data-slide-to="1"></li>
+				<li data-target="#carouselId" data-slide-to="2"></li>
+				<li data-target="#carouselId" data-slide-to="3"></li>
+				<li data-target="#carouselId" data-slide-to="4"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<section style="background-color: #161616; padding: 20px; margin-top: 40px; ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<div>
+								<div class="carousel-inner">
+									<div class="carousel-item item-custom active">
+										<div class="video-carousel-caption">
+											<h3>Introducing DRIVe</h3>
+										</div>
+										<iframe aria-label="Video on BARDA's Dr. Rick Bright Introducing DRIVe"
+											class="embedded-video-iframe"
+											src="https://www.youtube-nocookie.com/embed/cs3E_2yMwPw?rel=0"></iframe>
+										<div class="video-carousel-caption">
+										</div>
+									</div>
+
+									<div class="carousel-item item-custom">
+										<div class="video-carousel-caption">
+											<h3>BARDA's Dr. Rick Bright Introducing DRIVe</h3>
+										</div>
+										<iframe aria-label="Video on BARDA's Dr. Rick Bright Introducing DRIVe"
+											class="embedded-video-iframe"
+											src="https://www.youtube-nocookie.com/embed/PIG68ObytqE?rel=0"></iframe>
+										<div class="video-carousel-caption">
+										</div>
+									</div>
+
+									<div class="carousel-item item-custom">
+										<div class="video-carousel-caption">
+											<h3>Dr. Kadlec, the ASPR, Describing DRIVe</h3>
+										</div>
+										<iframe aria-label="Video on ASPR's Dr. Kadlec Introducing DRIVe"
+											class="embedded-video-iframe"
+											src="https://www.youtube-nocookie.com/embed/3FNIFqYfzsk?rel=0"></iframe>
+										<div class="video-carousel-caption">
+
+										</div>
+									</div>
+
+									<div class="carousel-item item-custom">
+										<div class="video-carousel-caption">
+											<h3>BARDA's Dr. Rick Bright Describing DRIVe</h3>
+										</div>
+										<iframe aria-label="Video on BARDA's Dr. Rick Bright"
+											class="embedded-video-iframe"
+											src="https://www.youtube-nocookie.com/embed/cySeW-l244o?rel=0"></iframe>
+										<div class="video-carousel-caption">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#carouselId" aria-label="Previous carousel item"
+					data-slide="prev"> <span class="carousel-control-prev-icon"></span>
+				</a> 
+				<a class="carousel-control-custom carousel-control-next" href="#carouselId"
+					aria-label="Previous carousel item" data-slide="next"> <span
+						class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</section>
+
+		<section style=" background-color: #fafafa; padding: 20px; text-align: center">
+			<div>
+				<div class="row justify-content-center">
+					<div class="col-xs-12">
+						<div><br />
+							<h1 style="color: #4A4A4A">Powering Innovation</h1>
+							<h5>
+								DRIVe is forming novel Public-Private Partnerships. Approaches
+								could include <a style="color: #165F9C;" data-toggle="tooltip" data-placement="top"
+									title="no equity positions taken">non-dilutive</a>
+								funding<br>
+								through DRIVe-X or <a style="color: #165F9C;" data-toggle="tooltip" data-placement="top"
+									title="equity positions taken">dilutive</a>
+								funding through
+								DRIVe Launch or DRIVe Ventures.
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects" class="projects-section bg-light">
+			<div class="container">
+				<!-- Featured Project Row -->
+				<!-- Project One Row -->
+				<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+					<div style="background-color: #161616" class="col-lg-6 blackbox_drivex">
+						<img class="img-fluid" src="assets/images/drive-x.jpg" alt="Driv-X icon">
+					</div>
+					<div class="col-lg-6">
+						<div class="bg-black text-center h-100 project">
+							<div class="d-flex h-100">
+								<div class="project-text w-100 my-auto text-center text-lg-left">
+									<i style="color: #FFFFFF; font-size: 50px; margin-bottom: 20px;"
+										class="fas fa-rocket"></i>
+									<h4 class="text-white">DriVe X</h4>
+									<p class="mb-0 text-white-50 blackbox">DRIVe-X is our hyper-focused innovation
+										development program, using non-dilutive funding to address national health
+										security threats. If you're interested in partnering with us, please review our
+										EZ BAA or BAA Special Instructions. Additional partnering opportunities will
+										follow. For more information, please see the full FedBizOpps <a
+											href="https://www.fbo.gov/spg/HHS/OOS/OASPHEP/BAA-18-100-SOL-00018/listing.html"
+											target="_blank">EZ BAA announcement</a> or <a
+											href="https://www.fbo.gov/spg/HHS/OOS/OASPHEP/BAA-18-100-SOL-00003/listing.html"
+											target="_blank">BAA Special Instructions</a>.</p>
+									<hr class="d-none d-lg-block mb-0 ml-0">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Two Row -->
+				<div class="row justify-content-center no-gutters">
+					<div style="background-color: #161616" class="col-lg-6">
+						<img height="800px" class="img-fluid" src="assets/images/launch.jpg" alt="">
+					</div>
+					<div class="col-lg-6 order-lg-first">
+						<div class="bg-black text-center h-100 project">
+							<div class="d-flex h-100">
+								<div class="project-text w-100 my-auto text-center text-lg-right">
+									<img alt="hand with leaf icon" style="margin-bottom: 10px" height="70px"
+										src="assets/images/icons/hand_leaf.png">
+									<h4 class="text-white">LAUNCH</h4>
+									<p class="mb-0 text-white-50 blackbox">DRIVe Launch establishes a bilateral
+										partnership with a non-profit third-party entity with the potential for the
+										entity to take equity positions in companies and/or technologies. DRIVe Launch
+										will address gaps which require innovative and entrepreneurial approaches that
+										may not be considered under traditional medical countermeasure development.</p>
+									<hr class="d-none d-lg-block mb-0 mr-0">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Project One Row -->
+				<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+					<div class="col-lg-6">
+						<img class="img-fluid" src="assets/images/ventures.jpg" alt="">
+					</div>
+					<div class="col-lg-6">
+						<div class="bg-black text-center h-100 project">
+							<div class="d-flex h-100">
+								<div class="project-text w-100 my-auto text-center text-lg-left">
+									<img alt="ventures" style="margin-bottom: 10px" height="70px"
+										src="assets/images/icons/ventures.png">
+									<h4 class="text-white">VENTURES</h4>
+									<p class="mb-0 text-white-50 blackbox">DRIVe Ventures will work with corporate
+										venture capital partners to invest in promising products, driving them to the
+										marketplace to transform and enhance national health security. <a
+											href="ventures.html">Learn more.</a></p>
+									<hr class="d-none d-lg-block mb-0 ml-0">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Two Row -->
+				<div class="row justify-content-center no-gutters">
+					<div class="col-lg-6">
+						<img class="img-fluid" src="assets/images/accelerators.jpg" alt="">
+					</div>
+					<div class="col-lg-6 order-lg-first">
+						<div class="bg-black text-center h-100 project">
+							<div class="d-flex h-100">
+								<div class="project-text w-100 my-auto text-center text-lg-right">
+									<img alt="accelerator" style="margin-bottom: 10px" height="70px"
+										src="assets/images/icons/accelerator_03.png">
+									<h4 class="text-white">ACCELERATORS</h4>
+									<p class="mb-0 text-white-50 blackbox">DRIVe is decentralizing innovation across the
+										country. The DRIVe Accelerator Network is working with regional accelerators to
+										identify promising innovation and provide wraparound technical and business
+										development support services.</p>
+									<hr class="d-none d-lg-block mb-0 mr-0">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-xs-12" style="padding: 40px;">
+						<p>
+							<b>DRIVe</b> (<b>D</b>ivision of <b>R</b>esearch, <b>I</b>nnovation,
+							and <b>Ve</b>ntures) was established by the <b>B</b>iomedical <b>A</b>dvanced
+							<b>R</b>esearch and <b>D</b>evelopment <b>A</b>uthority (<a
+								href="https://medicalcountermeasures.gov/" target="_blank"><b>BARDA</b></a>),
+							part of the <b>A</b>ssistant <b>S</b>ecretary for <b>P</b>reparedness
+							and <b>R</b>esponse (<a href="http://www.phe.gov/" target="_blank"><b>ASPR</b></a>), within
+							the United States
+							Department of <b>H</b>ealth and <b>H</b>uman <b>S</b>ervices (<a href="http://www.hhs.gov/"
+								target="_blank"><b>HHS</b></a>).
+						</p>
+						<div class="text-center footer_logos" style="margin-top: 20px; margin-bottom: 20px;">
+							<a target="_blank" href="https://hhs.gov"><img
+									alt="Department of Health &amp; Human Services - USA" src="assets/images/logos/dhhs.png"
+									style="height: 100px;"></a> <a target="_blank" href="https://phe.gov"><img
+									alt="ASPR" src="assets/images/logos/aspr.png" style="height: 80px;"></a> <a target="_blank"
+								href="https://medicalcountermeasures.gov/"><img alt="BARDA logo"
+									src="assets/images/logos/barda.png" style="height: 80px;" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--   END: CONTENT -->
+	<!-- Footer -->
+	<div id="includefooter"></div>
+	<!-- Footer --------->
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div id="scroll-top-link" class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#page-top"> <i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+</body>
+
+</html>
